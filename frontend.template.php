@@ -332,7 +332,10 @@ Verwenden Sie es also nicht für vertrauliche Daten.</strong>
         </div>
 
         <p>
-            <small>Powered by
+            <small>PC MB 0.1 Powered by
+<a
+                        href="https://github.com/pfeifferch/disposable-mailbox"><strong>pfeifferch/disposable-mailbox</strong></a>
+a Fork of            
                 <a
                         href="https://github.com/synox/disposable-mailbox"><strong>synox/disposable-mailbox</strong></a>
             </small>
