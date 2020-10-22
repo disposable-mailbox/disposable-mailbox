@@ -61,7 +61,7 @@ function printMessageBody($email, $purifier) {
 
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -112,7 +112,7 @@ function printMessageBody($email, $purifier) {
 
 <div id="new-content-avalable">
     <div class="alert alert-info alert-fixed" role="alert">
-        <strong>Neue emails</strong> sind eingetroffen.
+        <strong>Neue eMails</strong> sind eingetroffen.
 
         <button type="button" class="btn btn-outline-secondary" onclick="location.reload()">
             <i class="fas fa-sync"></i>
@@ -144,7 +144,7 @@ function printMessageBody($email, $purifier) {
         <div class="row" id="address-box-normal">
 
             <div class="col my-address-block">
-                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address">Copy</button>
+                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address">Kopieren</button>
             </div>
 
 
