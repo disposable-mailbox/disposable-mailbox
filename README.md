@@ -1,5 +1,5 @@
 # disposable-mailbox
-Fork of Synox disposable-mailbox
+Fork of Synox [disposable-mailbox](https://github.com/synox/disposable-mailbox/)
 
 [![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
