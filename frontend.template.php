@@ -1,4 +1,5 @@
 <?php
+if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';}
 /*
 input:
 
@@ -61,7 +62,7 @@ function printMessageBody($email, $purifier) {
 
 
 <!doctype html>
-<html lang="de">
+<html lang="<?php echo $setHTMLLanguageCode; ?>">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -91,7 +92,7 @@ function printMessageBody($email, $purifier) {
             r.onreadystatechange = function () {
                 if (r.readyState != 4 || r.status != 200) return;
                 if (r.responseText > 0) {
-                    console.log("es gibt", r.responseText, "neue Mails.");
+                    console.log($config['localeHowManyMailArrivedBevore'], r.responseText, $config['localeHowManyMailArrivedBevore']);
                     document.getElementById("new-content-avalable").style.display = 'block';
 
                     // If there are no emails displayed, we can reload the page without losing any state.
@@ -112,11 +113,11 @@ function printMessageBody($email, $purifier) {
 
 <div id="new-content-avalable">
     <div class="alert alert-info alert-fixed" role="alert">
-        <strong>Neue eMails</strong> sind eingetroffen.
+        <?php echo $config['localeMailArrived']; ?>
 
         <button type="button" class="btn btn-outline-secondary" onclick="location.reload()">
             <i class="fas fa-sync"></i>
-            aktualisieren!
+            <?php echo $config['localeTranslationForRefresh']; ?>
         </button>
 
     </div>
@@ -140,11 +141,11 @@ function printMessageBody($email, $purifier) {
 		<p class="lead ">
             </p>
         <p class="lead ">
-            Deine Einweg-Mailadresse ist fertig.</p>
+            <?php echo $config['localeMailboxReady']; ?></p>
         <div class="row" id="address-box-normal">
 
             <div class="col my-address-block">
-                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address">Kopieren</button>
+                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address"><?php echo $config['localeTranslationforCopy']; ?></button>
             </div>
 
 
@@ -153,7 +154,7 @@ function printMessageBody($email, $purifier) {
                         data-toggle="collapse" title="choose your own address"
                         data-target=".change-address-toggle"
                         aria-controls="address-box-normal address-box-edit" aria-expanded="false">
-                    <i class="fas fa-magic"></i> Addresse wechseln
+                    <i class="fas fa-magic"></i> <?php echo $config['localeChangeMailUsername']; ?>
                 </button>
             </div>
         </div>
@@ -165,12 +166,12 @@ function printMessageBody($email, $purifier) {
                     <p>
                         <a href="?action=random" role="button" class="btn btn-dark">
                             <i class="fa fa-random"></i>
-                            Zuf&auml;llige Mailadresse generieren
+                            <?php echo $config['localeSetToRandom']; ?>
                         </a>
                     </p>
 
 
-                    oder eigene Adresse anlegen:
+                    <?php echo $config['localeUseOwnUsername']; ?>
                     <div class="form-row align-items-center">
                         <div class="col-sm">
                             <label class="sr-only" for="inlineFormInputName">username</label>
@@ -179,7 +180,7 @@ function printMessageBody($email, $purifier) {
                                    value="<?php echo $user->username ?>">
                         </div>
                         <div class="col-sm-auto my-1">
-                            <label class="sr-only" for="inlineFormInputGroupUsername">Domain</label>
+                            <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $config['localeTranslationForDomain']; ?></label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">@</div>
@@ -198,7 +199,7 @@ function printMessageBody($email, $purifier) {
                             </div>
                         </div>
                         <div class="col-auto my-1">
-                            <button type="submit" class="btn btn-primary">&Ouml;ffne Mailbox</button>
+                            <button type="submit" class="btn btn-primary"><?php echo $config['localeOpenMailbox']; ?></button>
                         </div>
                     </div>
 
@@ -252,13 +253,13 @@ function printMessageBody($email, $purifier) {
                                 <a class="btn btn-outline-primary btn-sm" download="true"
                                    role="button"
                                    href="<?php echo "?action=download_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    Download
+                                    <?php echo $config['localeTranslationForDownload']; ?>
                                 </a>
 
                                 <a class="btn btn-outline-danger btn-sm"
                                    role="button"
                                    href="<?php echo "?action=delete_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    L&ouml;schen
+                                    <?php echo $config['localeTranslationForDelete']; ?>
                                 </a>
                             </div>
                              <?php printMessageBody($email, $purifier); ?>
@@ -273,7 +274,7 @@ function printMessageBody($email, $purifier) {
             if (empty($emails)) {
                 ?>
                 <div id="empty-mailbox">
-                    <p>Das Postfach ist leer. Solange diese Seite ge&ouml;ffnet ist, wird Automatisch nach neuen E-Mails gesucht...</p>
+                    <?php echo $config['localeEmptyMailbox']; ?>
                     <div class="spinner">
                         <div class="rect1"></div>
                         <div class="rect2"></div>
@@ -291,54 +292,33 @@ function printMessageBody($email, $purifier) {
 <footer>
     <div class="container">
 
-
-                <select id="language-selection" class="custom-select" title="Language">
-                   <!-- <option>English</option>-->
- <option value="1" selected>Deutsch</option>
-<!--                    <option value="2">Two</option>-->
-<!--                    <option value="3">Three</option>-->
+<!-- 
+<select id="language-selection" class="custom-select" title="Language">                 
+<option value="EN"><?php echo $config['localeLanguage1']; ?></option>
+<option value="DE" selected><?php echo $config['localeLanguage']; ?></option>
+<option value="ES"><?php echo $config['localeLanguage3']; ?></option>
 </select>
+-->
  <br>
 
         <small class="text-justify quick-summary">
-            Dies ist ein Einweg-Postfachdienst.  Wer Ihren Benutzernamen kennt, kann Ihre E-Mails lesen.
-            Emails werden automatisch und unwiederbringlich gel&ouml;scht nach <?php echo $config['delete_messages_older_than']; ?> Tagen.
+            <?php echo $config['localeQuickSummary']; ?>
 
             <a data-toggle="collapse" href="#about"
                aria-expanded="false"
                aria-controls="about">
-                Mehr Infos
+                <?php echo $config['localecollapse']; ?>
             </a>
         </small>
         <div class="card card-body collapse" id="about" style="max-width: 40rem">
-
-            <p class="text-justify">Diese Einweg-Mailbox h&auml;lt Ihre Hauptmailbox frei von Spam.</p>
-
-<p class="text-justify">
-W&auml;hlen Sie einfach eine Adresse und verwenden Sie sie auf Websites, denen Sie nicht vertrauen und wo Sie die Private Haupt-E-Mail-Adresse nicht preisgeben wollen.<br/>
-Sobald Sie fertig sind, können Sie die Mailbox einfach vergessen.<br/>
-Der ganze Spam bleibt hier wird nicht im Privaten Mailaccount landen.</p>
-
-<p class="text-justify">
-Sie wählen die Adresse aus, die Sie verwenden m&ouml;chten, und empfangene E-Mails werden automatisch angezeigt. <br/>
-Es gibt keine Registrierung und keine Passwörter.<br/>
-Wenn Sie die Adresse kennen, können Sie die E-Mails lesen.
-<br/>
-<br/>              <strong>Grunds&auml;tzlich sind alle E-Mails &ouml;ffentlich. <br/>
-Verwenden Sie es also nicht für vertrauliche Daten.</strong>
-
-
-            </p>
-        </div>
+       <?php echo $config['localelong-about-1']; ?>
+       <?php echo $config['localelong-about-2']; ?>
+       <?php echo $config['localelong-about-3']; ?>
+     </div>
 
         <p>
-            <small>PC DMB 0.1.1 Powered by
-<a
-                        href="https://github.com/pfeifferch/disposable-mailbox"><strong>pfeifferch/disposable-mailbox</strong></a>
-a Fork of            
-                <a
-                        href="https://github.com/synox/disposable-mailbox"><strong>synox/disposable-mailbox</strong></a>
-            </small>
+            
+       <?php echo $config['localeCopyright']; ?>
         </p>
     </div>
 </footer>
