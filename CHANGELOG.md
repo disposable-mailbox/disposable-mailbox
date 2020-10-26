@@ -2,6 +2,25 @@
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 
+
+## [2.1.1] - 2020-10-26 -ML Branch
+
+### Changed
+
+Funktion für mehrere Sprachen hinzugefügt. 
+-    Diese kann mit en_US oder de_DE in der config.php per $config['locale']  ausgewählt werden
+-    Weitere Übersetzungen müssen in /locale/%LOCALECODE%/locale.template.php abgelegt werden.
+-    Es fehlt noch eine Debug Fassung falls keine Sprachdatei gefunden wurde - aktuell ist die Seite dann ohne Text.
+-    Die Möglichkeit, die Sprache durch den User zu ändern ist auch noch nicht Integriert!
+
+Added functionality for multiple languages.
+-    This can be selected with en_US or de_DE in config.php (  $config['locale']   ) 
+-    further translations must be stored in /locale/CODE/locale.template.php
+-    A debug version is still missing if no language file was found - the current page is then without text.
+-    The possibility of changing the language by the user is also not yet integrated!
+
+
+
 ## [Unreleased]
 
 ### Changed
