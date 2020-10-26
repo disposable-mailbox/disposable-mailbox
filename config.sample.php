@@ -6,9 +6,21 @@ date_default_timezone_set('Europe/Paris');
 // set locale (see supported locales: https://github.com/fightbulc/moment.php#switch-locale)
 $config['locale'] = 'en_US';
 
+//Funktion für mehrere Sprachen hinzugefügt. 
+//    Diese kann mit en_US oder de_DE ausgewählt werden.
+//    Weitere Übersetzungen müssen in /locale/%LOCALECODE%/locale.template.php abgelegt werden.
+//    Es fehlt noch eine Debug Fassung falls keine Sprachdatei gefunden wurde - aktuell ist die Seite dann ohne Text.
+//    Die Möglichkeit, die Sprache durch den User zu ändern ist auch noch nicht Integriert!
+//Added functionality for multiple languages.
+//    This can be selected with en_US or de_DE.
+//    further translations must be stored in /locale/CODE/locale.template.php.
+//    A debug version is still missing if no language file was found - the current page is then without text.
+//    The possibility of changing the language by the user is also not yet integrated!
+
 
 // enable in production:
 error_reporting(0);
+
 
 // enable while testing:
 //ini_set('display_errors', 1);
