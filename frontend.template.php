@@ -307,7 +307,7 @@ function printMessageBody($email, $purifier) {
             <a data-toggle="collapse" href="#about"
                aria-expanded="false"
                aria-controls="about">
-                Show Details
+                Mehr Infos
             </a>
         </small>
         <div class="card card-body collapse" id="about" style="max-width: 40rem">
