@@ -1,29 +1,29 @@
 <?php
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
   $setHTMLLanguageCode = "en";
-  $config['localeHowManyMailArrivedBevore']  = "There are ";
-  $config['localeMailHaveBeArrivedAfter']  = " new Mails.";
-  $config['localeMailArrived']  = "<strong>New emails</strong> have arrived";
-  $config['localeTranslationForRefresh']  = "Reload!";
-  $config['localeMailboxReady']  =  "Your disposable mailbox is ready.";
-  $config['localeTranslationforCopy']  =  "copy";
-  $config['localeChangeMailUsername']  = "Change address";
-  $config['localeSetToRandom']  = "Open random mailbox";
-  $config['localeUseOwnUsername']  = "or create your own address:";
-  $config['localeTranslationForDomain']  = "Domain";
-  $config['localeOpenMailbox']  = "Open mailbox";
-  $config['localeTranslationForDownload']  =  "Download";
-  $config['localeTranslationForDelete']  =  "Delete";
-  $config['localeEmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
-  $config['localeLanguage1']  = "English";
-  $config['localeLanguage2']  = "German";
-  $config['localeLanguage3']  = "Spanish";
-  $config['localeQuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
-  $config['localecollapse']  = "Show Details";
-$config['localelong-about-2']  = "<p class=\"text-justify\">you don't trust and don't  want to use your main email address.<br/>
+  $locale['HowManyMailArrivedBevore']  = "There are ";
+  $locale['MailHaveBeArrivedAfter']  = " new Mails.";
+  $locale['MailArrived']  = "<strong>New emails</strong> have arrived";
+  $locale['TranslationForRefresh']  = "Reload!";
+  $locale['MailboxReady']  =  "Your disposable mailbox is ready.";
+  $locale['TranslationforCopy']  =  "copy";
+  $locale['ChangeMailUsername']  = "Change address";
+  $locale['SetToRandom']  = "Open random mailbox";
+  $locale['UseOwnUsername']  = "or create your own address:";
+  $locale['TranslationForDomain']  = "Domain";
+  $locale['OpenMailbox']  = "Open mailbox";
+  $locale['TranslationForDownload']  =  "Download";
+  $locale['TranslationForDelete']  =  "Delete";
+  $locale['EmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
+  $locale['Language1']  = "English";
+  $locale['Language2']  = "German";
+  $locale['Language3']  = "Spanish";
+  $locale['QuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
+  $locale['collapse']  = "Show Details";
+$locale['long-about-2']  = "<p class=\"text-justify\">you don't trust and don't  want to use your main email address.<br/>
 Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";
-$config['localelong-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
-$config['localeCopyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> V2.1.1_NT - a Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['long-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> V2.1.1_NT - a Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 }
 /*
 input:
@@ -117,7 +117,7 @@ function printMessageBody($email, $purifier) {
             r.onreadystatechange = function () {
                 if (r.readyState != 4 || r.status != 200) return;
                 if (r.responseText > 0) {
-                    console.log($config['localeHowManyMailArrivedBevore'], r.responseText, $config['localeHowManyMailArrivedBevore']);
+                    console.log($locale['HowManyMailArrivedBevore'], r.responseText, $locale['HowManyMailArrivedBevore']);
                     document.getElementById("new-content-avalable").style.display = 'block';
 
                     // If there are no emails displayed, we can reload the page without losing any state.
@@ -138,11 +138,11 @@ function printMessageBody($email, $purifier) {
 
 <div id="new-content-avalable">
     <div class="alert alert-info alert-fixed" role="alert">
-        <?php echo $config['localeMailArrived']; ?>
+        <?php echo $locale['MailArrived']; ?>
 
         <button type="button" class="btn btn-outline-secondary" onclick="location.reload()">
             <i class="fas fa-sync"></i>
-            <?php echo $config['localeTranslationForRefresh']; ?>
+            <?php echo $locale['TranslationForRefresh']; ?>
         </button>
 
     </div>
@@ -166,11 +166,11 @@ function printMessageBody($email, $purifier) {
 		<p class="lead ">
             </p>
         <p class="lead ">
-            <?php echo $config['localeMailboxReady']; ?></p>
+            <?php echo $locale['MailboxReady']; ?></p>
         <div class="row" id="address-box-normal">
 
             <div class="col my-address-block">
-                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address"><?php echo $config['localeTranslationforCopy']; ?></button>
+                <span id="my-address"><?php echo $user->address ?></span>&nbsp;<button class="copy-button" data-clipboard-target="#my-address"><?php echo $locale['TranslationforCopy']; ?></button>
             </div>
 
 
@@ -179,7 +179,7 @@ function printMessageBody($email, $purifier) {
                         data-toggle="collapse" title="choose your own address"
                         data-target=".change-address-toggle"
                         aria-controls="address-box-normal address-box-edit" aria-expanded="false">
-                    <i class="fas fa-magic"></i> <?php echo $config['localeChangeMailUsername']; ?>
+                    <i class="fas fa-magic"></i> <?php echo $locale['ChangeMailUsername']; ?>
                 </button>
             </div>
         </div>
@@ -191,12 +191,12 @@ function printMessageBody($email, $purifier) {
                     <p>
                         <a href="?action=random" role="button" class="btn btn-dark">
                             <i class="fa fa-random"></i>
-                            <?php echo $config['localeSetToRandom']; ?>
+                            <?php echo $locale['SetToRandom']; ?>
                         </a>
                     </p>
 
 
-                    <?php echo $config['localeUseOwnUsername']; ?>
+                    <?php echo $locale['UseOwnUsername']; ?>
                     <div class="form-row align-items-center">
                         <div class="col-sm">
                             <label class="sr-only" for="inlineFormInputName">username</label>
@@ -205,7 +205,7 @@ function printMessageBody($email, $purifier) {
                                    value="<?php echo $user->username ?>">
                         </div>
                         <div class="col-sm-auto my-1">
-                            <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $config['localeTranslationForDomain']; ?></label>
+                            <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $locale['TranslationForDomain']; ?></label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">@</div>
@@ -224,7 +224,7 @@ function printMessageBody($email, $purifier) {
                             </div>
                         </div>
                         <div class="col-auto my-1">
-                            <button type="submit" class="btn btn-primary"><?php echo $config['localeOpenMailbox']; ?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo $locale['OpenMailbox']; ?></button>
                         </div>
                     </div>
 
@@ -284,7 +284,7 @@ function printMessageBody($email, $purifier) {
                                 <a class="btn btn-outline-danger btn-sm"
                                    role="button"
                                    href="<?php echo "?action=delete_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    <?php echo $config['localeTranslationForDelete']; ?>
+                                    <?php echo $locale['TranslationForDelete']; ?>
                                 </a>
                             </div>
  <div id="emailMessageBody"><hr>
@@ -301,7 +301,7 @@ function printMessageBody($email, $purifier) {
             if (empty($emails)) {
                 ?>
                 <div id="empty-mailbox">
-                    <?php echo $config['localeEmptyMailbox']; ?>
+                    <?php echo $locale['EmptyMailbox']; ?>
                     <div class="spinner">
                         <div class="rect1"></div>
                         <div class="rect2"></div>
@@ -321,32 +321,32 @@ function printMessageBody($email, $purifier) {
 
 <!-- 
 <select id="language-selection" class="custom-select" title="Language">                 
-<option value="EN"><?php echo $config['localeLanguage1']; ?></option>
-<option value="DE" selected><?php echo $config['localeLanguage']; ?></option>
-<option value="ES"><?php echo $config['localeLanguage3']; ?></option>
+<option value="EN"><?php echo $locale['Language1']; ?></option>
+<option value="DE" selected><?php echo $locale['Language2']; ?></option>
+<option value="ES"><?php echo $locale['Language3']; ?></option>
 </select>
 -->
  <br>
 
         <small class="text-justify quick-summary">
-            <?php echo $config['localeQuickSummary']; ?>
+            <?php echo $locale['QuickSummary']; ?>
 
             <a data-toggle="collapse" href="#about"
                aria-expanded="false"
                aria-controls="about">
-                <?php echo $config['localecollapse']; ?>
+                <?php echo $locale['collapse']; ?>
             </a>
         </small>
         <div class="card card-body collapse" id="about" style="max-width: 40rem">
-       <?php echo $config['localelong-about-1']; ?>
-       <?php echo $config['localelong-about-2']; ?>
-       <?php echo $config['localelong-about-3']; ?>
+       <?php echo $locale['long-about-1']; ?>
+       <?php echo $locale['long-about-2']; ?>
+       <?php echo $locale['long-about-3']; ?>
        <?php echo $config['imprintanddisclaimer']; ?>
      </div>
 
         <p>
             
-       <?php echo $config['localeCopyright']; ?>
+       <?php echo $locale['Copyright']; ?>
         </p>
     </div>
 </footer>
