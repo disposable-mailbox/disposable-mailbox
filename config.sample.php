@@ -1,4 +1,5 @@
 <?php
+$config['versionnumber'] = '2.1.1';
 
 // set your time zone:
 date_default_timezone_set('Europe/Paris');
