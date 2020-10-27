@@ -1,4 +1,6 @@
 <?php
+if(file_exists('/versioninfo.php')){ include './versioninfo.php';}
+ 
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
   $setHTMLLanguageCode = "en";
   $locale['HowManyMailArrivedBevore']  = "There are ";
