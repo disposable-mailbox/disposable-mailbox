@@ -351,9 +351,9 @@ function printMessageBody($email, $purifier) {
      </div>
 
         <p>
-            
        <?php echo $locale['Copyright']; ?>
-        </p>
+       <?php echo $usercontent['footer']; ?>
+       </p>
     </div>
 </footer>
 
