@@ -49,3 +49,13 @@ $config['blocked_usernames'] = array('root', 'admin', 'administrator', 'hostmast
 
 // Mails are usually show as Text and only if not available as HTML. You can turn this around to prefer HTML over text.
 $config['prefer_plaintext'] = true;
+
+// Impressum and Disclaimer show in "more Info"
+config['imprintanddisclaimer'] =
+"<p>This service is provided for test purposes and free of charge; there is no guarantee of constant availability, in particular not of the accessibility of the domains </p><h5><span id=\"more-24\"></span></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">CONTACT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">IMPRINT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">DISCLAIMER</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">DATA PROTECTION</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">REFERENCES</a></h5>	
+</p>";
