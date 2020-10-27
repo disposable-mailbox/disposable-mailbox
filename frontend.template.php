@@ -341,6 +341,7 @@ function printMessageBody($email, $purifier) {
        <?php echo $config['localelong-about-1']; ?>
        <?php echo $config['localelong-about-2']; ?>
        <?php echo $config['localelong-about-3']; ?>
+       <?php echo $config['imprintanddisclaimer']; ?>
      </div>
 
         <p>
