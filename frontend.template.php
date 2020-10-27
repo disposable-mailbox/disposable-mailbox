@@ -1,5 +1,8 @@
 <?php
 @include './versioninfo.php';
+@include './detectmobile.php';
+@include './usercontent.php';
+
  
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
   $setHTMLLanguageCode = "en";
@@ -165,6 +168,7 @@ function printMessageBody($email, $purifier) {
 		<hr>		
 		</p>
 -->	
+   <?php echo $usercontent['headline']; ?>
 		<p class="lead ">
             </p>
         <p class="lead ">
