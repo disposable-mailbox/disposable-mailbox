@@ -109,8 +109,8 @@ function printMessageBody($email, $purifier) {
 	
     <link rel="stylesheet" href="assets/custom.css">
 
-	
-	   <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Calligraffitti:300,400,500,300italic' rel='stylesheet' type='text/css'>
     <script>
         var mailCount = <?php echo count($emails)?>;
         setInterval(function () {
