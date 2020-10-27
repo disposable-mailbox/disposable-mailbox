@@ -1,54 +1,54 @@
 <?php 
 //// Debug Message
-//echo "Englische Sprachdatei geladen"; 
+echo "<!-- English language file loaded -->"; 
 
 
 $setHTMLLanguageCode = "en";
 
-$config['localeHowManyMailArrivedBevore']  = "There are "; //Counter
-$config['localeMailHaveBeArrivedAfter']  = " new Mails.";
+$locale['HowManyMailArrivedBevore']  = "There are "; //Counter
+$locale['MailHaveBeArrivedAfter']  = " new Mails.";
 
-$config['localeMailArrived']  = "<strong>New emails</strong> have arrived";
+$locale['MailArrived']  = "<strong>New emails</strong> have arrived";
 
-$config['localeTranslationForRefresh']  = "Reload!";
+$locale['TranslationForRefresh']  = "Reload!";
 
-$config['localeMailboxReady']  =  "Your disposable mailbox is ready.";
+$locale['MailboxReady']  =  "Your disposable mailbox is ready.";
 
-$config['localeTranslationforCopy']  =  "copy";
+$locale['TranslationforCopy']  =  "copy";
 
-$config['localeChangeMailUsername']  = "Change address";
+$locale['ChangeMailUsername']  = "Change address";
 
-$config['localeSetToRandom']  = "Open random mailbox";
+$locale['SetToRandom']  = "Open random mailbox";
 
-$config['localeUseOwnUsername']  = "or create your own address:";
+$locale['UseOwnUsername']  = "or create your own address:";
 
-$config['localeTranslationForDomain']  = "Domain";
+$locale['TranslationForDomain']  = "Domain";
 
-$config['localeOpenMailbox']  = "Open mailbox";
+$locale['OpenMailbox']  = "Open mailbox";
 
-$config['localeTranslationForDownload']  =  "Download";
+$locale['TranslationForDownload']  =  "Download";
 
-$config['localeTranslationForDelete']  =  "Delete";
+$locale['TranslationForDelete']  =  "Delete";
 
-$config['localeEmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
+$locale['EmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
 
-$config['localeLanguage1']  = "English";
+$locale['Language1']  = "English";
 
-$config['localeLanguage2']  = "German";
+$locale['Language2']  = "German";
 
-$config['localeLanguage3']  = "Spanish";
+$locale['Language3']  = "Spanish";
 
-$config['localeQuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
+$locale['QuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
 
-$config['localecollapse']  = "Show Details";
+$locale['collapse']  = "Show Details";
 
-$config['localelong-about-1']  = "<p class=\"text-justify\">This disposable mailbox keeps your main mailbox clean from spam.</p>";
+$locale['long-about-1']  = "<p class=\"text-justify\">This disposable mailbox keeps your main mailbox clean from spam.</p>";
 
-$config['localelong-about-2']  = "<p class=\"text-justify\">you don't trust and don't  want to use your main email address.<br/>
+$locale['long-about-2']  = "<p class=\"text-justify\">you don't trust and don't  want to use your main email address.<br/>
 Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";
 
-$config['localelong-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
+$locale['long-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 
-$config['localeCopyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> V2.1.1_EN - a Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_EN - a Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
 ?>
