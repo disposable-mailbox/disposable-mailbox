@@ -288,7 +288,7 @@ function printMessageBody($email, $purifier) {
                                 <a class="btn btn-outline-primary btn-sm" download="true"
                                    role="button"
                                    href="<?php echo "?action=download_email&email_id=$safe_email_id&address=$user->address" ?>">
-                                    <?php echo $config['localeTranslationForDownload']; ?>
+                                    <?php echo $locale['TranslationForDownload']; ?>
                                 </a>
 
                                 <a class="btn btn-outline-danger btn-sm"
