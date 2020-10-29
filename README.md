@@ -5,11 +5,11 @@ detached Fork of Synox [disposable-mailbox](https://github.com/synox/disposable-
 
 A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
 
-**Demo**: [BhadooMail](https://inbox.bhadoomail.com/inbox/) 
+**Demo**: [disposable-mailbox.ml](https://www.disposable-mailbox.ml) 
 
 **PHP is not your thing? You should try the more efficient NodeJs version:** https://github.com/synox/void-mail
 
-![Screenshot](docs/screenshot_example.png)
+![Screenshot](docs/screenshot-example.jpg)
 
 
 ## Features
