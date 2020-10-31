@@ -27,8 +27,8 @@ function getPreferredLanguage(){
 
 	return $preferredLanguage;
 }
-
-$PreferredLocale = ereg_replace('-', '_', $PreferredLanguage);
+$PreferredLanguageX = getPreferredLanguage();
+$PreferredLocale = ereg_replace('-', '_', $PreferredLanguageX);
 
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
