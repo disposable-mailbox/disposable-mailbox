@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.1.3] - 2020-10-31 -ML Branch
+
+### Changed
+
+Funktion für mehrere Sprachen erweitert. 
+-    Diese wird nun vom Browser ausgelesen. 
+     In der  config.php per $config['locale']  wird die Formatierung von Datum Uhrzeit und co festgelegt.  
+     Ist die vom Browser vorgegebene Sprache nicht verfügbar, wird versucht, die Übersetzungsdatei zu Laden die der Sprache der Konfiguration entspricht. 
+     Ist auch diese Übersetzungsdatei nicht auffindbar, wird ein Standardtext verwendet. 
+-    Weitere Übersetzungen müssen in /locale/%LOCALECODE%/locale.template.php abgelegt werden.
+-    BEHOBEN: Es fehlt noch eine Debug Fassung falls keine Sprachdatei gefunden wurde - aktuell ist die Seite dann ohne Text.
+-    Die Möglichkeit, die Sprache durch den User zu ändern ist noch nicht Integriert!
 
 
 ## [2.1.1] - 2020-10-26 -ML Branch
