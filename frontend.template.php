@@ -3,7 +3,33 @@
 @include './detectmobile.php';
 @include './usercontent.php';
 
+/**
+ * Detect Browser Language
+ * (c) http://martin-mueller.info/2014/03/24/sprache-des-benutzers-oder-browsers-erkennen-php/
+ */
+function getPreferredLanguage(){
  
+	$acceptedLanguages = @explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+	$preferredLanguage = null;
+	$maxWeight = 0.0;
+ 
+	foreach((array)$acceptedLanguages as $acceptedLanguage){
+ 
+		$weight = (float)@substr(explode(';', $acceptedLanguage)[1], 2);
+		if(!$weight){$weight = 1.0;}
+ 
+		if($weight > $maxWeight){
+			// $preferredLanguage =  substr($acceptedLanguage, 0, 2);  // evtl kürzen
+			$maxWeight = $weight;
+		}
+	}
+ 
+	return $preferredLanguage;
+}
+
+ 
+if(file_exists('./locale/'.getPreferredLanguage().'/locale.template.php')){ include './locale/'.getPreferredLanguage().'/locale.template.php';} else {
+
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
   $setHTMLLanguageCode = "en";
   $locale['HowManyMailArrivedBevore']  = "There are ";
@@ -93,35 +119,12 @@ function printMessageBody($email, $purifier) {
 }
 
 
-/**
- * Detect Browser Language
- * (c) http://martin-mueller.info/2014/03/24/sprache-des-benutzers-oder-browsers-erkennen-php/
- */
-function getPreferredLanguage(){
- 
-	$acceptedLanguages = @explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
-	$preferredLanguage = null;
-	$maxWeight = 0.0;
- 
-	foreach((array)$acceptedLanguages as $acceptedLanguage){
- 
-		$weight = (float)@substr(explode(';', $acceptedLanguage)[1], 2);
-		if(!$weight){$weight = 1.0;}
- 
-		if($weight > $maxWeight){
-			$preferredLanguage =  substr($acceptedLanguage, 0, 2);  // evtl kürzen
-			$maxWeight = $weight;
-		}
-	}
- 
-	return $preferredLanguage;
-}
-
 
 ?>
 
 
 <!doctype html>
+
 <html lang="<?php echo $setHTMLLanguageCode; ?>">
 <head>
     <meta charset="utf-8">
@@ -169,8 +172,6 @@ function getPreferredLanguage(){
 
 </head>
 <body>
-
-<?php echo "<!-- ".getPreferredLanguage()." -->"; ?>
 
 <div id="new-content-avalable">
     <div class="alert alert-info alert-fixed" role="alert">
