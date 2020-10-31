@@ -384,7 +384,7 @@ aria-controls="about">
 <?php echo $locale['long-about-3']; ?>
 <?php echo $config['imprintanddisclaimer']; ?>
 </div>
-
+<hr>
 <p>
 <?php echo $locale['Copyright']; ?>
 <?php echo $usercontent['footer']; ?>
