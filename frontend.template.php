@@ -29,7 +29,9 @@ function getPreferredLanguage(){
 }
 
 
-if(file_exists('./locale/'.getPreferredLanguage().'/locale.template.php')){ include './locale/'.getPreferredLanguage().'/locale.template.php';} else {
+$PreferredLng = ereg_replace('-', '_', getPreferredLanguage());
+
+if(file_exists('./locale/'.$PreferredLng.'/locale.template.php')){ include './locale/'.$PreferredLng.'/locale.template.php';} else {
 
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
 $setHTMLLanguageCode = "en";
