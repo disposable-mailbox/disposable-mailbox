@@ -29,6 +29,7 @@ function getPreferredLanguage(){
 }
 
 $PreferredLocale = getPreferredLanguage(); 
+$PreferredLocale = str_replace("-", "_", $PreferredLocale);
 
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
@@ -123,7 +124,6 @@ echo $safeText;
 }
 }
 }
-
 
 
 ?><!doctype html>
