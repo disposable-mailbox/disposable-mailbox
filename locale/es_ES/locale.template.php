@@ -55,5 +55,5 @@ Si conoce la dirección, puede leer los correos electrónicos.<br/><br/>
 <strong>En principio, todos los correos electrónicos son públicos.<br/>
 Así que no lo use para datos confidenciales.</strong></p>";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES - una bifurcación separada de <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES-ES - una bifurcación separada de <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 ?>
