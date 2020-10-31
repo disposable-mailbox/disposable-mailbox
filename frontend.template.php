@@ -125,10 +125,7 @@ echo $safeText;
 
 
 
-?>
-
-
-<!doctype html>
+?><!doctype html>
 
 <html lang="<?php echo $setHTMLLanguageCode; ?>">
 <head>
