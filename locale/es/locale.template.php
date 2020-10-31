@@ -35,7 +35,7 @@ $locale['Language2']  = "Alemán";
 
 $locale['Language3']  = "Español";
 
-$locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> Los correos electrónicos se eliminan automática e irremediablemente después de ". $ config ['delete_messages_older_than']."  Dias. ";
+$locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> Los correos electrónicos se eliminan automática e irremediablemente después de ". $config['delete_messages_older_than']."  Dias. ";
 
 $locale['collapse']  = "Más información";
 
