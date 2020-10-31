@@ -28,10 +28,9 @@ function getPreferredLanguage(){
 	return $preferredLanguage;
 }
 
+$PreferredLocale = ereg_replace('-', '_', $PreferredLanguage);
 
-$PreferredLng = ereg_replace('-', '_', getPreferredLanguage());
-
-if(file_exists('./locale/'.$PreferredLng.'/locale.template.php')){ include './locale/'.$PreferredLng.'/locale.template.php';} else {
+if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
 $setHTMLLanguageCode = "en";
