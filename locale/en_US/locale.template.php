@@ -1,7 +1,4 @@
-<?php 
-//// Debug Message
-echo "<!-- English language file loaded -->"; 
-
+<?php
 
 $setHTMLLanguageCode = "en";
 
