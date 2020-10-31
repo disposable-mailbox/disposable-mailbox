@@ -35,17 +35,25 @@ $locale['Language2']  = "Alemán";
 
 $locale['Language3']  = "Español";
 
-$locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> Los correos electrónicos se eliminan automática e irremediablemente después de ". $config['delete_messages_older_than']."  Dias. ";
+$locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  
+Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> 
+Los correos electrónicos se eliminan automática e irremediablemente después de ". $config['delete_messages_older_than']."  Dias. ";
 
 $locale['collapse']  = "Más información";
 
 $locale['long-about-1']  = "<p class=\"text-justify\"Este buzón desechable mantendrá su buzón principal libre de spam.</p>";
 
-$locale['long-about-2']  = "<p class=\"text-justify\">Simplemente elija una dirección y utilícela en sitios web en los que no confíe y en los que no desee revelar la dirección de correo electrónico privada principal.
- Una vez que haya terminado, puede simplemente olvidarse del buzón.
- Todo el spam permanece aquí y no terminará en la cuenta de correo privado<br/>Sobald Sie fertig sind, können Sie die Mailbox einfach vergessen. <br/> Der ganze Spam bleibt hier wird nicht im Privaten Mailaccount landen.</p>";
+$locale['long-about-2']  = "<p class=\"text-justify\">Simplemente elija una dirección y utilícela en sitios web en los que no confíe y en los que no 
+desee revelar la dirección de correo electrónico privada principal.<br/>
+Una vez que haya terminado, puede simplemente olvidarse del buzón.<br/>
+Todo el spam permanece aquí y no terminará en la cuenta de correo Private.</p>";
 
-$locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse aus, die Sie verwenden m&ouml;chten, und empfangene E-Mails werden automatisch angezeigt. <br/>Es gibt keine Registrierung und keine Passwörter. <br/>Wenn Sie die Adresse kennen, können Sie die E-Mails lesen.<br/><br/>             <strong>Grunds&auml;tzlich sind alle E-Mails &ouml;ffentlich. <br/>Verwenden Sie es also nicht für vertrauliche Daten.</strong></p>";
+$locale['long-about-3']  = "<p class=\"text-justify\">
+Selecciona la dirección que desea usar y los correos electrónicos recibidos aparecerán automáticamente.<br/>
+No hay registro ni contraseñas.<br/>
+Si conoce la dirección, puede leer los correos electrónicos.<br/><br/>             
+<strong>En principio, todos los correos electrónicos son públicos.<br/>
+Así que no lo use para datos confidenciales.</strong></p>";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES - una bifurcación separada de <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 ?>
