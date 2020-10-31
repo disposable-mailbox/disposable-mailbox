@@ -2,42 +2,42 @@
 
 $setHTMLLanguageCode = "es";
 
-$locale['HowManyMailArrivedBevore']  = "es gibt "; //Counter
-$locale['MailHaveBeArrivedAfter']  = " neue Mails.";
+$locale['HowManyMailArrivedBevore']  = "hay "; //Counter
+$locale['MailHaveBeArrivedAfter']  = " nuevos correos.";
 
-$locale['MailArrived']  = "<strong>neue eMails</strong> sind eingetroffen.";
+$locale['MailArrived']  = "han llegado <strong>nuevos correos</strong> electrónicos.";
 
-$locale['TranslationForRefresh']  = "Aktualisieren!";
+$locale['TranslationForRefresh']  = "Actualizar!";
 
-$locale['MailboxReady']  =  "Deine Einweg-Mailadresse ist bereit.";
+$locale['MailboxReady']  =  "Su dirección de correo electrónico unidireccional está lista.";
 
-$locale['TranslationforCopy']  =  "Kopieren";
+$locale['TranslationforCopy']  =  "Copiar";
 
-$locale['ChangeMailUsername']  = "Addresse wechseln";
+$locale['ChangeMailUsername']  = "Cambiar dirección";
 
-$locale['SetToRandom']  = "Zuf&auml;llige Mailadresse generieren";
+$locale['SetToRandom']  = "Genere una dirección de correo electrónico aleatoria";
 
-$locale['UseOwnUsername']  = "oder eigene Adresse anlegen:";
+$locale['UseOwnUsername']  = "oo crea tu propia dirección:";
 
-$locale['TranslationForDomain']  = "Domain";
+$locale['TranslationForDomain']  = "dominio";
 
-$locale['OpenMailbox']  = "&Ouml;ffne Mailbox";
+$locale['OpenMailbox']  = "buzón abierto";
 
-$locale['TranslationForDownload']  =  "Download";
+$locale['TranslationForDownload']  =  "Descargar";
 
-$locale['TranslationForDelete']  =  "L&ouml;schen";
+$locale['TranslationForDelete']  =  "Claro";
 
-$locale['EmptyMailbox']  = "<p>Das Postfach ist leer. Solange diese Seite ge&ouml;ffnet ist, wird Automatisch nach neuen E-Mails gesucht...</p>";
+$locale['EmptyMailbox']  = "<p>El buzón está vacío. Mientras esta página esté abierta, buscará automáticamente nuevos correos electrónicos ... </p>";
 
-$locale['Language1']  = "Englisch";
+$locale['Language1']  = "Inglés";
 
-$locale['Language2']  = "Deutsch";
+$locale['Language2']  = "Alemán";
 
-$locale['Language3']  = "Spanisch";
+$locale['Language3']  = "Español";
 
-$locale['QuickSummary']  = "Dies ist ein Einweg-Postfachdienst.  Wer Ihren Benutzernamen kennt, kann Ihre E-Mails lesen. <br/>Emails werden automatisch und unwiederbringlich gel&ouml;scht nach ". $config['delete_messages_older_than']." Tagen.";
+$locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> Los correos electrónicos se eliminan automática e irremediablemente después de ". $ config ['delete_messages_older_than']."  Dias. ";
 
-$locale['collapse']  = "Mehr Infos";
+$locale['collapse']  = "Más información";
 
 $locale['long-about-1']  = "<p class=\"text-justify\">Diese Einweg-Mailbox h&auml;lt Ihre Hauptmailbox frei von Spam.</p>";
 
