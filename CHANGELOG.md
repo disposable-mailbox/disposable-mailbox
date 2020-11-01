@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.2.x] - 2020-11-01 -ML Branch
+
+### Changed
+2.2 : Sprache kann vom User gewechselt werden. 
+   X: hier folgen noch kleine Optimierungen 
+      (Verfügbare Sprachen in der Config festlegen anstatt im Template, ... )
+
+
 ## [2.1.3] - 2020-10-31 -ML Branch
 
 ### Changed
