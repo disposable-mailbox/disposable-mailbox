@@ -365,14 +365,20 @@ if (empty($emails)) {
 
 <footer>
 <div class="container">
-
-
+	
 <form action="https://<?php echo $aDomain."\?".$user->username."@".$aDomain; ?>" method="post">
 <img src="locale/Language-Icons/icon128px-exported-black.jpg" hight="30px" width="30px">
 <select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
-<option value="en">English</option>
-<option value="de">Deutsch</option>
-<option value="es">Español</option>
+<?php
+	
+//$config['availablelanguagescodes']
+//$config['availablelanguages']
+	
+foreach ($config['availablelanguagescodes'] as $aLanguage) {
+$selected = $aLanguage === $user->domain ? ' selected ' : '';
+print "<option value='$aLanguage' $selected>$aLanguage</option>";
+}
+?>
 </select>
 <input type="submit" />
 </form>		
