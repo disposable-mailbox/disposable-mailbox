@@ -367,6 +367,13 @@ if (empty($emails)) {
 
 <footer>
 <div class="container">
+
+	
+<?php 
+if (!isset($config['availablelanguages'])) {
+	 echo "<p>Leider keine Sprachauswahl konfiguriert...</p><!--"; }
+?>
+	
 	
 <form action="https://<?php echo $aDomain."\?".$user->username."@".$aDomain; ?>" method="post">
 <img src="locale/Language-Icons/icon128px-exported-black.jpg" hight="30px" width="30px">
@@ -382,7 +389,11 @@ print "<option value='$aLanguages' $lngselected>$aLanguagecd</option>";
 </select>
 <input type="submit" />
 </form>
-	
+<?php 
+if (!isset($config['availablelanguages'])) {
+	 echo "// Leider keine Sprachauswahl
+	 -->"; }
+?>
 <br>
 
 <small class="text-justify quick-summary">
