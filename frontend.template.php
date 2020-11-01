@@ -56,9 +56,6 @@ $locale['OpenMailbox'] = "Open mailbox";
 $locale['TranslationForDownload'] = "Download";
 $locale['TranslationForDelete'] = "Delete";
 $locale['EmptyMailbox'] = "<p>Emails will appear here automatically. </p>";
-$locale['Language1'] = "English";
-$locale['Language2'] = "German";
-$locale['Language3'] = "Spanish";
 $locale['QuickSummary'] = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/> <br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
 $locale['collapse'] = "Show Details";
 $locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't want to use your main email address.<br/>
@@ -252,6 +249,9 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
+<input name="localeselect" type="hidden" class="form-control" id="inlineFormInputName"
+placeholder="<?php echo $localeselect; ?>"
+value="<?php echo $localeselected; ?>">
 </div>
 <div class="col-sm-auto my-1">
 <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $locale['TranslationForDomain']; ?></label>
