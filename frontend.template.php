@@ -371,22 +371,15 @@ if (empty($emails)) {
 <select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
 <?php
 	
-//$config['availablelanguagescodes']
-//$config['availablelanguages']
-	
-foreach ($config['availablelanguagescodes'] as $aLanguage) {
-$selected = $aLanguage === $user->domain ? ' selected ' : '';
-print "<option value='$aLanguage' $selected>$aLanguage</option>";
+foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
+$selected = $aLanguagecd === $localeselect ? ' selected ' : '';
+print "<option value='$aLanguages' $selected>$aLanguagecd</option>";
 }
+
 ?>
 </select>
 <input type="submit" />
-</form>		
-	
-	
-	
-	
-	
+</form>
 	
 <br>
 
