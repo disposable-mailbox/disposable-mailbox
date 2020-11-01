@@ -9,7 +9,7 @@ $config['locale'] = 'en_US';
 $config['availablelanguages'] = array(
 'English', 
 'Deutsch',
-'Español, 
+'Español', 
 'Test1', 
 'Test2');
 
