@@ -31,6 +31,11 @@ function getPreferredLanguage(){
 $PreferredLocale = getPreferredLanguage(); 
 $PreferredLocale = str_replace("-", "_", $PreferredLocale);
 
+
+
+
+if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';} else {
+
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
@@ -62,6 +67,7 @@ $locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposabl
 
 }
 
+}
 
 // if empty
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
@@ -360,13 +366,22 @@ if (empty($emails)) {
 <footer>
 <div class="container">
 
-<!-- 
-<select id="language-selection" class="custom-select" title="Language"> 
-<option value="EN"><?php echo $locale['Language1']; ?></option>
-<option value="DE" selected><?php echo $locale['Language2']; ?></option>
-<option value="ES"><?php echo $locale['Language3']; ?></option>
+
+<form action="https://<?php echo $aDomain."\?".$user->username."@".$aDomain; ?>" method="post">
+<img src="locale/Language-Icons/icon128px-exported-black.jpg" hight="30px" width="30px">
+<select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
+<option value="en">English</option>
+<option value="de">Deutsch</option>
+<option value="es">Español</option>
 </select>
--->
+<input type="submit" />
+</form>		
+	
+	
+	
+	
+	
+	
 <br>
 
 <small class="text-justify quick-summary">
