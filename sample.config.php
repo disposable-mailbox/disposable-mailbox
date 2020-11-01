@@ -9,17 +9,13 @@ $config['locale'] = 'en_US';
 $config['availablelanguages'] = array(
 'English', 
 'Deutsch',
-'Español', 
-'Test1', 
-'Test2');
+'Español');
 
 // Language Codes - have to match Languages
 $config['availablelanguagescodes'] = array(
 'en', 
 'de', 
-'es', 
-'t1',
-'t2');
+'es');
 
 
 // enable in production:
