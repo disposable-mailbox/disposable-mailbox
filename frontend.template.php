@@ -34,7 +34,9 @@ $PreferredLocale = str_replace("-", "_", $PreferredLocale);
 
 
 
-if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';} else {
+if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';
+$localeselected = $_REQUEST['localeselect'];
+} else {
 
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
@@ -372,8 +374,8 @@ if (empty($emails)) {
 <?php
 	
 foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
-$selected = $aLanguagecd === $localeselect ? ' selected ' : '';
-print "<option value='$aLanguages' $selected>$aLanguagecd</option>";
+$lngselected = $aLanguages === $localeselected ? ' selected ' : '';
+print "<option value='$aLanguages' $lngselected>$aLanguagecd</option>";
 }
 
 ?>
