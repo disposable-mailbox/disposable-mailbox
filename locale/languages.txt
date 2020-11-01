@@ -1,0 +1,157 @@
+aa	Afar	Qafár af
+ab	Abchasisch	aab
+af	Afrikaans	Afrikaans
+am	Amharisch	አማርኛ
+ar	Arabisch	العربية
+as	Assamesisch	অসমীয়া
+ay	Aymara	Aymar aru
+az	Aserbaidschanisch	azərbaycanca
+ba	Baschkirisch	башҡортса
+be	Belorussisch	беларуская
+bg	Bulgarisch	български
+bh	Biharisch	भोजपुरी
+bi	Bislamisch	Bislama
+bn	Bengalisch	বাংলা
+bo	Tibetanisch	བོད་ཡིག
+br	Bretonisch	brezhoneg
+ca	Katalanisch	català
+co	Korsisch	corsu
+cs	Tschechisch	čeština
+cy	Walisisch	Cymraeg
+da	Dänisch	dansk
+de	Deutsch	Deutsch
+dz	Dzongkha, Bhutani	ཇོང་ཁ
+el	Griechisch	Ελληνικά
+en	Englisch	English
+eo	Esperanto	Esperanto
+es	Spanisch	español
+et	Estnisch	eesti
+eu	Baskisch	euskara
+fa	Persisch	فارسی
+fi	Finnisch	suomi
+fj	Na Vosa Vakaviti	Fiji
+fo	Färöisch	føroyskt
+fr	Französisch	français
+fy	Friesisch	Frysk
+ga	Irisch	Gaeilge
+gd	Schottisches Gälisch	Gàidhlig
+gl	Galizisch	galego
+gn	Guarani	Avañe'ẽ
+gu	Gujaratisch	ગુજરાતી
+ha	Haussa	Hausa
+he	Hebräisch	עברית
+hi	Hindi	हिन्दी
+hr	Kroatisch	hrvatski
+hu	Ungarisch	magyar
+hy	Armenisch	Հայերեն
+ia	Interlingua	interlingua
+id	Indonesisch	Bahasa Indonesia
+ie	Interlingue	Interlingue
+ik	Inupiak	Iñupiak
+is	Isländisch	íslenska
+it	Italienisch	italiano
+iu	Inuktitut (Eskimo)	ᐃᓄᒃᑎᑐᑦ/inuktitut
+iw	Hebräisch (veraltet, nun: he)	iw
+ja	Japanisch	日本語
+ji	Jiddish (veraltet, nun: yi)	ji
+jv	Javanisch	Basa Jawa
+ka	Georgisch	ქართული
+kk	Kasachisch	қазақша
+kl	Kalaallisut (Grönländisch)	kalaallisut
+km	Kambodschanisch	ភាសាខ្មែរ
+kn	Kannada	ಕನ್ನಡ
+ko	Koreanisch	한국어
+ks	Kaschmirisch	कॉशुर / کٲشُر
+ku	Kurdisch	Kurdî
+ky	Kirgisisch	Кыргызча
+la	Lateinisch	Latina
+ln	Lingala	lingála
+lo	Laotisch	ລາວ
+lt	Litauisch	lietuvių
+lv	Lettisch	latviešu
+mg	Malagasisch	Malagasy
+mi	Maorisch	Māori
+mk	Mazedonisch	македонски
+ml	Malajalam	മലയാളം
+mn	Mongolisch	монгол
+mo	Moldavisch	молдовеняскэ
+mr	Marathi	मराठी
+ms	Malaysisch	Bahasa Melayu
+mt	Maltesisch	Malti
+my	Burmesisch	မြန်မာဘာသာ
+na	Nauruisch	Dorerin Naoero
+ne	Nepalesisch	नेपाली
+nl	Niederländisch	Nederlands
+no	Norwegisch	norsk bokmål
+oc	Okzitanisch	occitan
+om	Oromo	Oromoo
+or	Oriya	ଓଡ଼ିଆ
+pa	Pundjabisch	ਪੰਜਾਬੀ
+pl	Polnisch	polski
+ps	Paschtu	پښتو
+pt	Portugiesisch	português
+qu	Quechua	Runa Simi
+rm	Rätoromanisch	rumantsch
+rn	Kirundisch	Kirundi
+ro	Rumänisch	română
+ru	Russisch	русский
+rw	Kijarwanda	Kinyarwanda
+sa	Sanskrit	संस्कृतम्
+sd	Zinti	سنڌي
+sg	Sango	Sängö
+sh	Serbokroatisch (veraltet)	srpskohrvatski / српскохрватски
+si	Singhalesisch	සිංහල
+sk	Slowakisch	slovenčina
+sl	Slowenisch	slovenščina
+sm	Samoanisch	Gagana Samoa
+sn	Schonisch	chiShona
+so	Somalisch	Soomaaliga
+sq	Albanisch	shqip
+sr	Serbisch	српски / srpski
+ss	Swasiländisch	SiSwati
+st	Sesothisch	Sesotho
+su	Sudanesisch	Basa Sunda
+sv	Schwedisch	svenska
+sw	Suaheli	Kiswahili
+ta	Tamilisch	தமிழ்
+te	Tegulu	తెలుగు
+tg	Tadschikisch	тоҷикӣ
+th	Thai	ไทย
+ti	Tigrinja	ትግርኛ
+tk	Turkmenisch	Türkmençe
+tl	Tagalog	Tagalog
+tn	Sezuan	Setswana
+to	Tongaisch	lea faka-Tonga
+tr	Türkisch	Türkçe
+ts	Tsongaisch	Xitsonga
+tt	Tatarisch	татарча/tatarça
+tw	Twi	Twi
+ug	Uigur	ئۇيغۇرچە / Uyghurche
+uk	Ukrainisch	українська
+ur	Urdu	اردو
+uz	Usbekisch	oʻzbekcha/ўзбекча
+vi	Vietnamesisch	Tiếng Việt
+vo	Volapük	Volapük
+wo	Wolof	Wolof
+xh	Xhosa	isiXhosa
+yi	Jiddish	ייִדיש
+yo	Joruba	Yorùbá
+za	Zhuang	Vahcuengh
+zh	Chinesisch	中文
+zu	Zulu	isiZulu
+
+
+
+de-CH	Schweizerdeutsch
+de-AT	österreichisches Deutsch
+en-US	amerikanisches Englisch
+en-CA	kanadisches Englisch
+en-AU	australisches Englisch
+en-GB	britisches Englisch
+en-UK	königlich-britisches Englisch
+cel-gaulish	Gallisch
+fr-CA	kanadisches Französisch
+zh-TW	Taiwan-Chinesisch
+zh-guoyu	Mandarin-Chinesisch
+zh-min-nan	Min-Nan-Chinesisch
+zh-xiang	Xiang-Chinesisch
