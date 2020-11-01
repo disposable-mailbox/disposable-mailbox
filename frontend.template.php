@@ -371,7 +371,8 @@ if (empty($emails)) {
 	
 <?php 
 if (!isset($config['availablelanguages'])) {
-	 echo "<p>Leider keine Sprachauswahl konfiguriert...</p><!--"; }
+	 echo "<!--
+// Leider keine Sprachauswahl in der config.php konfiguriert. Funktion auskommentieren"; }
 ?>
 	
 	
@@ -391,7 +392,7 @@ print "<option value='$aLanguages' $lngselected>$aLanguagecd</option>";
 </form>
 <?php 
 if (!isset($config['availablelanguages'])) {
-	 echo "// Leider keine Sprachauswahl
+	 echo "// Leider keine Sprachauswahl - Kommentieren beenden
 	 -->"; }
 ?>
 <br>
