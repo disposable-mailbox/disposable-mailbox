@@ -376,7 +376,7 @@ if (!isset($config['availablelanguages'])) {
 ?>
 	
 	
-<form action="https://<?php echo $aDomain."\?".$user->username."@".$aDomain; ?>" method="post">
+<form action="https://<?php echo $_SERVER['REQUEST_URI']."\?".$user->username."@".$aDomain; ?>" method="post">
 <img src="locale/Language-Icons/icon128px-exported-black.jpg" hight="30px" width="30px">
 <select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
 <?php
