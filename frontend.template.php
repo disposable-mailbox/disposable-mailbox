@@ -31,14 +31,11 @@ function getPreferredLanguage(){
 $PreferredLocale = getPreferredLanguage(); 
 $PreferredLocale = str_replace("-", "_", $PreferredLocale);
 
-
-
+if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
 if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';
 $localeselected = $_REQUEST['localeselect'];
 } else {
-
-if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
 $setHTMLLanguageCode = "en";
