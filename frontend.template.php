@@ -33,7 +33,7 @@ $PreferredLocale = str_replace("-", "_", $PreferredLocale);
 $localeselected = $_REQUEST['localeselect'];
 
 //if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php') AND if empty($localeselected); ){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
-if(file_exists('./locale/'.$localeselected.'/locale.template.php')){ include './locale/'.$localeselected.'/locale.template.php';} else {
+if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';} else {
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
 
@@ -58,11 +58,11 @@ $locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't w
 Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";
 $locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 $locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['ourdomains'] = "Our Domains";
 }
 }
 }
 //}
-
 
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
@@ -406,6 +406,24 @@ aria-controls="about">
 <?php echo $locale['long-about-2']; ?>
 <?php echo $locale['long-about-3']; ?>
 <?php echo $config['imprintanddisclaimer']; ?>
+</div>
+<hr>
+<small class="text-justify quick-summary">
+<a data-toggle="collapse" href="#ourdomains"
+aria-expanded="false"
+aria-controls="about">
+<?php echo $locale['ourdomains']; ?>
+</a>
+</small>
+<div class="card card-body collapse" id="ourdomains" style="max-width: 40rem">
+<p class="lead ">
+			<?php
+foreach ($config['domains'] as $aDomain) {
+$selected = $aDomain === $user->domain ? '' : '';
+print "<p><!--$user->username @--><a href=\"https://$aDomain\?$user->username@$aDomain\">$aDomain</a></p> ";
+}
+?>		
+</p>
 </div>
 <hr>
 <p>
