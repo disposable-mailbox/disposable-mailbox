@@ -29,12 +29,6 @@ $locale['TranslationForDelete']  =  "Delete";
 
 $locale['EmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
 
-$locale['Language1']  = "English";
-
-$locale['Language2']  = "German";
-
-$locale['Language3']  = "Spanish";
-
 $locale['QuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
 
 $locale['collapse']  = "Show Details";
@@ -47,5 +41,7 @@ Once you are done, you can just forget about the mailbox. <br/>All the spam stay
 $locale['long-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_EN-US - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+
+$locale['ourdomains'] = "Our Domains";
 
 ?>
