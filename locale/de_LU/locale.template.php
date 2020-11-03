@@ -29,12 +29,6 @@ $locale['TranslationForDelete']  =  "L&ouml;schen";
 
 $locale['EmptyMailbox']  = "<p>Das Postfach ist leer. Solange diese Seite ge&ouml;ffnet ist, wird Automatisch nach neuen E-Mails gesucht...</p>";
 
-$locale['Language1']  = "Englisch";
-
-$locale['Language2']  = "Deutsch";
-
-$locale['Language3']  = "Spanisch";
-
 $locale['QuickSummary']  = "Dies ist ein Einweg-Postfachdienst.  Wer Ihren Benutzernamen kennt, kann Ihre E-Mails lesen. <br/>Emails werden automatisch und unwiederbringlich gel&ouml;scht nach ". $config['delete_messages_older_than']." Tagen.";
 
 $locale['collapse']  = "Mehr Infos";
@@ -45,5 +39,8 @@ $locale['long-about-2']  = "<p class=\"text-justify\">W&auml;hlen Sie einfach ei
 
 $locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse aus, die Sie verwenden m&ouml;chten, und empfangene E-Mails werden automatisch angezeigt. <br/>Es gibt keine Registrierung und keine Passwörter. <br/>Wenn Sie die Adresse kennen, können Sie die E-Mails lesen.<br/><br/>             <strong>Grunds&auml;tzlich sind alle E-Mails &ouml;ffentlich. <br/>Verwenden Sie es also nicht für vertrauliche Daten.</strong></p>";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_DE-LU - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_DE - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+
+$locale['ourdomains'] = "&Uuml;bersicht der verf&uuml;gbaren Domains";
+
 ?>
