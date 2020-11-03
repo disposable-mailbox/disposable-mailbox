@@ -29,12 +29,6 @@ $locale['TranslationForDelete']  =  "Claro";
 
 $locale['EmptyMailbox']  = "<p>El buzón está vacío. Mientras esta página esté abierta, buscará automáticamente nuevos correos electrónicos ... </p>";
 
-$locale['Language1']  = "Inglés";
-
-$locale['Language2']  = "Alemán";
-
-$locale['Language3']  = "Español";
-
 $locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  
 Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> 
 Los correos electrónicos se eliminan automática e irremediablemente después de ". $config['delete_messages_older_than']."  Dias. ";
@@ -56,4 +50,7 @@ Si conoce la dirección, puede leer los correos electrónicos.<br/><br/>
 Así que no lo use para datos confidenciales.</strong></p>";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES-ES - una bifurcación separada de <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+
+$locale['ourdomains'] = "Nuestros dominios";
+
 ?>
