@@ -30,10 +30,10 @@ function getPreferredLanguage(){
 
 $PreferredLocale = getPreferredLanguage(); 
 $PreferredLocale = str_replace("-", "_", $PreferredLocale);
-$localeselected = $_REQUEST['localeselect'];
+$localeselected = htmlspecialchars($_REQUEST['localeselect']);
 
 //if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php') AND if empty($localeselected); ){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
-if(file_exists('./locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php')){ include './locale/'.htmlspecialchars($_REQUEST['localeselect']).'/locale.template.php';} else {
+if(file_exists('./locale/'.$localeselected.'/locale.template.php')){ include './locale/'.$localeselected.'/locale.template.php';} else {
 if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
 
