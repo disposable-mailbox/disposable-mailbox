@@ -127,7 +127,6 @@ echo $safeText;
 
 
 ?><!doctype html>
-
 <html lang="<?php echo $setHTMLLanguageCode; ?>">
 <head>
 <meta charset="utf-8">
@@ -226,7 +225,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 </div>
 
 
-<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect" method="post">
+<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect&localeselect=<?php echo $localeselected; ?>" method="post">
 <div class="card">
 <div class="card-body">
 <p>
@@ -244,8 +243,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<input name="localeselect" type="hidden" class="form-control" id="inlineFormInputLocaleselect"
-placeholder="<?php echo $localeselected; ?>"
+<input name="localeselect" name="localeselect" type="hidden" class="form-control"
 value="<?php echo $localeselected; ?>">
 </div>
 <div class="col-sm-auto my-1">
