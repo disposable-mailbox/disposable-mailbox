@@ -415,7 +415,8 @@ aria-controls="about">
 </small>
 <div class="card card-body collapse" id="ourdomains" style="max-width: 40rem">
 <p class="lead ">
-			<?php
+<?php
+echo $user->username."@ ...";
 foreach ($config['domains'] as $aDomain) {
 $selected = $aDomain === $user->domain ? '' : '';
 print "<p><!--$user->username @--><a href=\"https://$aDomain\?$user->username@$aDomain\">$aDomain</a></p> ";
