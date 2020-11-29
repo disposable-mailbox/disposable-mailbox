@@ -7,7 +7,6 @@ A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelop
 
 **Demo**: [disposable-mailbox.ml](https://www.disposable-mailbox.ml) 
 
-**PHP is not your thing? You should try the more efficient NodeJs version:** https://github.com/synox/void-mail
 
 ![Screenshot](docs/screenshot-example.jpg)
 
@@ -30,10 +29,10 @@ A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelop
 
 ### Before you start :heavy_exclamation_mark:
 
-* Subscribe to [![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes.  
-* This is **Beta** software, [there are still unsolved problems](https://github.com/synox/disposable-mailbox/issues). Contributions are welcome! :heart:
+// * Subscribe to [![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes.  
+* This is **Beta** software, [there are still unsolved problems](https://github.com/pfeifferch/disposable-mailbox/issues). Contributions are welcome! :heart:
 * License: **GPL-3.0**. You can modify this application and run it anywhere, charge money and show advertisement. Any forks or repacked distribution must follow the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).  
-* A link to https://github.com/synox/disposable-mailbox in the footer is appreciated.  
+* A link to https://github.com/pfeifferch/disposable-mailbox in the footer is appreciated.  
 
 
 
@@ -45,9 +44,10 @@ Disposable-mailbox can be installed by copying the src directory to a webserver.
 
         <?php print imap_base64("SU1BUCBleHRlbnNpb24gc2VlbXMgdG8gYmUgaW5zdGFsbGVkLiA="); ?>
 
-2. download a [release](https://github.com/synox/disposable-mailbox/releases) or clone this repository
+2. download a [release](https://github.com/pfeifferch/disposable-mailbox/releases) or clone this repository
 3. copy the files in the `src` directory to your web server (not the whole repo!).
-4. rename `config.sample.php` to `config.php` and apply the imap settings. Move `config.php` to a safe location in a *parent directory* outside the `public_html`, so it is not reachable through the browser.
+4. rename `config.sample.php` to `config.php` and apply the imap settings. 
+   Set CHMOD (Oktal) to 400
 5. open it in your browser, check your php error log for messages. 
 
 
@@ -76,6 +76,9 @@ Install php dependecies:
 ## Credit :thumbsup:
 
 This could not be possible without...
-
- * https://github.com/barbushin/php-imap, https://github.com/gnugat-legacy/PronounceableWord, http://htmlpurifier.org/, 
- * https://github.com/turbolinks/turbolinks, http://tobiasahlin.com/spinkit/
+ * https://github.com/synox/disposable-mailbox/
+ * https://github.com/barbushin/php-imap
+ * https://github.com/gnugat-legacy/PronounceableWord
+ * http://htmlpurifier.org/
+ * https://github.com/turbolinks/turbolinks
+ * http://tobiasahlin.com/spinkit/
