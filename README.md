@@ -1,8 +1,7 @@
 # disposable-mailbox
 detached Fork of Synox [disposable-mailbox](https://github.com/synox/disposable-mailbox/)
 
-[![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
+<!-- [![Join the chat at https://gitter.im/pfeifferch/disposable-mailbox](https://badges.gitter.im/pfeifferch/disposable-mailbox.svg)](https://gitter.im/pfeifferch/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)-->
 A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
 
 **Demo**: [disposable-mailbox.ml](https://www.disposable-mailbox.ml) 
@@ -29,7 +28,7 @@ A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelop
 
 ### Before you start :heavy_exclamation_mark:
 
-// * Subscribe to [![Join the chat at https://gitter.im/synox/disposable-mailbox](https://badges.gitter.im/synox/disposable-mailbox.svg)](https://gitter.im/synox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes.  
+<!-- * Subscribe to [![Join the chat at https://gitter.im/pfeifferch/disposable-mailbox](https://badges.gitter.im/pfeifferch/disposable-mailbox.svg)](https://gitter.im/pfeifferch/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes. --> 
 * This is **Beta** software, [there are still unsolved problems](https://github.com/pfeifferch/disposable-mailbox/issues). Contributions are welcome! :heart:
 * License: **GPL-3.0**. You can modify this application and run it anywhere, charge money and show advertisement. Any forks or repacked distribution must follow the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).  
 * A link to https://github.com/pfeifferch/disposable-mailbox in the footer is appreciated.  
