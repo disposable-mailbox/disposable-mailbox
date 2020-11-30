@@ -12,6 +12,7 @@ $config['availablelanguages'] = array(
 "English" => "en",
 "Deutsch" => "de",
 "Español" => "es",
+"Nederlands" => "nl",
 //"British English" => "en_GB",
 //"American English" => "en_US",
 //"&Ouml;sterreichisches Deutsch" => "de_AT",
@@ -58,9 +59,9 @@ $config['prefer_plaintext'] = true;
 // Impressum and Disclaimer show in "more Info"
 config['imprintanddisclaimer'] =
 "<p>This service is provided for test purposes and free of charge; there is no guarantee of constant availability, in particular not of the accessibility of the domains </p><h5><span id=\"more-24\"></span></h5>
-<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">CONTACT</a></h5>
-<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">IMPRINT</a></h5>
-<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">DISCLAIMER</a></h5>
-<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">DATA PROTECTION</a></h5>
-<h5 style=\"text-align: right;\"><a href=\"https://example.com/\">REFERENCES</a></h5>	
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/contact-form \">CONTACT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/yourimprint\">IMPRINT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/yourdisclaimer.html\">DISCLAIMER</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/cookiesandmore.info\">DATA PROTECTION</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/ise.php\">REFERENCES</a></h5>	
 </p>";
