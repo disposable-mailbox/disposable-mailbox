@@ -4,7 +4,7 @@ detached Fork of Synox [disposable-mailbox](https://github.com/synox/disposable-
 <!-- [![Join the chat at https://gitter.im/pfeifferch/disposable-mailbox](https://badges.gitter.im/pfeifferch/disposable-mailbox.svg)](https://gitter.im/pfeifferch/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)-->
 A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelope: 
 
-**Demo**: [disposable-mailbox.ml](https://www.disposable-mailbox.ml) 
+**Demo**: [disposable-mailbox.eu](https://www.disposable-mailbox.eu) 
 
 
 ![Screenshot](docs/screenshot-example.jpg)
