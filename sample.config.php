@@ -11,7 +11,16 @@ $config['locale'] = 'en_US';
 $config['availablelanguages'] = array(
 "English" => "en",
 "Deutsch" => "de",
-"Español" => "es");
+"Español" => "es",
+//"British English" => "en_GB",
+//"American English" => "en_US",
+//"&Ouml;sterreichisches Deutsch" => "de_AT",
+//"Schweizerdeutsch" => "de_CH",
+//"Deutsch (Deutschland)" => "de_DE",
+//"Deutsch (Liechtenstein)" => "de_LI",
+//"Deutsch (Luxembourg)" => "de_LU",
+//"Español (europeo)" => "es_ES",
+);
 
 
 // enable in production:
