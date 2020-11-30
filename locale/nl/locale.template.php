@@ -9,11 +9,11 @@ $locale['MailArrived']  = "<strong>neue eMails</strong> sind eingetroffen.";
 
 $locale['TranslationForRefresh']  = "Aktualisieren!";
 
-$locale['MailboxReady']  =  "Uw eenrichtings-e-mailadres is klaar.";
+$locale['MailboxReady']  =  "Uw wegwerp - e-mailadres is klaar";
 
-$locale['TranslationforCopy']  =  "Kopieren";
+$locale['TranslationforCopy']  =  "Kopiëren";
 
-$locale['ChangeMailUsername']  = "Addresse wechseln";
+$locale['ChangeMailUsername']  = "Adres wijzigen";
 
 $locale['SetToRandom']  = "Zuf&auml;llige Mailadresse generieren";
 
