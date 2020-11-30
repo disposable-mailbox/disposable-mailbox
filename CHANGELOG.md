@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.2.4] - 2020-11-30 -ML Branch
+Viele Kleinigkeiten, NL hinzugefuegt
+
 ## [2.2.x] - 2020-11-01 -ML Branch
 
 ### Changed
