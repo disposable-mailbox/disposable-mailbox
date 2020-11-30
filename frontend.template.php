@@ -4,13 +4,17 @@
 @include './usercontent.php';
 
 
-
-
-//if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php') AND if empty($localeselected); ){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
-if(file_exists('./locale/'.$localeselected.'/locale.template.php')){ include './locale/'.$localeselected.'/locale.template.php';} else {
-if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php')){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
-if(file_exists('./locale/'.$config['locale'].'/locale.template.php')){ include './locale/'.$config['locale'].'/locale.template.php';} else {
-
+// gibt es die vom User gewaehlte Sprache?
+if (file_exists('./locale/'.$localeselected.'/locale.template.php')) {
+include './locale/'.$localeselected.'/locale.template.php';$config['locale'] ;
+} else {
+// wenn nicht, gibt es die vom Browser vorgegebene Sprache?
+if (file_exists('./locale/'.$PreferredLocale.'/locale.template.php')) {
+include './locale/'.$PreferredLocale.'/locale.template.php';} else {
+// wenn auch die nicht, dann die in der Config festgelegte Sprache testen
+if (file_exists('./locale/'.$config['locale'].'/locale.template.php')) { 
+include './locale/'.$config['locale'].'/locale.template.php';} else {
+// Sprachdateien nicht gefunden oder keine Sprache gesetzt, Standarttext vorgeben
 $setHTMLLanguageCode = "en";
 $locale['HowManyMailArrivedBevore'] = "There are ";
 $locale['MailHaveBeArrivedAfter'] = " new Mails.";
