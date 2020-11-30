@@ -35,12 +35,9 @@ $locale['collapse']  = "Meer informatie";
 
 $locale['long-about-1']  = "<p class=\"text-justify\">Deze wegwerpmailbox houdt uw hoofdmailbox spamvrij.</p>";
 
-$locale['long-about-2']  = "<p class=\"text-justify\">
-Kies gewoon een adres en gebruik het op websites die u niet vertrouwt en waar u het belangrijkste privé-e-mailadres niet wilt onthullen. <br/>
-Als je klaar bent, kun je de mailbox gewoon vergeten.<br/>
-Alle spam blijft hier en komt niet in het privé mailaccount terecht.</p>";
+$locale['long-about-2']  = "<p class=\"text-justify\">Kies gewoon een adres en gebruik het op websites die u niet vertrouwt en waar u het belangrijkste privé-e-mailadres niet wilt onthullen. <br/>Als je klaar bent, kun je de mailbox gewoon vergeten.<br/>Alle spam blijft hier en komt niet in het privé mailaccount terecht.</p>";
 
-$locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse aus, die Sie verwenden m&ouml;chten, und empfangene E-Mails werden automatisch angezeigt. <br/>Es gibt keine Registrierung und keine Passwörter. <br/>Wenn Sie die Adresse kennen, können Sie die E-Mails lesen.<br/><br/>             <strong>Grunds&auml;tzlich sind alle E-Mails &ouml;ffentlich. <br/>Verwenden Sie es also nicht für vertrauliche Daten.</strong></p>";
+$locale['long-about-3']  = "<p class=\"text-justify\">U selecteert het adres dat u wilt gebruiken en ontvangen e-mails verschijnen automatisch <br/>Er is geen registratie en geen wachtwoorden. <br/>Als u het adres kent, kunt u de e-mails lezen.<br/><br/>             <strong>In principe zijn alle e-mails openbaar.<br/>Gebruik het dus niet voor gevoelige gegevens.</strong></p>";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NL - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
