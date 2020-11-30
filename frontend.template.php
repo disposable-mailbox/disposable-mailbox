@@ -217,7 +217,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<input name="localeselect" name="localeselect" type="hidden" class="form-control"
+<input name="localeselect" id="localeselect" type="hidden" class="form-control"
 value="<?php echo $localeselected; ?>">
 </div>
 <div class="col-sm-auto my-1">
