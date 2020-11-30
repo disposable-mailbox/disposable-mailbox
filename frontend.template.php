@@ -1,36 +1,10 @@
 <?php
 @include './versioninfo.php';
-@include './detectmobile.php';
+@include './functions.php';
 @include './usercontent.php';
 
-/**
-* Detect Browser Language
-* (c) http://martin-mueller.info/2014/03/24/sprache-des-benutzers-oder-browsers-erkennen-php/
-*/
-function getPreferredLanguage(){
 
-	$acceptedLanguages = @explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
-	$preferredLanguage = null;
-	$maxWeight = 0.0;
 
-	foreach((array)$acceptedLanguages as $acceptedLanguage){
-
-		$weight = (float)@substr(explode(';', $acceptedLanguage)[1], 2);
-		if(!$weight){$weight = 1.0;}
-
-		if($weight > $maxWeight){
-			/* $preferredLanguage = substr($acceptedLanguage, 0, 2); */ //gekürzt
-			/* $preferredLanguage = substr($acceptedLanguage, 0, 2); */ //ungekürzt
-			$preferredLanguage = $acceptedLanguage; 			$maxWeight = $weight;
-		}
-	}
-
-	return $preferredLanguage;
-}
-
-$PreferredLocale = getPreferredLanguage(); 
-$PreferredLocale = str_replace("-", "_", $PreferredLocale);
-$localeselected = htmlspecialchars($_REQUEST['localeselect']);
 
 //if(file_exists('./locale/'.$PreferredLocale.'/locale.template.php') AND if empty($localeselected); ){ include './locale/'.$PreferredLocale.'/locale.template.php';} else {
 if(file_exists('./locale/'.$localeselected.'/locale.template.php')){ include './locale/'.$localeselected.'/locale.template.php';} else {
