@@ -13,7 +13,7 @@ $locale['MailboxReady']  =  "Deine Einweg-Mailadresse ist bereit.";
 
 $locale['TranslationforCopy']  =  "Kopieren";
 
-$locale['ChangeMailUsername']  = "Addresse wechseln";
+$locale['ChangeMailUsername']  = "Adresse wechseln";
 
 $locale['SetToRandom']  = "Zuf&auml;llige Mailadresse generieren";
 
