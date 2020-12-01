@@ -5,6 +5,8 @@ date_default_timezone_set('Europe/Paris');
 // set locale (see supported locales: https://github.com/fightbulc/moment.php#switch-locale)
 // format Date and Time
 $config['locale'] = 'en_US';
+$config['locale_supported_languages'] = array('root', 'admin', 'administrator', 'hostmaster', 'postmaster', 'webmaster');
+
 
 
 // User Changable Languages
