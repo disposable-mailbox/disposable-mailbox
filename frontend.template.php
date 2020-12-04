@@ -32,29 +32,27 @@ include './locale/'.$config['locale'].'/locale.template.php';} else {
 
 // Sprachdateien nicht gefunden oder keine Sprache gesetzt, Standarttext vorgeben
 
-// if (empty($setHTMLLanguageCode)) {$setHTMLLanguageCode = "en";}
-// if (empty($locale['HowManyMailArrivedBevore'])) {$locale['HowManyMailArrivedBevore'] = "There are ";}
-// if (empty($locale['MailHaveBeArrivedAfter'])) {$locale['MailHaveBeArrivedAfter'] = " new Mails.";}
-// if (empty($locale['MailArrived'])) {$locale['MailArrived'] = "<strong>New emails</strong> have arrived";}
-// if (empty($locale['TranslationForRefresh'])) {$locale['TranslationForRefresh'] = "Reload!";}
-// if (empty($locale['MailboxReady'])) {$locale['MailboxReady'] = "Your disposable mailbox is ready.";}
-// if (empty($locale['TranslationforCopy'])) {$locale['TranslationforCopy'] = "copy";}
-// if (empty($locale['ChangeMailUsername'])) {$locale['ChangeMailUsername'] = "Change address";}
-// if (empty($locale['SetToRandom'])) {$locale['SetToRandom'] = "Open random mailbox";}
-// if (empty($locale['UseOwnUsername'])) {$locale['UseOwnUsername'] = "or create your own address:";}
-// if (empty($locale['TranslationForDomain'])) {$locale['TranslationForDomain'] = "Domain";}
-// if (empty($locale['OpenMailbox'])) {$locale['OpenMailbox'] = "Open mailbox";}
-// if (empty($locale['TranslationForDownload'])) {$locale['TranslationForDownload'] = "Download";}
-// if (empty($locale['TranslationForDelete'])) {$locale['TranslationForDelete'] = "Delete";}
-// if (empty($locale['EmptyMailbox'])) {$locale['EmptyMailbox'] = "<p>Emails will appear here automatically. </p>";}
-// if (empty($locale['QuickSummary'])) {$locale['QuickSummary'] = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/> <br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";}
-// if (empty($locale['collapse'])) {$locale['collapse'] = "Show Details";}
-// if (empty($locale['long-about-1'])) {}
-// if (empty($locale['long-about-2'])) {$locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't want to use your main email address.<br/>}
-Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";}
-// if (empty($locale['long-about-3'])) {$locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";}
-// if (empty()) {$locale['ourdomains'] = "Our Domains";}
-
+if (empty($setHTMLLanguageCode)) {$setHTMLLanguageCode = "en";}
+if (empty($locale['HowManyMailArrivedBevore'])) {$locale['HowManyMailArrivedBevore'] = "There are ";}
+if (empty($locale['MailHaveBeArrivedAfter'])) {$locale['MailHaveBeArrivedAfter'] = " new Mails.";}
+if (empty($locale['MailArrived'])) {$locale['MailArrived'] = "<strong>New emails</strong> have arrived";}
+if (empty($locale['TranslationForRefresh'])) {$locale['TranslationForRefresh'] = "Reload!";}
+if (empty($locale['MailboxReady'])) {$locale['MailboxReady'] = "Your disposable mailbox is ready.";}
+if (empty($locale['TranslationforCopy'])) {$locale['TranslationforCopy'] = "copy";}
+if (empty($locale['ChangeMailUsername'])) {$locale['ChangeMailUsername'] = "Change address";}
+if (empty($locale['SetToRandom'])) {$locale['SetToRandom'] = "Open random mailbox";}
+if (empty($locale['UseOwnUsername'])) {$locale['UseOwnUsername'] = "or create your own address:";}
+if (empty($locale['TranslationForDomain'])) {$locale['TranslationForDomain'] = "Domain";}
+if (empty($locale['OpenMailbox'])) {$locale['OpenMailbox'] = "Open mailbox";}
+if (empty($locale['TranslationForDownload'])) {$locale['TranslationForDownload'] = "Download";}
+if (empty($locale['TranslationForDelete'])) {$locale['TranslationForDelete'] = "Delete";}
+if (empty($locale['EmptyMailbox'])) {$locale['EmptyMailbox'] = "<p>Emails will appear here automatically. </p>";}
+if (empty($locale['QuickSummary'])) {$locale['QuickSummary'] = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/> <br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";}
+if (empty($locale['collapse'])) {$locale['collapse'] = "Show Details";}
+if (empty($locale['long-about-1'])) {}
+if (empty($locale['long-about-2'])) {$locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't want to use your main email address.<br/>}Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";}
+if (empty($locale['long-about-3'])) {$locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";}
+if (empty()) {$locale['ourdomains'] = "Our Domains";}
 
 if (empty($locale['success'])) {$locale['success'] = "success";}
 if (empty($locale['copied'])) {$locale['copied'] = "Copied!";}
