@@ -43,10 +43,6 @@ $locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't w
 Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";
 $locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 $locale['ourdomains'] = "Our Domains";
-$locale['success'] = "success";
-$locale['copied'] = "Copied!";
-$locale['show'] = "show";
-$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
 }
 }
@@ -55,6 +51,14 @@ $locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposabl
 //adsActive
 //adsLocale
 //adsDefault
+// if (empty()) {}
+
+if (empty($locale['success'])) {$locale['success'] = "success";}
+if (empty($locale['copied'])) {$locale['copied'] = "Copied!";}
+if (empty($locale['show'])) {$locale['show'] = "show";}
+
+if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";}
+
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
 
