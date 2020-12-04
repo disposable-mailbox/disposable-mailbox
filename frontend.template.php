@@ -44,6 +44,7 @@ Once you are done, you can just forget about the mailbox. <br/>All the spam stay
 $locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 $locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 $locale['ourdomains'] = "Our Domains";
+$locale['success']; = "success";
 $locale['copied'] = "Copied!";
 $locale['show']; = "show";
 }
@@ -441,11 +442,11 @@ $('[data-tooltip="tooltip"]').tooltip()
 });
 
 /** from https://github.com/twbs/bootstrap/blob/c11132351e3e434f6d4ed72e5a418eb692c6a319/assets/js/src/application.js */
-clipboard.on('success', function (e) {
+clipboard.on('<?php echo $locale['success']; ?>', function (e) {
 $(e.trigger)
-.attr('title', '')
+.attr('title', '<?php echo $locale['copied']; ?>')
 .tooltip('_fixTitle')
-.tooltip('')
+.tooltip('<?php echo $locale['show']; ?>')
 .tooltip('_fixTitle');
 e.clearSelection();
 });
