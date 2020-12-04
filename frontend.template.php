@@ -452,7 +452,7 @@ $('[data-tooltip="tooltip"]').tooltip()
 /** from https://github.com/twbs/bootstrap/blob/c11132351e3e434f6d4ed72e5a418eb692c6a319/assets/js/src/application.js */
 clipboard.on('<?php echo $locale['success']; ?>', function (e) {
 $(e.trigger)
-.attr('title', '<?php echo $locale['copied']; ?>')
+.attr('title', '<?php echo $locale['copied']; ?>!')
 .tooltip('_fixTitle')
 .tooltip('<?php echo $locale['show']; ?>')
 .tooltip('_fixTitle');
