@@ -55,7 +55,7 @@ if (empty($locale['long-about-3'])) {$locale['long-about-3'] = "<p class=\"text-
 if (empty($locale['ourdomains'])) {$locale['ourdomains'] = "Our Domains";}
 
 if (empty($locale['success'])) {$locale['success'] = "success";}
-if (empty($locale['copied'])) {$locale['copied'] = "Copied!";}
+if (empty($locale['copied'])) {$locale['copied'] = "Copied.";}
 if (empty($locale['show'])) {$locale['show'] = "show";}
 
 if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";}
