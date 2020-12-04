@@ -44,4 +44,10 @@ $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposab
 
 $locale['ourdomains'] = "Our Domains";
 
+$locale['success'] = "success";
+
+$locale['copied'] = "Copied!";
+
+$locale['show'] = "show";
+
 ?>
