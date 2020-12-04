@@ -39,6 +39,8 @@ $locale['long-about-2']  = "<p class=\"text-justify\">W&auml;hlen Sie einfach ei
 
 $locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse aus, die Sie verwenden m&ouml;chten, und empfangene E-Mails werden automatisch angezeigt. <br/>Es gibt keine Registrierung und keine Passwörter. <br/>Wenn Sie die Adresse kennen, können Sie die E-Mails lesen.<br/><br/>             <strong>Grunds&auml;tzlich sind alle E-Mails &ouml;ffentlich. <br/>Verwenden Sie es also nicht für vertrauliche Daten.</strong></p>";
 
+$locale['success'] = "Erfolgreich";
+
 $locale['copied'] = "Kopiert!";
 
 $locale['show'] = "Anzeigen";
