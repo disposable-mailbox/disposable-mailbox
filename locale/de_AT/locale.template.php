@@ -41,7 +41,7 @@ $locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse au
 
 $locale['copied'] = "Kopiert!";
 
-$locale['show']; = "Anzeigen";
+$locale['show'] = "Anzeigen";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_DE-AT - eine Weiterentwicklung von <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
