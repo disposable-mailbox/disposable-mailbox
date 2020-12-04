@@ -52,7 +52,9 @@ $locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposabl
 }
 }
 //}
-
+//adsActive
+//adsLocale
+//adsDefault
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
 
