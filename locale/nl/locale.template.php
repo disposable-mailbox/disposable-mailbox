@@ -14,9 +14,7 @@ $locale['MailboxReady']  =  "Uw wegwerp - e-mailadres is klaar";
 $locale['TranslationforCopy']  =  "Kopiëren";
 
 $locale['ChangeMailUsername']  = "Adres wijzigen";
-
 $locale['SetToRandom']  = "Genereer een willekeurig e-mailadres";
-
 $locale['UseOwnUsername']  = "of selecteer uw eigen adres:";
 
 $locale['TranslationForDomain']  = "domein";
@@ -40,6 +38,8 @@ $locale['ourdomains'] = "Overzicht van de beschikbare domeinen";
 $locale['success'] = "Met succes";
 $locale['copied'] = "Gekopieerd!";
 $locale['show'] = "Tonen";
+
+$locale['adsLocale'] = "Advertentie:";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NL - een vrijstaande vork van <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
