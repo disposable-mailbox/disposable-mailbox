@@ -38,4 +38,10 @@ $PreferredLocale = getPreferredLanguage();
 $PreferredLocale = str_replace("-", "_", $PreferredLocale);
 $localeselected = htmlspecialchars($_REQUEST['localeselect']);
 
+
+//Extrakt Domain and eat all Subdomains  
+$just_domain = preg_replace("/^(.*\.)?([^.]*\..*)$/", "$2", $_SERVER['HTTP_HOST']);
+$dotted_sub_domain = preg_replace("/^(.*\.)?([^.]*\..*)$/", "$1", $_SERVER['HTTP_HOST']);
+$sub_domain = substr($dotted_sub_domain, 0, -1);
+// echo $just_domain;	
 ?>
