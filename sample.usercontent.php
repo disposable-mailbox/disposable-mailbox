@@ -2,6 +2,8 @@
 //edit disposable-mailbox.eu to your Main Domain ;)
 $usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable mailbox</a></i></h2><hr>"; 
 
+$usercontent['CookieConsentManagementTool'] = "<!-- Edit your CookieConsentManagementTool Settings in Usercontent please!!! -->";
+
 $usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";
 
 // Translation assistance is requested. Standard is:
