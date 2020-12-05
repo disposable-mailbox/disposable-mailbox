@@ -19,6 +19,7 @@
 	-webkit-transform: rotate(0deg); 
 	transform: rotate(0deg) !important; 
 	text-align: right !important;
+margin-bottom: 3em;
 } 
 
 .adw { 
