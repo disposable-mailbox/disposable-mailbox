@@ -57,10 +57,10 @@ if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
 
-//In Dev / ADS
-//if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
-//if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement";}
-//if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
+//ADS
+if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
+if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
+if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
 
 /*
 // social Media phrases
@@ -168,6 +168,8 @@ echo $user->address ?></title>
 <link rel="stylesheet" href="assets/custom.css">
 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/ADSstyle.<?php echo $mobiledetect; ?>.css">
+
 <link href='https://fonts.googleapis.com/css?family=Calligraffitti:300,400,500,300italic' rel='stylesheet' type='text/css'>
 <script>
 var mailCount = <?php echo count($emails)?>;
@@ -295,7 +297,12 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </form>
 </div>
 </header>
-
+<div class="container">
+<?php 
+if ($config['adsActive'] = "1") {echo "<div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div>";	
+}
+?>
+</div>
 <main>
 <div class="container">
 
