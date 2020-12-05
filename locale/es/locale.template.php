@@ -47,6 +47,8 @@ $locale['success'] = "Exitosamente";
 $locale['copied'] = "Copiado!";
 $locale['show'] = "mostrar";
 
+$locale['adsLocale'] = "Anuncio:";
+
 $locale['ourdomains'] = "Nuestros dominios";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_ES - una bifurcación separada de <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
