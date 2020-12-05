@@ -64,22 +64,25 @@ if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\
 
 /*
 // social Media phrases
-// Follows & co
+// Follow
 if (empty($localeSoMephrases['followFB'])) {$localeSoMephrases['followFB'] = "Like us on Facebook";}
 if (empty($localeSoMephrases['followTwttr'])) {$localeSoMephrases['followTwttr'] = "Follow us on Twitter";}
 if (empty($localeSoMephrases['followPin'])) {$localeSoMephrases['followPin'] = "Follow us on Pinterest";}
 if (empty($localeSoMephrases['followInsta'])) {$localeSoMephrases['followInsta'] = "Follow us on Instagram";}
+if (empty($localeSoMephrases['followYT'])) {$localeSoMephrases['followYT'] = "Follow us on YouTube";}
+if (empty($localeSoMephrases['followInsta'])) {$localeSoMephrases['followInsta'] = "Follow us on Instagram";}
+// Talk & Community 
 if (empty($localeSoMephrases['devOnGitHub'])) {$localeSoMephrases['devOnGitHub'] = "contribute on Github";}
 if (empty($localeSoMephrases['chatOnGitter'])) {$localeSoMephrases['chatOnGitter'] = "Join the Chat on Gitter";}
-if (empty($localeSoMephrases['smExampleA'])) {$localeSoMephrases['smExampleA'] = "";}
+if (empty($localeSoMephrases['chatOnWtsApp'])) {$localeSoMephrases['chatOnWtsApp'] = "Chat with me on WhatsApp";}
 if (empty($localeSoMephrases['smExampleS'])) {$localeSoMephrases['smExampleS'] = "";}
 if (empty($localeSoMephrases['smExampleD'])) {$localeSoMephrases['smExampleD'] = "";}
 if (empty($localeSoMephrases['smExampleF'])) {$localeSoMephrases['smExampleF'] = "";}
-// Share & co
+// Share
 if (empty($localeSoMephrases['ShareOnFB'])) {$localeSoMephrases['ShareOnFB'] = "Send this post to your friend on Facebook";}
 if (empty($localeSoMephrases['ShareOnTwttr'])) {$localeSoMephrases['ShareOnTwttr'] = "Send this post to your friend on Twitter";}
 if (empty($localeSoMephrases['ShareOnInsta'])) {$localeSoMephrases['ShareOnInsta'] = "Send this post to your friend on Instagram";}
-if (empty($localeSoMephrases['ShareOnXyz1'])) {$localeSoMephrases['ShareOnXyz1'] = "Send this post to your friend on xyza";}
+if (empty($localeSoMephrases['ShareOnWtsApp'])) {$localeSoMephrases['ShareOnWtsApp'] = "Send this post to your friend on WhatsApp";}
 if (empty($localeSoMephrases['ShareOnXyz2'])) {$localeSoMephrases['ShareOnXyz2'] = "Send this post to your friend on xyzb";}
 if (empty($localeSoMephrases['ShareOnXyz3'])) {$localeSoMephrases['ShareOnXyz3'] = "Send this post to your friend on xyzc";}
 
