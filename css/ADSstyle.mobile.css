@@ -1,9 +1,9 @@
 .werbung { 	
 	width: 100%; 	
-	height: 100px;/* 	
-	background-color: #637d96;*/ 	
+	height: 100px; 	
+	/* background-color: #637d96;*/ 	
 	font-size:xx-small !important; 	
-	vertical-align: middle; 
+	/* vertical-align: middle; */
 } 
 
 .hwadw { 	
@@ -18,7 +18,7 @@
 	-o-transform: rotate(0deg); 	
 	-webkit-transform: rotate(0deg); 
 	transform: rotate(0deg) !important;
- 	vertical-align: middle; 
+ 	vertical-align: top; 
 	text-align: right !important;
 } 
 
@@ -28,6 +28,6 @@
 	width: auto; 
 	height: 95px; 
 	float: left; 
-	vertical-align: middle; 
+	vertical-align: bottom; 
 	text-align: left !important; 
 }
