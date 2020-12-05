@@ -203,7 +203,7 @@ r.send();
 
 </head>
 <body>
-<?php echo ($usercontent['CookieConsentManagementTool']; ?>
+<?php echo $usercontent['CookieConsentManagementTool']; ?>
 
 <div id="new-content-avalable">
 <div class="alert alert-info alert-fixed" role="alert">
