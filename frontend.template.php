@@ -57,7 +57,11 @@ if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
 
-//ADS
+// 
+if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} 
+
+
+// ADS
 if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
 if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
 if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
@@ -199,6 +203,7 @@ r.send();
 
 </head>
 <body>
+<?php echo ($usercontent['CookieConsentManagementTool']; ?>
 
 <div id="new-content-avalable">
 <div class="alert alert-info alert-fixed" role="alert">
