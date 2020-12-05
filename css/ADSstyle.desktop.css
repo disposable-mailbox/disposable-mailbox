@@ -1,1 +1,30 @@
-.werbung { 		width: 100%; 		height: 100px;/* 		background-color: #637d96;*/ 		font-size:xx-small !important; 		vertical-align: middle; 		 	} 	 	.hwadw { 		position: absolute; 		left: 0px; 		opacity: .75; 		width: 10%; 		height: 95px; 		float: left; 		-moz-transform: rotate(270deg); 		-ms-transform: rotate(270deg); 		-o-transform: rotate(270deg); 		-webkit-transform: rotate(270deg); 		transform: rotate(270deg) !important; 		text-align: right !important; 	} 	 .adw { 	position: absolute; 	right: 0px; 	width: auto; 	height: 95px; 	float: left; 	text-align: left !important; }
+.werbung { 	
+	width: 100%; 	
+	height: 100px;/* 	
+	background-color: #637d96;*/ 	
+	font-size:xx-small !important; 	
+	vertical-align: middle; 	
+} 	 	
+
+.hwadw { 	
+	position: absolute; 	
+	left: 0px; 	
+	opacity: .75; 	
+	width: 10%; 	
+	height: 95px; 	
+	float: left; 	
+	-moz-transform: rotate(0deg); 
+	-ms-transform: rotate(0deg); 	
+	-o-transform: rotate(0deg); 	
+	-webkit-transform: rotate(0deg); 
+	transform: rotate(0deg) !important; 	
+	text-align: right !important; 	
+} 	
+.adw { 
+	position: absolute; 
+	right: 0px; 
+	width: auto; 
+	height: 95px; 
+	float: left; 
+	text-align: left !important; 
+}
