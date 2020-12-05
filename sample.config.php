@@ -31,6 +31,8 @@ $config['availablelanguages'] = array(
 //"Español (europeo)" => "es_ES",
 );
 
+// enable or disable Ads
+$config['adsActive'] = "1";
 
 // enable in production:
 error_reporting(0);
