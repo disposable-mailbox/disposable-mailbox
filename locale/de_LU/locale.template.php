@@ -38,6 +38,8 @@ $locale['success'] = "Erfolgreich";
 $locale['copied'] = "Kopiert!";
 $locale['show'] = "Anzeigen";
 
+$locale['adsLocale'] = "Werbeanzeige:";
+
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_DE-LU - eine Weiterentwicklung von <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
 
 ?>
