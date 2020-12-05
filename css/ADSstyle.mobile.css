@@ -10,16 +10,16 @@
 	position: absolute; 	
 	left: 0px; 	
 	opacity: .75; 	
-	width: 10%; 	
+	width: 20%; 	
 	height: 95px; 	
 	float: left; 	
 	-moz-transform: rotate(0deg); 	
 	-ms-transform: rotate(0deg); 	
 	-o-transform: rotate(0deg); 	
 	-webkit-transform: rotate(0deg); 
-	transform: rotate(0deg) !important; 
+	transform: rotate(0deg) !important;
+ 	vertical-align: middle; 
 	text-align: right !important;
-padding-right: 3em;
 } 
 
 .adw { 
@@ -28,5 +28,6 @@ padding-right: 3em;
 	width: auto; 
 	height: 95px; 
 	float: left; 
+	vertical-align: middle; 
 	text-align: left !important; 
 }
