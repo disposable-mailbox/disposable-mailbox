@@ -2,7 +2,31 @@
 //edit disposable-mailbox.eu to your Main Domain ;)
 $usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable mailbox</a></i></h2><hr>"; 
 
-$usercontent['CookieConsentManagementTool'] = "<!-- Edit your CookieConsentManagementTool Settings in Usercontent please!!! -->";
+
+
+//// only one domain usage:
+//$usercontent['CookieConsentManagementTool'] = "<!-- Edit your CookieConsentManagementTool Settings in Usercontent please!!! -->";
+//// Multi Domain Usage Hotfix:
+$cookie_supported_domains = array(
+   "Example.com" => 
+	 "<!--<script src=\"https://consent.example.com/banner.js\" data-cookie-key=\"123\"></script>-->",
+    "Example.org" =>
+	"<!--<script src=\"https://consent.example.com/banner.js\" data-cookie-key=\"456\"></script>-->",
+    "Example.net" =>
+	"<!--<script src=\"https://consent.example.com/banner.js\" data-cookie-key=\"789\"></script>-->",
+);
+foreach ($cookie_supported_domains as $allSupportetDomains => $allSupportetCookies) {$cookieselected = $allSupportetCookies === $cookieselected ? '' : '';
+if ($allSupportetDomains == $just_domain) {
+	$cookiecode =
+	$allSupportetCookies; }
+}
+$usercontent['CookieConsentManagementTool'] = $cookiecode;
+
+
+
+
+
+
 
 $usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";
 
