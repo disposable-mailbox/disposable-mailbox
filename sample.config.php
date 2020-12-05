@@ -32,6 +32,7 @@ $config['availablelanguages'] = array(
 );
 
 // enable or disable Ads
+// (edit the Ads-Code in usercontent.php)
 $config['adsActive'] = "1";
 
 // enable in production:
