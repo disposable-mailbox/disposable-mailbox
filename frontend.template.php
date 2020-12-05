@@ -76,12 +76,12 @@ if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
 if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
 if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
 // Share & co
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
-if (empty($localeSoMephrases[''])) {$localeSoMephrases[''] = "";}
+if (empty($localeSoMephrases['ShareOnFB'])) {$localeSoMephrases[''] = "Send this post to your friend on Facebook";}
+if (empty($localeSoMephrases['ShareOnTwttr'])) {$localeSoMephrases[''] = "Send this post to your friend on Twitter";}
+if (empty($localeSoMephrases['ShareOnInsta'])) {$localeSoMephrases[''] = "Send this post to your friend on Instagram";}
+if (empty($localeSoMephrases['ShareOnxyz1'])) {$localeSoMephrases[''] = "Send this post to your friend on xyza";}
+if (empty($localeSoMephrases['ShareOnxyz2'])) {$localeSoMephrases[''] = "Send this post to your friend on xyzb";}
+if (empty($localeSoMephrases['ShareOnxyz3'])) {$localeSoMephrases[''] = "Send this post to your friend on xyzc";}
 
 */
 
