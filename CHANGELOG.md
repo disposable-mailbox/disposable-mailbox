@@ -1,15 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.3.0] - 2020-12-05 -ML Branch
+Einige Kleinigkeiten (unter anderem fehlende Uebersetzungen)
+Advertisement Settings integriert 
+Vorbereitung für Social Media Banner
+
 ## [2.2.4] - 2020-11-30 -ML Branch
-Viele Kleinigkeiten, NL hinzugefuegt
+Viele Kleinigkeiten
+.NL hinzugefuegt
 
 ## [2.2.x] - 2020-11-01 -ML Branch
-
 ### Changed
 2.2 : Sprache kann vom User gewechselt werden. 
-   X: hier folgen noch kleine Optimierungen 
-      (Verfügbare Sprachen in der Config festlegen anstatt im Template, ... )
+      Bleibt bei einem Wechsel der Adresse oder Refresh nicht gespeichert, 
+      dann wird auf die Browservorgabe zurück gegriffen.
+   X: kleine Optimierungen
 
 
 ## [2.1.3] - 2020-10-31 -ML Branch
