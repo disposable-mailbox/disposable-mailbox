@@ -26,7 +26,7 @@ $locale['TranslationForDelete']  =  "Čisto";
 
 $locale['EmptyMailbox']  = "<p> Poštanski sandučić je prazan.  Sve dok je ova stranica otvorena, automatski će tražiti nove e-adrese ... </p> ";
 
-$locale['QuickSummary']  = "Ovo je usluga jednosmjernog poštanskog sandučića.  Tko zna vaše korisničko ime, može čitati vaše e-mailove.  <br/> E-adrese se automatski i nepovratno brišu nakon ". $ config ['delete_messages_older_than']."  Dana. ";
+$locale['QuickSummary']  = "Ovo je usluga jednosmjernog poštanskog sandučića.  Tko zna vaše korisničko ime, može čitati vaše e-mailove.  <br/> E-adrese se automatski i nepovratno brišu nakon ". $config ['delete_messages_older_than']."  Dana.";
 $locale['collapse']  = "Više informacija";
 $locale['long-about-1']  = "<p class=\"text-justify\">Diese Einweg-Mailbox h&auml;lt Ihre Hauptmailbox frei von Spam.</p>";
 $locale['long-about-2']  = "<p class=\"text-justify\">W&auml;hlen Sie einfach eine Adresse und verwenden Sie sie auf Websites, denen Sie nicht vertrauen und wo Sie die Private Haupt-E-Mail-Adresse nicht preisgeben wollen. <br/>Sobald Sie fertig sind, können Sie die Mailbox einfach vergessen. <br/> Der ganze Spam bleibt hier wird nicht im Privaten Mailaccount landen.</p>";
@@ -34,12 +34,12 @@ $locale['long-about-3']  = "<p class=\"text-justify\">Sie wählen die Adresse au
 
 $locale['ourdomains'] = "&Uuml;bersicht der verf&uuml;gbaren Domains";
 
-$locale['success'] = "Erfolgreich";
-$locale['copied'] = "Kopiert!";
-$locale['show'] = "Anzeigen";
+$locale['success'] = "Uspješno";
+$locale['copied'] = "Kopirano!";
+$locale['show'] = "Pokazati";
 
-$locale['adsLocale'] = "Werbeanzeige:";
+$locale['adsLocale'] = "Oglas:";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_DE - eine Weiterentwicklung von <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_HR</small>";
 
 ?>
