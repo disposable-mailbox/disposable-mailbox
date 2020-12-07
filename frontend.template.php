@@ -307,7 +307,7 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </header>
 <div class="container">
 <?php 
-if ($config['adsActive'] = "1") {echo "<div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div>";	
+if ($config['adsActive'] == "1") {echo "<div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div>";	
 }
 ?>
 </div>
