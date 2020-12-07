@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [2.3.0] - 2020-12-05 -ML Branch
 Einige Kleinigkeiten (unter anderem fehlende Uebersetzungen)
-Advertisement Settings integriert 
+Advertisement Settings integriert (2.3.01: Bugfix On/Off)
 Vorbereitung für Social Media Banner
 
 ## [2.2.4] - 2020-11-30 -ML Branch
