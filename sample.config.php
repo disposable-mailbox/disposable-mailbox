@@ -21,6 +21,7 @@ $config['availablelanguages'] = array(
 "Deutsch" => "de",
 "Español" => "es",
 "Nederlands" => "nl",
+"Hrvatski" => "hr",
 //"British English" => "en_GB",
 //"American English" => "en_US",
 //"&Ouml;sterreichisches Deutsch" => "de_AT",
