@@ -7,20 +7,18 @@
 // gibt es die vom User gewaehlte Sprache?
 if (file_exists('./locale/'.$localeselected.'/locale.template.php')) {
 include './locale/'.$localeselected.'/locale.template.php';
-   
-   //$config['locale'] = $localeselected;
-   // Prüfung einbauen, ob Auswahl eine Supported language ist!
+$languagemainselection = $localeselected;
 } else {
 // wenn nicht, gibt es die vom Browser vorgegebene Sprache?
 if (file_exists('./locale/'.$PreferredLocale.'/locale.template.php')) {
-include './locale/'.$PreferredLocale.'/locale.template.php';
-   
-   //$config['locale'] = $PreferredLocale;
-   // Prüfung einbauen, ob Auswahl eine Supported language ist!
+include './locale/'.$PreferredLocale.'/locale.template.php';   
+$languagemainselection = $PreferredLocale;
 } else {
 // wenn auch die nicht, dann die in der Config festgelegte Sprache testen
 if (file_exists('./locale/'.$config['locale'].'/locale.template.php')) { 
-include './locale/'.$config['locale'].'/locale.template.php';} else {
+include './locale/'.$config['locale'].'/locale.template.php';
+$languagemainselection = $config['locale'];
+} else {
 }
 }
 }
