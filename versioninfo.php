@@ -1,3 +1,3 @@
 <?php
-$config['versionnumber'] = '2.3.0';
+$config['versionnumber'] = '2.3.01';
 ?>
