@@ -1,7 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
-## [2.3.2] - 2020-12-05 -ML Branch
+
+## [2.3.2] - 2020-12-09 -ML Branch
+Show/Hide overview of All Domains 
+Enable/Disable in Config
+## [2.3.2] 
 imprintanddisclaimer moved to usercontent.php
 
 ## [2.3.01] - 2020-12-07 -ML Branch
