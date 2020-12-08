@@ -39,6 +39,8 @@ $locale['success'] = "Exitosamente";
 $locale['copied'] = "Copiado!";
 $locale['show'] = "mostrar";
 
+$locale['imprintanddisclaimer']  = "descargo de responsabilidad y pie de imprenta...";
+
 $locale['adsLocale'] = "Anuncio:";
 
 $locale['ourdomains'] = "Nuestros dominios";
