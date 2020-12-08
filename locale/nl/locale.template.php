@@ -33,6 +33,8 @@ $locale['long-about-1']  = "<p class=\"text-justify\">Deze wegwerpmailbox houdt 
 $locale['long-about-2']  = "<p class=\"text-justify\">Kies gewoon een adres en gebruik het op websites die u niet vertrouwt en waar u het belangrijkste privé-e-mailadres niet wilt onthullen. <br/>Als je klaar bent, kun je de mailbox gewoon vergeten.<br/>Alle spam blijft hier en komt niet in het privé mailaccount terecht.</p>";
 $locale['long-about-3']  = "<p class=\"text-justify\">U selecteert het adres dat u wilt gebruiken en ontvangen e-mails verschijnen automatisch <br/>Er is geen registratie en geen wachtwoorden. <br/>Als u het adres kent, kunt u de e-mails lezen.<br/><br/>             <strong>In principe zijn alle e-mails openbaar.<br/>Gebruik het dus niet voor gevoelige gegevens.</strong></p>";
 
+$locale['imprintanddisclaimer']  = "Juridische informatie - afdruk, disclaimer en meer...";
+
 $locale['ourdomains'] = "Overzicht van de beschikbare domeinen";
 
 $locale['success'] = "Met succes";
