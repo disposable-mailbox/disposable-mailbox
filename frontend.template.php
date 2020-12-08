@@ -452,6 +452,7 @@ aria-controls="imprintanddisclaimer">
 <?php echo $config['imprintanddisclaimer']; ?>
 </div>
 <hr>
+<!--
 <small class="text-justify quick-summary">
 <a data-toggle="collapse" href="#ourdomains"
 aria-expanded="false"
@@ -471,6 +472,7 @@ print "<p><!--$user->username @--><a href=\"https://$aDomain\?$user->username@$a
 </p>
 </div>
 <hr>
+-->
 <p>
 <?php echo $locale['Copyright']; ?>
 <?php echo $usercontent['footer']; ?>
