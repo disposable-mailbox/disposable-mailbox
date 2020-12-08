@@ -32,6 +32,8 @@ $locale['long-about-1']  = "<p class=\"text-justify\">Ovaj jednokratni poštansk
 $locale['long-about-2']  = "<p class=\"text-justify\">ne vjerujete i ne želite koristiti svoju glavnu adresu e-pošte.Kad završite, jednostavno možete zaboraviti na poštanski sandučić. Sav neželjeni sadržaj ostaje ovdje i ne ispunjava vaš glavni poštanski sandučić.</p>";
 $locale['long-about-3']  = "<p class=\"text-justify\">Odaberite adresu koju želite koristiti i primljena e-pošta će se automatski prikazati.Nema registracije i lozinki.  Ako znate adresu, možete pročitati e-poštu.<strong>U osnovi su sve e-adrese javne.  Stoga ga nemojte koristiti za osjetljive podatke.</strong></p>";
 
+$locale['imprintanddisclaimer']  = "Pravne informacije - otisak, izjava o odricanju odgovornosti i još mnogo toga...";
+
 $locale['ourdomains'] = "Pregled dostupnih domena";
 
 $locale['success'] = "Uspješno";
