@@ -2,8 +2,6 @@
 //edit disposable-mailbox.eu to your Main Domain ;)
 $usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable mailbox</a></i></h2><hr>"; 
 
-
-
 //// only one domain usage:
 //$usercontent['CookieConsentManagementTool'] = "<!-- Edit your CookieConsentManagementTool Settings in Usercontent please!!! -->";
 //// Multi Domain Usage Hotfix:
@@ -23,11 +21,6 @@ if ($allSupportetDomains == $just_domain) {
 $usercontent['CookieConsentManagementTool'] = $cookiecode;
 
 
-
-
-
-
-
 $usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";
 
 // Translation assistance is requested. Standard is:
@@ -38,5 +31,17 @@ $usercontent['footer'] = "<hr><blockquote>Deze vertaling is gemaakt met behulp v
 $usercontent['footer'] = "<hr><blockquote>Esta traducción se creó con la ayuda de programas.  ayuda en <a href=\"https://github.com/pfeifferch/disposable-mailbox\">GitHub</a> para preparar una traducción comprensible.</blockquote>"; 
 } else    { 
 $usercontent['footer'] = "<br>"; }
+
+
+// Impressum and Disclaimer
+$usercontent['imprintanddisclaimer'] =
+"<p>This service is provided for test purposes and free of charge; there is no guarantee of constant availability, in particular not of the accessibility of the domains </p>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/contact-form \">CONTACT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/yourimprint\">IMPRINT</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/yourdisclaimer.html\">DISCLAIMER</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/cookiesandmore.info\">DATA PROTECTION</a></h5>
+<h5 style=\"text-align: right;\"><a href=\"https://example.com/ise.php\">REFERENCES</a></h5>	
+</p>";
+
 
 ?>
