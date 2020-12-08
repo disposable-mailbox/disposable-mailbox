@@ -1,7 +1,7 @@
 <?php
 @include './versioninfo.php';
 @include './functions.php';
-@include './usercontent.php';
+//@include './usercontent.php';
 
 
 // gibt es die vom User gewaehlte Sprache?
@@ -26,6 +26,8 @@ $languagemainfrom = "config";
 }
 }
 //}
+
+@include './usercontent.php';
 
 
 // Sprachdateien nicht gefunden oder keine Sprache gesetzt, Standarttext vorgeben
