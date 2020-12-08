@@ -33,6 +33,8 @@ $locale['long-about-1']  = "<p class=\"text-justify\">This disposable mailbox ke
 $locale['long-about-2']  = "<p class=\"text-justify\">you don't trust and don't  want to use your main email address.<br/>Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";
 $locale['long-about-3']  = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";
 
+$locale['imprintanddisclaimer']  = "Legal information - imprint, disclaimer and more...";
+
 $locale['ourdomains'] = "Our Domains";
 
 $locale['success'] = "success";
@@ -40,8 +42,6 @@ $locale['copied'] = "Copied!";
 $locale['show'] = "show";
 
 $locale['adsLocale'] = "Advertisement:";
-
-$locale['imprintanddisclaimer']  = "Legal information - imprint, disclaimer and more...";
 
 $locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_EN</small>";
 ?>
