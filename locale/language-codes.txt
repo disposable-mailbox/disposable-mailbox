@@ -1,3 +1,12 @@
+Zur Vereinfachung wurden Regionale Sprachen wieder entfernt. 
+Sollen diese genutzt werden, bitte Hauptstamm der Sprache Kopieren und nach diesem Muster nutzen: 
+de_DE, en_US , es_ES, ... 
+Bitte klein- und Großschreibung beachten und Unterstrich im Ordner benutzen!
+
+
+
+
+
 aa	Afar	Qafár af
 ab	Abchasisch	aab
 af	Afrikaans	Afrikaans
