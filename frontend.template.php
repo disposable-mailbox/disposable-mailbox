@@ -22,6 +22,10 @@ include './locale/'.$config['locale'].'/locale.template.php';
 $languagemainselection = $config['locale'];
 $languagemainfrom = "config";
 } else {
+if (file_exists('./locale/en/locale.template.php')) { 
+include './locale/en/locale.template.php';
+$languagemainselection = "en";
+$languagemainfrom = "filenotfound";
 }
 }
 }
@@ -57,7 +61,7 @@ if (empty($locale['copied'])) {$locale['copied'] = "Copied.";}
 if (empty($locale['success'])) {$locale['success'] = "success";}
 if (empty($locale['show'])) {$locale['show'] = "show";}
 if (empty($locale['imprintanddisclaimer'])) {$locale['imprintanddisclaimer'] = "Legal information - imprint, disclaimer and more";}
-if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT</small>";}
+if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (NT)</small>";}
 
 if (empty($config['OurDomainsActive'] )) {$config['OurDomainsActive'] = "1";} 
 
