@@ -70,7 +70,7 @@ $config['prefer_plaintext'] = true;
 
 // Impressum and Disclaimer show in "more Info"
 config['imprintanddisclaimer'] =
-"<p>This service is provided for test purposes and free of charge; there is no guarantee of constant availability, in particular not of the accessibility of the domains </p><h5><span id=\"more-24\"></span></h5>
+"<p>This service is provided for test purposes and free of charge; there is no guarantee of constant availability, in particular not of the accessibility of the domains </p>
 <h5 style=\"text-align: right;\"><a href=\"https://example.com/contact-form \">CONTACT</a></h5>
 <h5 style=\"text-align: right;\"><a href=\"https://example.com/yourimprint\">IMPRINT</a></h5>
 <h5 style=\"text-align: right;\"><a href=\"https://example.com/yourdisclaimer.html\">DISCLAIMER</a></h5>
