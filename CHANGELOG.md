@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.3.2] - 2020-12-05 -ML Branch
+imprintanddisclaimer moved to usercontent.php
+
+## [2.3.01] - 2020-12-07 -ML Branch
 ## [2.3.0] - 2020-12-05 -ML Branch
 Einige Kleinigkeiten (unter anderem fehlende Uebersetzungen)
 Advertisement Settings integriert (2.3.01: Bugfix On/Off)
