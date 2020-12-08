@@ -8,16 +8,19 @@
 if (file_exists('./locale/'.$localeselected.'/locale.template.php')) {
 include './locale/'.$localeselected.'/locale.template.php';
 $languagemainselection = $localeselected;
+$languagemainfrom = "UserSelectet";
 } else {
 // wenn nicht, gibt es die vom Browser vorgegebene Sprache?
 if (file_exists('./locale/'.$PreferredLocale.'/locale.template.php')) {
 include './locale/'.$PreferredLocale.'/locale.template.php';   
 $languagemainselection = $PreferredLocale;
+$languagemainfrom = "BrowserPreferred";
 } else {
 // wenn auch die nicht, dann die in der Config festgelegte Sprache testen
 if (file_exists('./locale/'.$config['locale'].'/locale.template.php')) { 
 include './locale/'.$config['locale'].'/locale.template.php';
 $languagemainselection = $config['locale'];
+$languagemainfrom = "config";
 } else {
 }
 }
@@ -52,12 +55,12 @@ if (empty($locale['copied'])) {$locale['copied'] = "Copied.";}
 if (empty($locale['success'])) {$locale['success'] = "success";}
 if (empty($locale['show'])) {$locale['show'] = "show";}
 if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";}
+
+if (empty($config['OurDomainsActive'] )) {$config['OurDomainsActive'] = "1";} 
+
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
-
-// 
 if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} 
-
 
 // ADS
 if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
@@ -65,36 +68,36 @@ if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
 if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
 
 /*
-// social Media phrases
+// social Media Phrases
 // Follow
-if (empty($localeSoMephrases['followFB'])) {$localeSoMephrases['followFB'] = "Like us on Facebook";}
-if (empty($localeSoMephrases['followTwttr'])) {$localeSoMephrases['followTwttr'] = "Follow us on Twitter";}
-if (empty($localeSoMephrases['followPin'])) {$localeSoMephrases['followPin'] = "Follow us on Pinterest";}
-if (empty($localeSoMephrases['followInsta'])) {$localeSoMephrases['followInsta'] = "Follow us on Instagram";}
-if (empty($localeSoMephrases['followYT'])) {$localeSoMephrases['followYT'] = "Follow us on YouTube";}
-if (empty($localeSoMephrases['followInsta'])) {$localeSoMephrases['followInsta'] = "Follow us on Instagram";}
+if (empty($localeSoMePhrases['followFB'])) {$localeSoMePhrases['followFB'] = "Like us on Facebook";}
+if (empty($localeSoMePhrases['followTwttr'])) {$localeSoMePhrases['followTwttr'] = "Follow us on Twitter";}
+if (empty($localeSoMePhrases['followPin'])) {$localeSoMePhrases['followPin'] = "Follow us on Pinterest";}
+if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on Instagram";}
+if (empty($localeSoMePhrases['followYT'])) {$localeSoMePhrases['followYT'] = "Follow us on YouTube";}
+if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on Instagram";}
 // Talk & Community 
-if (empty($localeSoMephrases['devOnGitHub'])) {$localeSoMephrases['devOnGitHub'] = "contribute on Github";}
-if (empty($localeSoMephrases['chatOnGitter'])) {$localeSoMephrases['chatOnGitter'] = "Join the Chat on Gitter";}
-if (empty($localeSoMephrases['chatOnWtsApp'])) {$localeSoMephrases['chatOnWtsApp'] = "Chat with me on WhatsApp";}
-if (empty($localeSoMephrases['smExampleS'])) {$localeSoMephrases['smExampleS'] = "";}
-if (empty($localeSoMephrases['smExampleD'])) {$localeSoMephrases['smExampleD'] = "";}
-if (empty($localeSoMephrases['smExampleF'])) {$localeSoMephrases['smExampleF'] = "";}
+if (empty($localeSoMePhrases['devOnGitHub'])) {$localeSoMePhrases['devOnGitHub'] = "contribute on Github";}
+if (empty($localeSoMePhrases['chatOnGitter'])) {$localeSoMePhrases['chatOnGitter'] = "Join the Chat on Gitter";}
+if (empty($localeSoMePhrases['chatOnWtsApp'])) {$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on WhatsApp";}
+if (empty($localeSoMePhrases['smExampleS'])) {$localeSoMePhrases['smExampleS'] = "";}
+if (empty($localeSoMePhrases['smExampleD'])) {$localeSoMePhrases['smExampleD'] = "";}
+if (empty($localeSoMePhrases['smExampleF'])) {$localeSoMePhrases['smExampleF'] = "";}
 // Share
-if (empty($localeSoMephrases['ShareOnFB'])) {$localeSoMephrases['ShareOnFB'] = "Send this post to your friend on Facebook";}
-if (empty($localeSoMephrases['ShareOnTwttr'])) {$localeSoMephrases['ShareOnTwttr'] = "Send this post to your friend on Twitter";}
-if (empty($localeSoMephrases['ShareOnInsta'])) {$localeSoMephrases['ShareOnInsta'] = "Send this post to your friend on Instagram";}
-if (empty($localeSoMephrases['ShareOnWtsApp'])) {$localeSoMephrases['ShareOnWtsApp'] = "Send this post to your friend on WhatsApp";}
-if (empty($localeSoMephrases['ShareOnXyz2'])) {$localeSoMephrases['ShareOnXyz2'] = "Send this post to your friend on xyzb";}
-if (empty($localeSoMephrases['ShareOnXyz3'])) {$localeSoMephrases['ShareOnXyz3'] = "Send this post to your friend on xyzc";}
+if (empty($localeSoMePhrases['ShareOnFB'])) {$localeSoMePhrases['ShareOnFB'] = "Send this post to your friend on Facebook";}
+if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr'] = "Send this post to your friend on Twitter";}
+if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Send this post to your friend on Instagram";}
+if (empty($localeSoMePhrases['ShareOnWtsApp'])) {$localeSoMePhrases['ShareOnWtsApp'] = "Send this post to your friend on WhatsApp";}
+if (empty($localeSoMePhrases['ShareOnXyz2'])) {$localeSoMePhrases['ShareOnXyz2'] = "Send this post to your friend on xyzb";}
+if (empty($localeSoMePhrases['ShareOnXyz3'])) {$localeSoMePhrases['ShareOnXyz3'] = "Send this post to your friend on xyzc";}
 
+if (empty($config['SocialMediaActive'] )) {$config['SocualMediaActive'] = "0";} 
 */
 
 
 
 /*
 input:
-
 User $user - User object
 array $config - config array
 array $emails - array of emails
