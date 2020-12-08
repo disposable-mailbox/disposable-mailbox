@@ -441,7 +441,7 @@ aria-controls="about">
 <?php echo $locale['long-about-2']; ?>
 <?php echo $locale['long-about-3']; ?>
 </div>
-
+<hr>
 <a data-toggle="collapse" href="#imprintanddisclaimer"
 aria-expanded="false"
 aria-controls="imprintanddisclaimer">
