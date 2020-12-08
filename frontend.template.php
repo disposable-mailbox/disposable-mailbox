@@ -69,6 +69,7 @@ if (empty($config['OurDomainsActive'] )) {$config['OurDomainsActive'] = "1";}
 if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧<i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\">Disposable Mailbox</i></h2><hr>";}
 if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
 if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} 
+if (empty($usercontent['imprintanddisclaimer'])) {$usercontent['imprintanddisclaimer'] = "<!-- EDIT imprintanddisclaimer in Usercontent, PLEASE! -->";} 
 
 // ADS
 if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
@@ -456,7 +457,7 @@ aria-controls="imprintanddisclaimer">
 </a>
 </small>
 <div class="card card-body collapse" id="imprintanddisclaimer" style="max-width: 40rem">
-<?php echo $config['imprintanddisclaimer']; ?>
+<?php echo $usercontent['imprintanddisclaimer']; ?>
 </div>
 <hr>
 <!--
