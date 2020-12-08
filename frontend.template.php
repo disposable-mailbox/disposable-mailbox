@@ -54,7 +54,8 @@ if (empty($locale['ourdomains'])) {$locale['ourdomains'] = "Our Domains";}
 if (empty($locale['copied'])) {$locale['copied'] = "Copied.";}
 if (empty($locale['success'])) {$locale['success'] = "success";}
 if (empty($locale['show'])) {$locale['show'] = "show";}
-if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT - a detached Fork of <a href=\"https://github.com/synox/disposable-mailbox\"><strong>synox</strong></a></small>";}
+if (empty($locale['imprintanddisclaimer'])) {$locale['imprintanddisclaimer'] = "Legal information - imprint, disclaimer and more";}
+if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."_NT</small>";}
 
 if (empty($config['OurDomainsActive'] )) {$config['OurDomainsActive'] = "1";} 
 
@@ -439,6 +440,15 @@ aria-controls="about">
 <?php echo $locale['long-about-1']; ?>
 <?php echo $locale['long-about-2']; ?>
 <?php echo $locale['long-about-3']; ?>
+</div>
+
+<a data-toggle="collapse" href="#imprintanddisclaimer"
+aria-expanded="false"
+aria-controls="imprintanddisclaimer">
+<?php echo $locale['imprintanddisclaimer']; ?>
+</a>
+</small>
+<div class="card card-body collapse" id="imprintanddisclaimer" style="max-width: 40rem">
 <?php echo $config['imprintanddisclaimer']; ?>
 </div>
 <hr>
