@@ -315,12 +315,14 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </form>
 </div>
 </header>
-<div class="container">
+
 <?php 
-if ($config['adsActive'] == "1") {echo "<div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div>";	
+/*
+if ($config['adsActive'] == "1") {echo "<div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
 }
+*/
 ?>
-</div>
+
 <main>
 <div class="container">
 
@@ -460,27 +462,26 @@ aria-controls="imprintanddisclaimer">
 <?php echo $usercontent['imprintanddisclaimer']; ?>
 </div>
 <hr>
-<!--
-<small class="text-justify quick-summary">
-<a data-toggle="collapse" href="#ourdomains"
-aria-expanded="false"
-aria-controls="about">
-<?php echo $locale['ourdomains']; ?>
-</a>
+<?php 
+
+if ($config['DomainActive'] == "1") {echo "
+<small class=\"text-justify quick-summary\">
+<a data-toggle=\"collapse\" href=\"#ourdomains\"
+aria-expanded=\"false\"
+aria-controls=\"about\">";
+echo $locale['ourdomains'];
+echo "</a>
 </small>
-<div class="card card-body collapse" id="ourdomains" style="max-width: 40rem">
-<p class="lead ">
-<?php
-//echo $user->username."@ ...";
+<div class=\"card card-body collapse\" id=\"ourdomains\" style=\"max-width: 40rem\">
+<p class=\"lead \">";
+echo $user->username."@ ...";
 foreach ($config['domains'] as $aDomain) {
 $selected = $aDomain === $user->domain ? '' : '';
-//print "<p><!--$user->username @--><a href=\"https://$aDomain\?$user->username@$aDomain\">$aDomain</a></p> ";
+print "<p><!--$user->username @--><a href=\"https://$aDomain\?$user->username@$aDomain\">$aDomain</a></p> ";
 }
-?>		
-</p>
-</div>
-<hr>
--->
+echo "</p></div><hr>";
+	}  ?>
+
 <p>
 <?php echo $locale['Copyright']; ?>
 <?php echo $usercontent['footer']; ?>
