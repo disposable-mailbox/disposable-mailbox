@@ -1,7 +1,7 @@
 <?php
 @include './versioninfo.php';
 @include './functions.php';
-//@include './usercontent.php';
+@include './usercontent.php';
 
 
 // gibt es die vom User gewaehlte Sprache?
@@ -317,10 +317,10 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </header>
 
 <?php 
-/*
+
 if ($config['adsActive'] == "1") {echo "<div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
 }
-*/
+
 ?>
 
 <main>
