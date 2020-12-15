@@ -1,5 +1,6 @@
 {
   "name": "disposable-mailbox",
   "description": "self-hosted disposable email service (php) using catch-all and imap",
-  "repository": "https://github.com/synox/disposable-mailbox",
+  "repository": "https://github.com/pfeifferch/disposable-mailbox-ML",
+  "website": "https://www.disposable-mailbox.eu/",
 }
