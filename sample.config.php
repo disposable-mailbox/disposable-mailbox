@@ -6,17 +6,6 @@ date_default_timezone_set('Europe/Paris');
 // format Date and Time
 $config['locale'] = 'en_US';
 
-/*
-$config['locale_supported_languages'] = array(
-'ar_TN', 'ca_ES', 'zh_CN', 'zh_TW', 'cs_CZ', 
-'da_DK', 'nl_NL', 'en_CA', 'en_GB', 'en_US', 
-'fa_IR', 'fi_FI', 'fr_FR', 'fr_CA', 'de_DE', 
-'hu_HU', 'id_ID', 'it_IT', 'ja_JP', 'oc_LNC', 
-'lv_LV', 'pl_PL', 'pt_BR','pt_PT', 'ru_RU', 
-'es_ES', 'sv_SE', 'uk_UA', 'th_TH', 'tr_TR', 
-'vi_VN');
-*/
-
 // User Changable Languages
 $config['availablelanguages'] = array(
 "English" => "en",
@@ -37,6 +26,11 @@ $config['availablelanguages'] = array(
 // enable or disable Ads
 // (edit the Ads-Code in usercontent.php)
 $config['adsActive'] = "1";
+
+// Show (1) or Hide (0) a List of All avaible Domains
+$config['DomainActive'] = "1";
+
+
 
 // enable in production:
 error_reporting(0);
@@ -70,5 +64,19 @@ $config['blocked_usernames'] = array('root', 'admin', 'administrator', 'hostmast
 // Mails are usually show as Text and only if not available as HTML. You can turn this around to prefer HTML over text.
 $config['prefer_plaintext'] = true;
 
-// Show (1) or Hide (0) a List of All avaible Domains
-$config['DomainActive'] = "1";
+
+
+
+
+
+
+/*
+$config['locale_supported_languages'] = array(
+'ar_TN', 'ca_ES', 'zh_CN', 'zh_TW', 'cs_CZ', 
+'da_DK', 'nl_NL', 'en_CA', 'en_GB', 'en_US', 
+'fa_IR', 'fi_FI', 'fr_FR', 'fr_CA', 'de_DE', 
+'hu_HU', 'id_ID', 'it_IT', 'ja_JP', 'oc_LNC', 
+'lv_LV', 'pl_PL', 'pt_BR','pt_PT', 'ru_RU', 
+'es_ES', 'sv_SE', 'uk_UA', 'th_TH', 'tr_TR', 
+'vi_VN');
+*/
