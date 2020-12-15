@@ -410,9 +410,9 @@ if (empty($emails)) {
 
 	
 <?php 
-if (!isset($config['availablelanguages'])) {
+if (empty($config['availablelanguages'])) {
 	 echo "<!--
-// Leider keine Sprachauswahl in der config.php konfiguriert. Funktion auskommentieren"; }
+// a language selection is unfortunately not available"; }
 ?>
 	
 	
@@ -431,8 +431,8 @@ print "<option value='$aLanguages' $lngselected>$aLanguagecd</option>";
 <input type="submit" />
 </form>
 <?php 
-if (!isset($config['availablelanguages'])) {
-	 echo "// Leider keine Sprachauswahl - Kommentieren beenden
+if (empty($config['availablelanguages'])) {
+	 echo "// a language selection is unfortunately not available
 	 -->"; }
 ?>
 <br>
