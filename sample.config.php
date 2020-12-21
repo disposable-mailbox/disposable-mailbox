@@ -60,7 +60,7 @@ $config['delete_messages_older_than'] = '30 days ago';
 
 // Mails to those usernames can not be accessed:
 $config['blocked_usernames'] = array(
-root',
+'root',
 'admin', 
 'administrator', 
 'hostmaster', 
