@@ -59,7 +59,22 @@ $config['delete_messages_older_than'] = '30 days ago';
 
 
 // Mails to those usernames can not be accessed:
-$config['blocked_usernames'] = array('root', 'admin', 'administrator', 'hostmaster', 'postmaster', 'webmaster');
+$config['blocked_usernames'] = array(
+root',
+'admin', 
+'administrator', 
+'hostmaster', 
+'postmaster', 
+'webmaster', 
+'abuse', 
+'ftp', 
+'mysql', 'mysql-root', 
+'oracle',
+'info', 'guest', 'test', 'example', 'demo', 'default', 'user', 'username',
+'noreply', 'reject',
+'john.doe', 'johndoe', 'john', 
+'jane.doe', 'janedoe', 'jane', 
+);
 
 // Mails are usually show as Text and only if not available as HTML. You can turn this around to prefer HTML over text.
 $config['prefer_plaintext'] = true;
