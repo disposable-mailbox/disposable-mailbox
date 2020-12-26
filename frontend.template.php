@@ -79,6 +79,7 @@ if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\
 /*
 // social Media Phrases
 // Follow
+if (empty($localeSoMePhrases['FollowHeading'])) {$localeSoMePhrases['FollowHeading'] = "FOLLOW US";}
 if (empty($localeSoMePhrases['followFB'])) {$localeSoMePhrases['followFB'] = "Like us on Facebook";}
 if (empty($localeSoMePhrases['followTwttr'])) {$localeSoMePhrases['followTwttr'] = "Follow us on Twitter";}
 if (empty($localeSoMePhrases['followPin'])) {$localeSoMePhrases['followPin'] = "Follow us on Pinterest";}
@@ -93,6 +94,7 @@ if (empty($localeSoMePhrases['smExampleS'])) {$localeSoMePhrases['smExampleS'] =
 if (empty($localeSoMePhrases['smExampleD'])) {$localeSoMePhrases['smExampleD'] = "";}
 if (empty($localeSoMePhrases['smExampleF'])) {$localeSoMePhrases['smExampleF'] = "";}
 // Share
+if (empty($localeSoMePhrases['ShareHeading'])) {$localeSoMePhrases['ShareHeading'] = "SHARE THIS PAGE";}
 if (empty($localeSoMePhrases['ShareOnFB'])) {$localeSoMePhrases['ShareOnFB'] = "Send this post to your friend on Facebook";}
 if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr'] = "Send this post to your friend on Twitter";}
 if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Send this post to your friend on Instagram";}
