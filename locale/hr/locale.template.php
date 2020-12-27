@@ -43,6 +43,6 @@ $locale['show'] = "Pokazati";
 
 $locale['adsLocale'] = "Oglas:";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."(HR)</small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (HR)</small>";
 
 ?>
