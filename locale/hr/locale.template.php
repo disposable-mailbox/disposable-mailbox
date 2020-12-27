@@ -26,7 +26,8 @@ $locale['TranslationForDelete']  =  "Čisto";
 
 $locale['EmptyMailbox']  = "<p> Poštanski sandučić je prazan.  Sve dok je ova stranica otvorena, automatski će tražiti nove e-adrese ... </p> ";
 
-$locale['QuickSummary']  = "Ovo je usluga jednosmjernog poštanskog sandučića.  Tko zna vaše korisničko ime, može čitati vaše e-mailove.  <br/> E-adrese se automatski i nepovratno brišu nakon ". $config ['delete_messages_older_than']."  Dana.";
+$onlynumber['delete_messages_older_than'] = preg_replace('![^0-9]!', '', $config['delete_messages_older_than']); 
+$locale['QuickSummary']  = "Ovo je usluga jednosmjernog poštanskog sandučića.  Tko zna vaše korisničko ime, može čitati vaše e-mailove.  <br/> E-adrese se automatski i nepovratno brišu nakon ". $onlynumber['delete_messages_older_than']."  Dana.";
 $locale['collapse']  = "Više informacija";
 $locale['long-about-1']  = "<p class=\"text-justify\">Ovaj jednokratni poštanski sandučić sačuvat će vaš glavni poštanski sandučić bez neželjene pošte..</p>";
 $locale['long-about-2']  = "<p class=\"text-justify\">ne vjerujete i ne želite koristiti svoju glavnu adresu e-pošte.Kad završite, jednostavno možete zaboraviti na poštanski sandučić. Sav neželjeni sadržaj ostaje ovdje i ne ispunjava vaš glavni poštanski sandučić.</p>";
