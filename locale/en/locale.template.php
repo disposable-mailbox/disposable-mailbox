@@ -26,7 +26,8 @@ $locale['TranslationForDelete']  =  "Delete";
 
 $locale['EmptyMailbox']  = "<p>Emails will appear here automatically. </p>";
 
-$locale['QuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";
+$onlynumber['delete_messages_older_than'] = preg_replace('![^0-9]!', '', $config['delete_messages_older_than']); 
+$locale['QuickSummary']  = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/>&nbsp;<br/>Emails will be deleted after ".$onlynumber['delete_messages_older_than']."days.";
 
 $locale['collapse']  = "Show Details";
 $locale['long-about-1']  = "<p class=\"text-justify\">This disposable mailbox keeps your main mailbox clean from spam.</p>";
