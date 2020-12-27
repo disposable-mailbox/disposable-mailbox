@@ -26,7 +26,8 @@ $locale['TranslationForDelete']  =  "Doorzichtig";
 
 $locale['EmptyMailbox']  = "<p>De mailbox is leeg.  Zolang deze pagina open is, zoekt deze automatisch naar nieuwe e-mails ...</p>";
 
-$locale['QuickSummary']  = "Dit is een eenrichtings-e-mailservice.  Wie uw gebruikersnaam kent, kan uw e-mails lezen. E-mails worden automatisch en onherroepelijk verwijderd na ". $config['delete_messages_older_than']." dagen.";
+$onlynumber['delete_messages_older_than'] = preg_replace('![^0-9]!', '', $config['delete_messages_older_than']); 
+$locale['QuickSummary']  = "Dit is een eenrichtings-e-mailservice.  Wie uw gebruikersnaam kent, kan uw e-mails lezen. E-mails worden automatisch en onherroepelijk verwijderd na ". $onlynumber['delete_messages_older_than']." dagen.";
 
 $locale['collapse']  = "Meer informatie";
 $locale['long-about-1']  = "<p class=\"text-justify\">Deze wegwerpmailbox houdt uw hoofdmailbox spamvrij.</p>";
