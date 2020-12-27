@@ -26,9 +26,10 @@ $locale['TranslationForDelete']  =  "Claro";
 
 $locale['EmptyMailbox']  = "<p>El buzón está vacío. Mientras esta página esté abierta, buscará automáticamente nuevos correos electrónicos ... </p>";
 
+$onlynumber['delete_messages_older_than'] = preg_replace('![^0-9]!', '', $config['delete_messages_older_than']); 
 $locale['QuickSummary']  = "Este es un servicio de buzón unidireccional.  
 Quien conozca su nombre de usuario puede leer sus correos electrónicos.  <br/> 
-Los correos electrónicos se eliminan automática e irremediablemente después de ". $config['delete_messages_older_than']."  Dias. ";
+Los correos electrónicos se eliminan automática e irremediablemente después de ". $onlynumber['delete_messages_older_than']."  Dias. ";
 
 $locale['collapse']  = "Más información";
 $locale['long-about-1']  = "<p class=\"text-justify\"Este buzón desechable mantendrá su buzón principal libre de spam.</p>";
