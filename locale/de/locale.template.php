@@ -43,6 +43,6 @@ $locale['show'] = "Anzeigen";
 
 $locale['adsLocale'] = "Werbeanzeige:";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']."(DE)</small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (DE)</small>";
 
 ?>
