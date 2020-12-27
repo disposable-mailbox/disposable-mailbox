@@ -26,7 +26,8 @@ $locale['TranslationForDelete']  =  "L&ouml;schen";
 
 $locale['EmptyMailbox']  = "<p>Das Postfach ist leer. Solange diese Seite ge&ouml;ffnet ist, wird Automatisch nach neuen E-Mails gesucht...</p>";
 
-$locale['QuickSummary']  = "Dies ist ein Einweg-Postfachdienst.  Wer Ihren Benutzernamen kennt, kann Ihre E-Mails lesen. <br/>Emails werden automatisch und unwiederbringlich gel&ouml;scht nach ". $config['delete_messages_older_than']." Tagen.";
+$onlynumber['delete_messages_older_than'] = preg_replace('![^0-9]!', '', $config['delete_messages_older_than']); 
+$locale['QuickSummary']  = "Dies ist ein Einweg-Postfachdienst.  Wer Ihren Benutzernamen kennt, kann Ihre E-Mails lesen. <br/>Emails werden automatisch und unwiederbringlich gel&ouml;scht nach ". $onlynumber['delete_messages_older_than']." Tagen.";
 $locale['collapse']  = "Mehr Infos";
 $locale['long-about-1']  = "<p class=\"text-justify\">Diese Einweg-Mailbox h&auml;lt Ihre Hauptmailbox frei von Spam.</p>";
 $locale['long-about-2']  = "<p class=\"text-justify\">W&auml;hlen Sie einfach eine Adresse und verwenden Sie sie auf Websites, denen Sie nicht vertrauen und wo Sie die Private Haupt-E-Mail-Adresse nicht preisgeben wollen. <br/>Sobald Sie fertig sind, können Sie die Mailbox einfach vergessen. <br/> Der ganze Spam bleibt hier wird nicht im Privaten Mailaccount landen.</p>";
