@@ -74,6 +74,7 @@ if (empty($localeSoMePhrases['CommunityHeading'])) {$localeSoMePhrases['Communit
 if (empty($localeSoMePhrases['devOnGitHub']))  {$localeSoMePhrases['devOnGitHub'] = "Contribute on ";}
 if (empty($localeSoMePhrases['devOnDocker']))  {$localeSoMePhrases['devOnDocker'] = "Contribute on ";}
 if (empty($localeSoMePhrases['chatOnGitter'])) {$localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";}
+if (empty($localeSoMePhrases['chatOnElement'])) {$localeSoMePhrases['chatOnElement'] = "Join the Chat on ";}
 if (empty($localeSoMePhrases['chatOnWtsApp'])) {$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";}
 if (empty($localeSoMePhrases['ShareHeading'])) {$localeSoMePhrases['ShareHeading'] = "SHARE THIS PAGE";}
 if (empty($localeSoMePhrases['ShareOnFB']))    {$localeSoMePhrases['ShareOnFB'] = "Share this post on ";}
@@ -447,6 +448,7 @@ echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\">";
+echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Gitter&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\">";
 echo "</blockquote>";
 echo "<blockquote>";
