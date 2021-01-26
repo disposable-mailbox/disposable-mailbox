@@ -1,27 +1,27 @@
 <?php 
-$localeSoMePhrases['FollowHeading'] = "Síguenos";
+$localeSoMePhrases['FollowHeading'] = "Volg ons";
 
-$localeSoMePhrases['followFB'] = "Como nosotros ";
-$localeSoMePhrases['followTwttr'] = "siga con nosotros ";
-$localeSoMePhrases['PinOnPinterest'] = "Nota con ";
-$localeSoMePhrases['followFB'] = "Como nosotros ";
-$localeSoMePhrases['followYT'] = "Suscríbete a nosotros ";
-$localeSoMePhrases['followInsta'] = "siga con nosotros ";
-
-
-$localeSoMePhrases['CommunityHeading'] = "Habla / programa con nosotros";
-
-$localeSoMePhrases['devOnGitHub'] = "Contribuir a ";
-$localeSoMePhrases['devOnDocker'] = "Contribuir a ";
-$localeSoMePhrases['chatOnGitter'] = "Únete al chat ";
-$localeSoMePhrases['chatOnWtsApp'] = "Chatea conmigo a través de ";
+$localeSoMePhrases['followFB'] = "Zoals wij ";
+$localeSoMePhrases['followTwttr'] = "Volg ons ";
+$localeSoMePhrases['PinOnPinterest'] = "Opmerking met ";
+$localeSoMePhrases['followFB'] = "Zoals wij ";
+$localeSoMePhrases['followYT'] = "Abonneer u op ons ";
+$localeSoMePhrases['followInsta'] = "Volg ons ";
 
 
-$localeSoMePhrases['ShareHeading'] = "Comparte esta publicación / página";
+$localeSoMePhrases['CommunityHeading'] = "Praat / plan met ons";
 
-$localeSoMePhrases['ShareOnFB']     = "Compartir esta publicacion ";
-$localeSoMePhrases['ShareOnTwttr']  = "Compartir esta publicacion ";
-$localeSoMePhrases['ShareOnInsta']  = "Compartir esta publicacion ";
-$localeSoMePhrases['ShareOnWtsApp'] = "Compartir esta publicacion ";
+$localeSoMePhrases['devOnGitHub']  = "Bijdragen aan ";
+$localeSoMePhrases['devOnDocker']  = "Bijdragen aan ";
+$localeSoMePhrases['chatOnGitter'] = "Doe mee met de chat ";
+$localeSoMePhrases['chatOnWtsApp'] = "Chat met me via ";
+
+
+$localeSoMePhrases['ShareHeading'] = "Deel deze post / pagina";
+
+$localeSoMePhrases['ShareOnFB']     = "deel dit bericht ";
+$localeSoMePhrases['ShareOnTwttr']  = "deel dit bericht ";
+$localeSoMePhrases['ShareOnInsta']  = "deel dit bericht ";
+$localeSoMePhrases['ShareOnWtsApp'] = "deel dit bericht ";
 
 ?>
