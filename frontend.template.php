@@ -530,6 +530,6 @@ e.clearSelection();
 });
 
 </script>
-<h7>*: Advertising cookies required</h7>
+<h6 style="font-size:XX-SMALL;">*: Advertising cookies required</h6>
 </body>
 </html>
