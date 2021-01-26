@@ -2,37 +2,10 @@
 @include './versioninfo.php';
 @include './functions.php';
 @include './usercontent.php';
-
-
-// gibt es die vom User gewaehlte Sprache?
-if (file_exists('./locale/'.$localeselected.'/locale.template.php')) {
-include './locale/'.$localeselected.'/locale.template.php';
-$languagemainselection = $localeselected;
-$languagemainfrom = "UserSelectet";
-} else {
-// wenn nicht, gibt es die vom Browser vorgegebene Sprache?
-if (file_exists('./locale/'.$PreferredLocale.'/locale.template.php')) {
-include './locale/'.$PreferredLocale.'/locale.template.php';   
-$languagemainselection = $PreferredLocale;
-$languagemainfrom = "BrowserPreferred";
-} else {
-// wenn auch die nicht, dann die in der Config festgelegte Sprache testen
-if (file_exists('./locale/'.$config['locale'].'/locale.template.php')) { 
-include './locale/'.$config['locale'].'/locale.template.php';
-$languagemainselection = $config['locale'];
-$languagemainfrom = "config";
-} else {
-if (file_exists('./locale/en/locale.template.php')) { 
-include './locale/en/locale.template.php';
-$languagemainselection = "en";
-$languagemainfrom = "filenotfound";
-}
-}
-}
-}
-//}
-
-@include './usercontent.php';
+@include './social.settings.php';
+@include './social.usercontent.php';
+//@include './social.template.php';
+//@include './usercontent.php';
 
 
 // Sprachdateien nicht gefunden oder keine Sprache gesetzt, Standarttext vorgeben
@@ -87,36 +60,44 @@ if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
 if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
 if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
 
-/*
-// social Media Phrases
-// Follow
+if (empty($config['SocialMediaActive'] )) {$config['SocialMediaActive'] = "1";}
+
 if (empty($localeSoMePhrases['FollowHeading'])) {$localeSoMePhrases['FollowHeading'] = "FOLLOW US";}
-if (empty($localeSoMePhrases['followFB'])) {$localeSoMePhrases['followFB'] = "Like us on Facebook";}
-if (empty($localeSoMePhrases['followTwttr'])) {$localeSoMePhrases['followTwttr'] = "Follow us on Twitter";}
-if (empty($localeSoMePhrases['followPin'])) {$localeSoMePhrases['followPin'] = "Follow us on Pinterest";}
-if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on Instagram";}
-if (empty($localeSoMePhrases['followYT'])) {$localeSoMePhrases['followYT'] = "Follow us on YouTube";}
-if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on Instagram";}
-// Talk & Community 
-if (empty($localeSoMePhrases['devOnGitHub'])) {$localeSoMePhrases['devOnGitHub'] = "contribute on Github";}
-if (empty($localeSoMePhrases['chatOnGitter'])) {$localeSoMePhrases['chatOnGitter'] = "Join the Chat on Gitter";}
-if (empty($localeSoMePhrases['chatOnWtsApp'])) {$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on WhatsApp";}
-if (empty($localeSoMePhrases['smExampleS'])) {$localeSoMePhrases['smExampleS'] = "";}
-if (empty($localeSoMePhrases['smExampleD'])) {$localeSoMePhrases['smExampleD'] = "";}
-if (empty($localeSoMePhrases['smExampleF'])) {$localeSoMePhrases['smExampleF'] = "";}
-// Share
+if (empty($localeSoMePhrases['followFB'])) {$localeSoMePhrases['followFB'] = "Like us on ";}
+if (empty($localeSoMePhrases['followTwttr'])) {$localeSoMePhrases['followTwttr'] = "Follow us on ";}
+if (empty($localeSoMePhrases['PinOnPinterest'])) {$localeSoMePhrases['PinOnPinterest'] = "Save on ";}
+if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on ";}
+if (empty($localeSoMePhrases['followYT'])) {$localeSoMePhrases['followYT'] = "Subscribe us on ";}
+if (empty($localeSoMePhrases['followInsta'])) {$localeSoMePhrases['followInsta'] = "Follow us on ";}
+if (empty($localeSoMePhrases['CommunityHeading'])) {$localeSoMePhrases['CommunityHeading'] = "TALK / CONTRIBUTE WITH US";}
+if (empty($localeSoMePhrases['devOnGitHub'])) {$localeSoMePhrases['devOnGitHub'] = "Contribute on ";}
+if (empty($localeSoMePhrases['devOnDocker'])) {$localeSoMePhrases['devOnDocker'] = "Contribute on ";}
+if (empty($localeSoMePhrases['chatOnGitter'])) {$localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";}
+if (empty($localeSoMePhrases['chatOnWtsApp'])) {$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";}
 if (empty($localeSoMePhrases['ShareHeading'])) {$localeSoMePhrases['ShareHeading'] = "SHARE THIS PAGE";}
-if (empty($localeSoMePhrases['ShareOnFB'])) {$localeSoMePhrases['ShareOnFB'] = "Send this post to your friend on Facebook";}
-if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr'] = "Send this post to your friend on Twitter";}
-if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Send this post to your friend on Instagram";}
-if (empty($localeSoMePhrases['ShareOnWtsApp'])) {$localeSoMePhrases['ShareOnWtsApp'] = "Send this post to your friend on WhatsApp";}
-if (empty($localeSoMePhrases['ShareOnXyz2'])) {$localeSoMePhrases['ShareOnXyz2'] = "Send this post to your friend on xyzb";}
-if (empty($localeSoMePhrases['ShareOnXyz3'])) {$localeSoMePhrases['ShareOnXyz3'] = "Send this post to your friend on xyzc";}
-
-if (empty($config['SocialMediaActive'] )) {$config['SocualMediaActive'] = "0";} 
-*/
+if (empty($localeSoMePhrases['ShareOnFB'])) {$localeSoMePhrases['ShareOnFB'] = "Share this post on ";}
+if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr'] = "Share this post on ";}
+if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Share this post on ";}
+if (empty($localeSoMePhrases['ShareOnWtsApp'])) {$localeSoMePhrases['ShareOnWtsApp'] = "Share this post on ";}
 
 
+if (file_exists('./locale/'.$languagemainselection.'/locale.SoMedia.php')) {
+include './locale/'.$languagemainselection.'/locale.SoMedia.php';
+} else if (file_exists('./locale/'.$localeselected.'/locale.SoMedia.php')) {
+include './locale/'.$localeselected.'/locale.SoMedia.php';
+} else if (file_exists('./locale/'.$PreferredLocale.'/locale.SoMedia.php')) {
+include './locale/'.$PreferredLocale.'/locale.SoMedia.php';
+} else if (file_exists('./locale/'.$config['locale'].'/locale.SoMedia.php')) {
+include './locale/'.$config['locale'].'/locale.SoMedia.php';
+} else if (file_exists('./locale/en/locale.SoMedia.php')) {
+include './locale/en/locale.SoMedia.php';
+}
+
+
+
+$bgcolorFollow = "eee";
+$bgcolorTalk = "a3a9af";
+$bgcolorSafeAndShare = "51565c";
 
 /*
 input:
@@ -464,6 +445,47 @@ aria-controls="about">
 <?php echo $locale['long-about-2']; ?>
 <?php echo $locale['long-about-3']; ?>
 </div>
+<?php if ($config['SocialMediaActive'] =="1") {
+echo "<hr>";
+echo "
+<blockquote><p>" . $localeSoMePhrases['FollowHeading'] . "</p>
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorFollow&colorB=1877F2\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\">
+
+
+</blockquote><blockquote><p>".$localeSoMePhrases['CommunityHeading']."</p>
+
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\">
+
+
+</blockquote><blockquote><p>".$localeSoMePhrases['ShareHeading']."</p>
+
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorSafeAndShare&colorB=1877F2\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\">
+
+<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\">
+
+<p/><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">
+</blockquote>
+";
+} ?>
 <hr>
 <a data-toggle="collapse" href="#imprintanddisclaimer"
 aria-expanded="false"
