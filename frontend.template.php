@@ -60,7 +60,7 @@ if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
 if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
 if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
 
-if (empty($config['SocialMediaActive'] )) {$config['SocialMediaActive'] = "1";}
+if (empty($config['SocialMediaActive'] )) {$config['SocialMediaActive'] = "0";}
 
 if (empty($localeSoMePhrases['FollowHeading'])) {$localeSoMePhrases['FollowHeading'] = "FOLLOW US";}
 if (empty($localeSoMePhrases['followFB'])) {$localeSoMePhrases['followFB'] = "Like us on ";}
