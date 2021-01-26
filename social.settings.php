@@ -1,5 +1,5 @@
 <?php 
 
-$config['SocialMediaActive'] = "1";
+$config['SocialMediaActive'] = "0";
 
 ?>
