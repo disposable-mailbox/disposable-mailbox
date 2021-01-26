@@ -1,27 +1,27 @@
 <?php 
-$localeSoMePhrases['FollowHeading'] = "DE: FOLLOW US";
+$localeSoMePhrases['FollowHeading'] = "Folge uns";
 
-$localeSoMePhrases['followFB'] = "Like us on ";
-$localeSoMePhrases['followTwttr'] = "Follow us on ";
-$localeSoMePhrases['PinOnPinterest'] = "Save on ";
-$localeSoMePhrases['followFB'] = "Like us on ";
-$localeSoMePhrases['followYT'] = "Subscribe us on ";
-$localeSoMePhrases['followInsta'] = "Follow us on ";
-
-
-$localeSoMePhrases['CommunityHeading'] = "DE: TALK / CONTRIBUTE WITH US";
-
-$localeSoMePhrases['devOnGitHub'] = "Contribute on ";
-$localeSoMePhrases['devOnDocker'] = "Contribute on ";
-$localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";
-$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";
+$localeSoMePhrases['followFB'] = "Like uns auf ";
+$localeSoMePhrases['followTwttr'] = "Folge uns auf ";
+$localeSoMePhrases['PinOnPinterest'] = "Merken mit ";
+$localeSoMePhrases['followFB'] = "Like uns auf ";
+$localeSoMePhrases['followYT'] = "Abonniere unsauf";
+$localeSoMePhrases['followInsta'] = "Folge uns auf ";
 
 
-$localeSoMePhrases['ShareHeading'] = "DE: SHARE THIS PAGE";
+$localeSoMePhrases['CommunityHeading'] = "Sprich/Programmiere mit uns";
 
-$localeSoMePhrases['ShareOnFB'] = "Share this post on ";
-$localeSoMePhrases['ShareOnTwttr'] = "Share this post on ";
-$localeSoMePhrases['ShareOnInsta'] = "Share this post on ";
-$localeSoMePhrases['ShareOnWtsApp'] = "Share this post on ";
+$localeSoMePhrases['devOnGitHub'] = "Mitwirken auf ";
+$localeSoMePhrases['devOnDocker'] = "Mitwirken auf ";
+$localeSoMePhrases['chatOnGitter'] = "Trete dem Chat bei auf";
+$localeSoMePhrases['chatOnWtsApp'] = "Chatte mit mir via ";
+
+
+$localeSoMePhrases['ShareHeading'] = "Teile diesen Beitrag / diese Seite";
+
+$localeSoMePhrases['ShareOnFB'] = "Teile diesen Beitrag auf ";
+$localeSoMePhrases['ShareOnTwttr'] = "Teile diesen Beitrag auf ";
+$localeSoMePhrases['ShareOnInsta'] = "Teile diesen Beitrag auf ";
+$localeSoMePhrases['ShareOnWtsApp'] = "Teile diesen Beitrag auf ";
 
 ?>
