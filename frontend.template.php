@@ -440,7 +440,7 @@ echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Fac
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">";
+echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorFollow&colorB=BD081C\">";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
