@@ -44,4 +44,34 @@ $just_domain = preg_replace("/^(.*\.)?([^.]*\..*)$/", "$2", $_SERVER['HTTP_HOST'
 $dotted_sub_domain = preg_replace("/^(.*\.)?([^.]*\..*)$/", "$1", $_SERVER['HTTP_HOST']);
 $sub_domain = substr($dotted_sub_domain, 0, -1);
 // echo $just_domain;	
+
+
+// gibt es die vom User gewaehlte Sprache?
+
+if (file_exists('./locale/'.$localeselected.'/locale.template.php')) {include './locale/'.$localeselected.'/locale.template.php';
+$languagemainselection = $localeselected;
+$languagemainfrom = "UserSelectet";
+} else {
+// wenn nicht, gibt es die vom Browser vorgegebene Sprache?
+if (file_exists('./locale/'.$PreferredLocale.'/locale.template.php')) {
+include './locale/'.$PreferredLocale.'/locale.template.php';   
+$languagemainselection = $PreferredLocale;
+$languagemainfrom = "BrowserPreferred";
+} else {
+// wenn auch die nicht, dann die in der Config festgelegte Sprache testen
+if (file_exists('./locale/'.$config['locale'].'/locale.template.php')) { 
+include './locale/'.$config['locale'].'/locale.template.php';
+$languagemainselection = $config['locale'];
+$languagemainfrom = "config";
+} else {
+if (file_exists('./locale/en/locale.template.php')) { 
+include './locale/en/locale.template.php';
+$languagemainselection = "en";
+$languagemainfrom = "filenotfound";
+}
+}
+}
+}
+//}
+
 ?>
