@@ -74,4 +74,30 @@ $languagemainfrom = "filenotfound";
 }
 //}
 
+
+if (file_exists('./locale/'.$languagemainselection.'/locale.SoMedia.php')) {
+
+include './locale/'.$languagemainselection.'/locale.SoMedia.php';
+
+}
+
+/*else if (file_exists('./locale/'.$localeselected.'/locale.SoMedia.php')) {
+
+include './locale/'.$localeselected.'/locale.SoMedia.php';
+
+} else if (file_exists('./locale/'.$PreferredLocale.'/locale.SoMedia.php')) {
+
+include './locale/'.$PreferredLocale.'/locale.SoMedia.php';
+
+} else if (file_exists('./locale/'.$config['locale'].'/locale.SoMedia.php')) {
+
+include './locale/'.$config['locale'].'/locale.SoMedia.php';
+
+} else if (file_exists('./locale/en/locale.SoMedia.php')) {
+
+include './locale/en/locale.SoMedia.php';
+
+}
+
+*/
 ?>
