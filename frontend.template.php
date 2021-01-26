@@ -65,6 +65,7 @@ if (empty($config['SocialMediaActive'])) {$config['SocialMediaActive'] = "0";}
 if (empty($localeSoMePhrases['FollowHeading'])) {$localeSoMePhrases['FollowHeading'] = "FOLLOW US";}
 if (empty($localeSoMePhrases['followFB']))     {$localeSoMePhrases['followFB'] = "Like us on ";}
 if (empty($localeSoMePhrases['followTwttr']))  {$localeSoMePhrases['followTwttr'] = "Follow us on ";}
+if (empty($localeSoMePhrases['followPinterest']))  {$localeSoMePhrases['followPinterest'] = "Follow us on ";}
 if (empty($localeSoMePhrases['PinOnPinterest'])) {$localeSoMePhrases['PinOnPinterest'] = "Save on ";}
 if (empty($localeSoMePhrases['followInsta']))  {$localeSoMePhrases['followInsta'] = "Follow us on ";}
 if (empty($localeSoMePhrases['followYT']))     {$localeSoMePhrases['followYT'] = "Subscribe us on ";}
@@ -439,6 +440,7 @@ echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Fac
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\">";
+echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
