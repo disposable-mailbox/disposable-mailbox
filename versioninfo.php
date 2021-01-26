@@ -1,3 +1,3 @@
 <?php
-$config['versionnumber'] = '2.3.3c';
+$config['versionnumber'] = '2.5.01 BETA SocialMedia A';
 ?>
