@@ -5,7 +5,7 @@ $localeSoMePhrases['followFB'] = "Like uns auf ";
 $localeSoMePhrases['followTwttr'] = "Folge uns auf ";
 $localeSoMePhrases['PinOnPinterest'] = "Merken mit ";
 $localeSoMePhrases['followFB'] = "Like uns auf ";
-$localeSoMePhrases['followYT'] = "Abonniere unsauf";
+$localeSoMePhrases['followYT'] = "Abonniere uns auf ";
 $localeSoMePhrases['followInsta'] = "Folge uns auf ";
 
 
@@ -13,7 +13,7 @@ $localeSoMePhrases['CommunityHeading'] = "Sprich/Programmiere mit uns";
 
 $localeSoMePhrases['devOnGitHub'] = "Mitwirken auf ";
 $localeSoMePhrases['devOnDocker'] = "Mitwirken auf ";
-$localeSoMePhrases['chatOnGitter'] = "Trete dem Chat bei auf";
+$localeSoMePhrases['chatOnGitter'] = "Trete dem Chat bei auf ";
 $localeSoMePhrases['chatOnWtsApp'] = "Chatte mit mir via ";
 
 
