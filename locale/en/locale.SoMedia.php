@@ -7,6 +7,7 @@ $localeSoMePhrases['PinOnPinterest'] = "Save on ";
 $localeSoMePhrases['followFB'] = "Like us on ";
 $localeSoMePhrases['followYT'] = "Subscribe us on";
 $localeSoMePhrases['followInsta'] = "Follow us on";
+$localeSoMePhrases['followPinterest'] = "Follow us on ";
 
 
 $localeSoMePhrases['CommunityHeading'] = "TALK / CONTRIBUTE WITH US";
@@ -14,6 +15,7 @@ $localeSoMePhrases['CommunityHeading'] = "TALK / CONTRIBUTE WITH US";
 $localeSoMePhrases['devOnGitHub'] = "Contribute on ";
 $localeSoMePhrases['devOnDocker'] = "Contribute on ";
 $localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";
+$localeSoMePhrases['chatOnElement'] = "Join the Chat on ";
 $localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";
 
 
