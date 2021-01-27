@@ -82,6 +82,7 @@ if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr
 if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Share this post on ";}
 if (empty($localeSoMePhrases['ShareOnWtsApp'])) {$localeSoMePhrases['ShareOnWtsApp'] = "Share this post on ";}
 
+$localeSoMePhrases['PinterestLng'] = $languagemainselection;
 
 $bgcolorFollow = "eee";
 $bgcolorTalk = "a3a9af";
@@ -460,7 +461,7 @@ echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Fa
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\">";
-echo "<a data-pin-do=\"buttonBookmark\" href=\"https://www.pinterest.com/pin/create/button/\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
+echo "<a data-pin-do=\"buttonBookmark\" data-pin-lang="\".$localeSoMePhrases['PinterestLng']."\" href=\"https://www.pinterest.com/pin/create/button/\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
 echo "<h6 style=\"font-size:XX-SMALL;\">*: Advertising cookies required (Pinterest)</h6>";
 echo "</blockquote>";
 } ?>
