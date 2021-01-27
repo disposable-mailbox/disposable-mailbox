@@ -2,8 +2,14 @@
 @include './versioninfo.php';
 @include './functions.php';
 @include './usercontent.php';
+if (!file_exists('./usercontent.php')) { @include './sample.usercontent.php';}
 @include './social.settings.php';
+if (!file_exists('./social.settings.php')) { @include './sample.social.settings.php';}
 @include './social.usercontent.php';
+if (!file_exists('./social.usercontent.php')) { @include './sample.social.usercontent.php';}
+
+
+
 //@include './social.template.php';
 //@include './usercontent.php';
 
@@ -438,11 +444,11 @@ aria-controls="about">
 echo "<hr>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['FollowHeading']."</p>";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorFollow&colorB=1877F2\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\">";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.FB']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorFollow&colorB=1877F2\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\"></a>";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorFollow&colorB=BD081C\">";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Pin']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorFollow&colorB=BD081C\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
