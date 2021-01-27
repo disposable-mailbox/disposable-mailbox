@@ -533,6 +533,6 @@ e.clearSelection();
 });
 
 </script>
-<h6 style="font-size:XX-SMALL;">*: Advertising cookies required</h6>
+<h6 style="font-size:XX-SMALL;">*: Advertising cookies required (Pinterest)</h6>
 </body>
 </html>
