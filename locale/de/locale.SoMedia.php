@@ -3,11 +3,11 @@ $localeSoMePhrases['FollowHeading'] = "Folge uns";
 
 $localeSoMePhrases['followFB'] = "Like uns auf ";
 $localeSoMePhrases['followTwttr'] = "Folge uns auf ";
-$localeSoMePhrases['PinOnPinterest'] = "Merken mit ";
 $localeSoMePhrases['followFB'] = "Like uns auf ";
 $localeSoMePhrases['followYT'] = "Abonniere uns auf ";
 $localeSoMePhrases['followInsta'] = "Folge uns auf ";
 $localeSoMePhrases['followPinterest'] = "Folge uns auf ";
+$localeSoMePhrases['PinOnPinterest'] = "Merken mit ";
 
 
 $localeSoMePhrases['CommunityHeading'] = "Sprich/Programmiere mit uns";
