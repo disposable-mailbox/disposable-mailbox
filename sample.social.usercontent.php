@@ -10,7 +10,7 @@ $SoMeSettings['PinPinterest'] = "";
 $SoMeSettings['UserGitHub'] = "pfeifferch";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox-ML";
 $SoMeSettings['UserDocker'] = "pfeifferch";
-$SoMeSettings['RepoDocker'] = "pfeifferch";
+$SoMeSettings['RepoDocker'] = "disposable-mailbox";
 $SoMeSettings['UserGitter'] = "pfeifferch";
 $SoMeSettings['GitterRoom'] = "disposable-mailbox";
 $SoMeSettings['UserElement'] = "";
@@ -21,6 +21,11 @@ $SoMeSettings['ShareFB'] = "";
 $SoMeSettings['ShareTwttr'] = "";
 $SoMeSettings['ShareInsta'] = "";
 $SoMeSettings['ShareWtsApp'] = "";
+
+
+
+
+
 
 
 $SoMeSettings['URL.FB'] = "https://fb.me/".SoMeSettings['UserFB'];
