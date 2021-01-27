@@ -26,8 +26,6 @@ $SoMeSettings['ShareWtsApp'] = "";
 
 
 
-
-
 $SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
 $SoMeSettings['URL.Twttr'] = "https://twitter.com/".$SoMeSettings['UserTwttr'];
 $SoMeSettings['URL.Insta'] = "";
