@@ -28,16 +28,16 @@ $SoMeSettings['ShareWtsApp'] = "";
 
 
 
-$SoMeSettings['URL.FB'] = "https://fb.me/".SoMeSettings['UserFB'];
-$SoMeSettings['URL.Twttr'] = "https://twitter.com/".SoMeSettings['UserTwttr'];
+$SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
+$SoMeSettings['URL.Twttr'] = "https://twitter.com/".$SoMeSettings['UserTwttr'];
 $SoMeSettings['URL.Insta'] = "";
 $SoMeSettings['URL.YT'] = "";
-$SoMeSettings['URL.Pin'] = "https://www.pinterest.de/".SoMeSettings['UserPinterest']."/pins/follow/";
-$SoMeSettings['URL.GitHubProfile'] = "https://github.com/".SoMeSettings['UserGitHub'];
-$SoMeSettings['URL.GitHubRepo'] ="https://github.com/".SoMeSettings['UserGitHub']."/".SoMeSettings['RepoGitHub']."/";
-$SoMeSettings['URL.DockerProfile'] = "https://hub.docker.com/r/".SoMeSettings['UserDocker'];
-$SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".SoMeSettings['UserDocker']."/".SoMeSettings['RepoDocker']."/";
+$SoMeSettings['URL.Pin'] = "https://www.pinterest.de/".$SoMeSettings['UserPinterest']."/pins/follow/";
+$SoMeSettings['URL.GitHubProfile'] = "https://github.com/".$SoMeSettings['UserGitHub'];
+$SoMeSettings['URL.GitHubRepo'] ="https://github.com/".$SoMeSettings['UserGitHub']."/".$SoMeSettings['RepoGitHub']."/";
+$SoMeSettings['URL.DockerProfile'] = "https://hub.docker.com/r/".$SoMeSettings['UserDocker'];
+$SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['UserDocker']."/".$SoMeSettings['RepoDocker']."/";
 $SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
-$SoMeSettings['URL.ElementRoom'] = "https://element.im/".SoMeSettings['UserElement']."/".SoMeSettings['ElementRoom'];
+$SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
 
 ?>
