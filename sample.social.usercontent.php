@@ -5,7 +5,7 @@ $SoMeSettings['UserTwttr'] = "disposablemxbox";
 $SoMeSettings['UserInsta'] = "";
 $SoMeSettings['UserYT'] = "";
 $SoMeSettings['UserPinterest'] = "disposablemxbox";
-$SoMeSettings['PinPinterest'] = "";
+//$SoMeSettings['PinPinterest'] = "";
 
 $SoMeSettings['UserGitHub'] = "pfeifferch";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox-ML";
@@ -28,8 +28,8 @@ $SoMeSettings['ShareWtsApp'] = "";
 
 $SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
 $SoMeSettings['URL.Twttr'] = "https://twitter.com/".$SoMeSettings['UserTwttr'];
-$SoMeSettings['URL.Insta'] = "";
-$SoMeSettings['URL.YT'] = "";
+$SoMeSettings['URL.Insta'] = "https://www.instagram.com/".$SoMeSettings['UserInsta'];
+$SoMeSettings['URL.YT'] = "https://www.youtube.com/".$SoMeSettings['UserYT'];
 $SoMeSettings['URL.Pin'] = "https://www.pinterest.de/".$SoMeSettings['UserPinterest']."/pins/follow/";
 $SoMeSettings['URL.GitHubProfile'] = "https://github.com/".$SoMeSettings['UserGitHub'];
 $SoMeSettings['URL.GitHubRepo'] ="https://github.com/".$SoMeSettings['UserGitHub']."/".$SoMeSettings['RepoGitHub']."/";
