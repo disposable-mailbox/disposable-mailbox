@@ -17,8 +17,8 @@ $localeSoMePhrases['devOnDocker']  = "Bijdragen aan ";
 $localeSoMePhrases['chatOnGitter'] = "Doe mee met de chat ";
 $localeSoMePhrases['chatOnElement'] = "Doe mee met de chat ";
 $localeSoMePhrases['chatOnWtsApp'] = "Chat met me via ";
-$localeSoMePhrases['RoposOnGitHub'] = "Bekijk repositories ";
-$localeSoMePhrases['RoposOnDocker'] = "Bekijk repositories ";
+$localeSoMePhrases['ReposOnGitHub'] = "Bekijk repositories ";
+$localeSoMePhrases['ReposOnDocker'] = "Bekijk repositories ";
 
 
 $localeSoMePhrases['ShareHeading'] = "Deel deze post / pagina";
