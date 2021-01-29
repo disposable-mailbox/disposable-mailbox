@@ -51,5 +51,5 @@ $SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['User
 $SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
 $SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
 
-$SoMeSettings['disclaimerShareButtons'] = "<span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest - only available for the main domain disposable-mailbox.eu</span>";
+$SoMeSettings['disclaimerShareButtons'] = "<br/><span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest - only available for the main domain disposable-mailbox.eu</span>";
 ?>
