@@ -399,7 +399,7 @@ if (!$SoMeSettings['ShareTwttr'] == "#TWTTRshareURL") {echo "<a target=\"DpMbEx\
 if (!$SoMeSettings['ShareInsta'] == "#INSTAshareURL") {echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareInsta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\"></a>";}
 if (!$SoMeSettings['ShareWtsApp'] == "#WAshareURL") {echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareWtsApp']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\"></a>";}
 echo "<a target=\"DpMbEx\" href=\"https://www.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
-echo "<span style=\"font-size:XX-SMALL;\">*: Advertising cookies required (Pinterest)</span>";
+echo $SoMeSettings['disclaimerShareButtons'];
 echo "</blockquote>";
 } ?>
 <hr>
