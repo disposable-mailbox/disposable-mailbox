@@ -16,59 +16,9 @@ if (!file_exists('./social.usercontent.php')) { @include './sample.social.userco
 
 // Sprachdateien nicht gefunden oder keine Sprache gesetzt, Standarttext vorgeben
 
-if (empty($setHTMLLanguageCode)) {$setHTMLLanguageCode = "en";}
-if (empty($locale['HowManyMailArrivedBevore'])) {$locale['HowManyMailArrivedBevore'] = "There are ";}
-if (empty($locale['MailHaveBeArrivedAfter'])) {$locale['MailHaveBeArrivedAfter'] = " new Mails.";}
-if (empty($locale['MailArrived'])) {$locale['MailArrived'] = "<strong>New emails</strong> have arrived";}
-if (empty($locale['TranslationForRefresh'])) {$locale['TranslationForRefresh'] = "Reload!";}
-if (empty($locale['MailboxReady'])) {$locale['MailboxReady'] = "Your disposable mailbox is ready.";}
-if (empty($locale['TranslationforCopy'])) {$locale['TranslationforCopy'] = "copy";}
-if (empty($locale['ChangeMailUsername'])) {$locale['ChangeMailUsername'] = "Change address";}
-if (empty($locale['SetToRandom'])) {$locale['SetToRandom'] = "Open random mailbox";}
-if (empty($locale['UseOwnUsername'])) {$locale['UseOwnUsername'] = "or create your own address:";}
-if (empty($locale['TranslationForDomain'])) {$locale['TranslationForDomain'] = "Domain";}
-if (empty($locale['OpenMailbox'])) {$locale['OpenMailbox'] = "Open mailbox";}
-if (empty($locale['TranslationForDownload'])) {$locale['TranslationForDownload'] = "Download";}
-if (empty($locale['TranslationForDelete'])) {$locale['TranslationForDelete'] = "Delete";}
-if (empty($locale['EmptyMailbox'])) {$locale['EmptyMailbox'] = "<p>Emails will appear here automatically. </p>";}
-if (empty($locale['QuickSummary'])) {$locale['QuickSummary'] = "This is a disposable mailbox service. <br/>Whoever knows your username, can read your emails.<br/> <br/>Emails will be deleted after ".$config['delete_messages_older_than']."days.";}
-if (empty($locale['collapse'])) {$locale['collapse'] = "Show Details";}
-if (empty($locale['long-about-1'])) {$locale['long-about-1']  = "<p class=\"text-justify\">This disposable mailbox keeps your main mailbox clean from spam.</p>";}
-if (empty($locale['long-about-2'])) {$locale['long-about-2'] = "<p class=\"text-justify\">you don't trust and don't want to use your main email address.<br/>}Once you are done, you can just forget about the mailbox. <br/>All the spam stays here and does not fill up your main mailbox.</p>";}
-if (empty($locale['long-about-3'])) {$locale['long-about-3'] = "<p class=\"text-justify\">You select the address you want to use and received emails will be displayed automatically. <br/>There is not registration and no passwords. If you know the address, you can read the emails. <br/><strong>Basically, all emails are public. So don't use it for sensitive data.</strong></p>";}
-if (empty($locale['ourdomains'])) {$locale['ourdomains'] = "Our Domains";}
-if (empty($locale['copied'])) {$locale['copied'] = "Copied.";}
-if (empty($locale['success'])) {$locale['success'] = "success";}
-if (empty($locale['show'])) {$locale['show'] = "show";}
-if (empty($locale['imprintanddisclaimer'])) {$locale['imprintanddisclaimer'] = "Legal information - imprint, disclaimer and more";}
-if (empty($locale['Copyright'])) {$locale['Copyright'] = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (NT)</small>";}
-
-if (empty($config['OurDomainsActive'] )) {$config['OurDomainsActive'] = "1";} 
-
-if (empty($awfnDE)){$awfnDE = "<p><a href=\"https://gh.disposable-mailbox.eu/de/\" target=\"awfn\">&Uuml;ber D-M</a> - <a href=\"https://gh.disposable-mailbox.eu/de/about.html\" target=\"awfn\">So funktioniert's</a> - <a href=\"https://gh.disposable-mailbox.eu/de/why.html\" target=\"awfn\">Warum Wegwerf-eMails?</a> - <a href=\"https://gh.disposable-mailbox.eu/de/FAQ.html\" target=\"awfn\">FAQ</a> - <a href=\"https://gh.disposable-mailbox.eu/de/news.html\" target=\"awfn\">News</a></p>";}
-if (empty($awfnEN)){$awfnEN = "<p><a href=\"https://gh.disposable-mailbox.eu/en/\" target=\"awfn\">About D-M</a> - <a href=\"https://gh.disposable-mailbox.eu/en/about.html\" target=\"awfn\">How it works</a> - <a href=\"https://gh.disposable-mailbox.eu/en/why.html\" target=\"awfn\">Why temporary eMails?</a> - <a href=\"https://gh.disposable-mailbox.eu/en/FAQ.html\" target=\"awfn\">FAQ</a> - <a href=\"https://gh.disposable-mailbox.eu/en/news.html\" target=\"awfn\">News</a></p>";}
-if (empty($awfnES)){$awfnES = "<p><a href=\"https://gh.disposable-mailbox.eu/es/\" target=\"awfn\">Breve información D-M</a> - <a href=\"https://gh.disposable-mailbox.eu/es/about.html\" target=\"awfn\">Así es como funciona</a> - <a href=\"https://gh.disposable-mailbox.eu/es/why.html\" target=\"awfn\">¿Por qué tirar los correos electrónicos?</a> - <a href=\"https://gh.disposable-mailbox.eu/es/FAQ.html\" target=\"awfn\">Preguntas más frecuentes</a> - <a href=\"https://gh.disposable-mailbox.eu/es/news.html\" target=\"awfn\">Noticias</a></p>";}
-if (empty($awfnHR)){$awfnHR = "<p><a href=\"https://gh.disposable-mailbox.eu/hr/\" target=\"awfn\">Kratke informacije</a> - <a href=\"https://gh.disposable-mailbox.eu/hr/about.html\" target=\"awfn\">Ovako to djeluje</a> - <a href=\"https://gh.disposable-mailbox.eu/hr/why.html\" target=\"awfn\">Zašto baciti mailove?</a> - <a href=\"https://gh.disposable-mailbox.eu/hr/FAQ.html\" target=\"awfn\">Pitanja</a> - <a href=\"https://gh.disposable-mailbox.eu/hr/news.html\" target=\"awfn\">Vijesti</a></p>";}
-if (empty($awfnNL)){$awfnNL = "<p><a href=\"https://gh.disposable-mailbox.eu/nl/\" target=\"awfn\">Beknopte informatie D-M</a> - <a href=\"https://gh.disposable-mailbox.eu/nl/about.html\" target=\"awfn\">Dit is hoe het werkt</a> - <a href=\"https://gh.disposable-mailbox.eu/nl/why.html\" target=\"awfn\">Waarom e-mails weggooien?</a> - <a href=\"https://gh.disposable-mailbox.eu/nl/FAQ.html\" target=\"awfn\">FAQ</a> - <a href=\"https://gh.disposable-mailbox.eu/nl/news.html\" target=\"awfn\">Nieuws</a></p>";}
-if (empty($awfn)){if(strpos($languagemainselection,"de")!==false) {$awfn = $awfnDE;} }
-if (empty($awfn)){if(strpos($languagemainselection,"en")!==false) {$awfn = $awfnEN;} }
-if (empty($awfn)){if(strpos($languagemainselection,"es")!==false) {$awfn = $awfnES;} }
-if (empty($awfn)){if(strpos($languagemainselection,"hr")!==false) {$awfn = $awfnHR;} }
-if (empty($awfn)){if(strpos($languagemainselection,"nl")!==false) {$awfn = $awfnNL;} }
-
-//if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable-mailbox&#8200;.eu</a></i></h2>$awfn<hr>"; }//if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} //if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} //if (empty($usercontent['imprintanddisclaimer'])) {$usercontent['imprintanddisclaimer'] = "<!-- EDIT imprintanddisclaimer in Usercontent, PLEASE! -->";} 
-
-// ADS
-if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
-if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
-if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
-
-
 $localeSoMePhrases['PinterestLng'] = $languagemainselection;
 
-// $bgcolorFollow = "eee";
-// $bgcolorTalk = "a3a9af";
-// $bgcolorSafeAndShare = "51565c";
+
 
 /*
 input:
@@ -433,20 +383,21 @@ echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitHub']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ReposOnGitHub']."-GitHub-red?&style=social&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitHubRepo']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ReposOnGitHub']."-GitHub-red?&style=social&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Docker']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['RoposOnGitHub']."-Docker-red?&style=social&logo=GitHub&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.DockerRepo']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['RoposOnGitHub']."-Docker-red?&style=social&logo=GitHub&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
 
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Gitter']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Element']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitterRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.ElementRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\"></a>";
+
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.WtsApp']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['ShareHeading']."</p>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.FB']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorSafeAndShare&colorB=1877F2\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Insta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.WtsApp']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareFB']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorSafeAndShare&colorB=1877F2\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareTwttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareInsta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['ShareWtsApp']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\"></a>";
 echo "<a target=\"DpMbEx\" href=\"https://www.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
 echo "<span style=\"font-size:XX-SMALL;\">*: Advertising cookies required (Pinterest)</span>";
 echo "</blockquote>";
