@@ -1,5 +1,5 @@
 <?php 
-$localeSoMePhrases['FollowHeading'] = "FOLLOW US";
+$localeSoMePhrases['FollowHeading'] = "Follow us";
 
 $localeSoMePhrases['followFB'] = "Like us on ";
 $localeSoMePhrases['followTwttr'] = "Follow us on ";
@@ -10,16 +10,18 @@ $localeSoMePhrases['followPinterest'] = "Follow us on ";
 $localeSoMePhrases['PinOnPinterest'] = "Save on ";
 
 
-$localeSoMePhrases['CommunityHeading'] = "TALK / CONTRIBUTE WITH US";
+$localeSoMePhrases['CommunityHeading'] = "Talk / Contribute with us";
 
 $localeSoMePhrases['devOnGitHub'] = "Contribute on ";
 $localeSoMePhrases['devOnDocker'] = "Contribute on ";
 $localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";
 $localeSoMePhrases['chatOnElement'] = "Join the Chat on ";
 $localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";
+$localeSoMePhrases['RoposOnGitHub'] = "Repositories on ";
+$localeSoMePhrases['RoposOnDocker'] = "Repositories on ";
 
 
-$localeSoMePhrases['ShareHeading'] = "SHARE THIS PAGE";
+$localeSoMePhrases['ShareHeading'] = "Share this Page/Post";
 
 $localeSoMePhrases['ShareOnFB'] = "Share this post on ";
 $localeSoMePhrases['ShareOnTwttr'] = "Share this post on ";
