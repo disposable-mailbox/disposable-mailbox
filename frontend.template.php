@@ -390,7 +390,7 @@ echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.DockerRepo']."\"><img src
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitterRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.ElementRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\"></a>";
 
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.WtsApp']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['StartWaChat']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['ShareHeading']."</p>";
