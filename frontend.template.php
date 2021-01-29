@@ -376,8 +376,8 @@ echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['FollowHeading']."</p>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.FB']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorFollow&colorB=1877F2\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Insta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.YT']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\"></a>";
+if (!$SoMeSettings['UserInsta'] == "#InstaUsername") {echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Insta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\"></a>";}
+if (!$SoMeSettings['UserYT'] == "#YTusername") {echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.YT']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\"></a>";}
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Pin']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorFollow&colorB=BD081C\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
