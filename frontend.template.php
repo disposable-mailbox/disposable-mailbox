@@ -401,7 +401,20 @@ if (!$SoMeSettings['ShareWtsApp'] == "#WAshareURL") {echo "<a target=\"DpMbEx\" 
 echo "<a target=\"DpMbEx\" href=\"https://www.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
 echo $SoMeSettings['disclaimerShareButtons'];
 echo "</blockquote>";
-} ?>
+
+
+if (!$SoMeSettings['CodeShareFB'] == "#FBshareCode")
+{ echo $SoMeSettings['CodeShareFB']; }
+if (!$SoMeSettings['CodeShareTwttr'] == "#TWTTRshareCode")
+{ echo $SoMeSettings['CodeShareTwttr']; }
+if (!$SoMeSettings['CodeShareInsta'] == "#INSTAshareCode")
+{ echo $SoMeSettings['CodeShareInsta']; }
+if (!$SoMeSettings['CodeShareWtsApp'] == "#WAshareCode")
+{ echo $SoMeSettings['CodeShareWtsApp']; }
+if (!$SoMeSettings['CodePinterest'] == "#PinCode")
+{ echo $SoMeSettings['CodePinterest']; }
+} 
+?>
 <hr>
 <a data-toggle="collapse" href="#imprintanddisclaimer"
 aria-expanded="false"
