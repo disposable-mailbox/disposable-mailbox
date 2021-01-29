@@ -27,6 +27,9 @@ $SoMeSettings['ShareInsta'] = "#INSTAshareURL";
 $SoMeSettings['ShareWtsApp'] = "#WAshareURL";
 
 
+// ab hier nichts mehr ändern, ausser du weißt was du tust
+// Don't change anything from here on, unless you know what you're doing
+
 $SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
 $SoMeSettings['URL.Twttr'] = "https://twitter.com/".$SoMeSettings['UserTwttr'];
 $SoMeSettings['URL.Insta'] = "https://www.instagram.com/".$SoMeSettings['UserInsta'];
