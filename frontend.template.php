@@ -56,43 +56,19 @@ if (empty($awfn)){if(strpos($languagemainselection,"es")!==false) {$awfn = $awfn
 if (empty($awfn)){if(strpos($languagemainselection,"hr")!==false) {$awfn = $awfnHR;} }
 if (empty($awfn)){if(strpos($languagemainselection,"nl")!==false) {$awfn = $awfnNL;} }
 
-if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable-mailbox&#8200;.eu</a></i></h2>$awfn<hr>"; }
-if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} 
-if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} 
-if (empty($usercontent['imprintanddisclaimer'])) {$usercontent['imprintanddisclaimer'] = "<!-- EDIT imprintanddisclaimer in Usercontent, PLEASE! -->";} 
+//if (empty($usercontent['headline'])) {$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable-mailbox&#8200;.eu</a></i></h2>$awfn<hr>"; }//if (empty($usercontent['footer'])) {$usercontent['footer'] = "<!-- <hr>Thank you 4 using DisposableMailbox --->";} //if (empty($usercontent['CookieConsentManagementTool'])) {$usercontent['CookieConsentManagementTool'] = "<!-- EDIT CookieConsentManagementTool SETTINGS, PLEASE! -->";} //if (empty($usercontent['imprintanddisclaimer'])) {$usercontent['imprintanddisclaimer'] = "<!-- EDIT imprintanddisclaimer in Usercontent, PLEASE! -->";} 
 
 // ADS
 if (empty($config['adsActive'])) {$config['adsActive'] = "1";}
 if (empty($locale['adsLocale'])) {$locale['adsLocale'] = "Advertisement:";}
 if (empty($usercontent['adsContent'])) {$usercontent['adsContent'] = "<img src=\"https://cdn.gh.disposable-mailbox.eu/images/placeholder-banner_$mobiledetect.png\">";} 
 
-if (empty($config['SocialMediaActive'])) {$config['SocialMediaActive'] = "0";}
-
-if (empty($localeSoMePhrases['FollowHeading'])) {$localeSoMePhrases['FollowHeading'] = "FOLLOW US";}
-if (empty($localeSoMePhrases['followFB']))     {$localeSoMePhrases['followFB'] = "Like us on ";}
-if (empty($localeSoMePhrases['followTwttr']))  {$localeSoMePhrases['followTwttr'] = "Follow us on ";}
-if (empty($localeSoMePhrases['followPinterest']))  {$localeSoMePhrases['followPinterest'] = "Follow us on ";}
-if (empty($localeSoMePhrases['PinOnPinterest'])) {$localeSoMePhrases['PinOnPinterest'] = "Save on ";}
-if (empty($localeSoMePhrases['followInsta']))  {$localeSoMePhrases['followInsta'] = "Follow us on ";}
-if (empty($localeSoMePhrases['followYT']))     {$localeSoMePhrases['followYT'] = "Subscribe us on ";}
-if (empty($localeSoMePhrases['followInsta']))  {$localeSoMePhrases['followInsta'] = "Follow us on ";}
-if (empty($localeSoMePhrases['CommunityHeading'])) {$localeSoMePhrases['CommunityHeading'] = "TALK / CONTRIBUTE WITH US";}
-if (empty($localeSoMePhrases['devOnGitHub']))  {$localeSoMePhrases['devOnGitHub'] = "Contribute on ";}
-if (empty($localeSoMePhrases['devOnDocker']))  {$localeSoMePhrases['devOnDocker'] = "Contribute on ";}
-if (empty($localeSoMePhrases['chatOnGitter'])) {$localeSoMePhrases['chatOnGitter'] = "Join the Chat on ";}
-if (empty($localeSoMePhrases['chatOnElement'])) {$localeSoMePhrases['chatOnElement'] = "Join the Chat on ";}
-if (empty($localeSoMePhrases['chatOnWtsApp'])) {$localeSoMePhrases['chatOnWtsApp'] = "Chat with me on ";}
-if (empty($localeSoMePhrases['ShareHeading'])) {$localeSoMePhrases['ShareHeading'] = "SHARE THIS PAGE";}
-if (empty($localeSoMePhrases['ShareOnFB']))    {$localeSoMePhrases['ShareOnFB'] = "Share this post on ";}
-if (empty($localeSoMePhrases['ShareOnTwttr'])) {$localeSoMePhrases['ShareOnTwttr'] = "Share this post on ";}
-if (empty($localeSoMePhrases['ShareOnInsta'])) {$localeSoMePhrases['ShareOnInsta'] = "Share this post on ";}
-if (empty($localeSoMePhrases['ShareOnWtsApp'])) {$localeSoMePhrases['ShareOnWtsApp'] = "Share this post on ";}
 
 $localeSoMePhrases['PinterestLng'] = $languagemainselection;
 
-$bgcolorFollow = "eee";
-$bgcolorTalk = "a3a9af";
-$bgcolorSafeAndShare = "51565c";
+// $bgcolorFollow = "eee";
+// $bgcolorTalk = "a3a9af";
+// $bgcolorSafeAndShare = "51565c";
 
 /*
 input:
@@ -172,8 +148,12 @@ echo $user->address ?></title>
 	
 	
 <link rel="stylesheet" href="assets/custom.css">
+<?php 
+if (!file_exists('./css/style.css')) { $stylefile = './css/style.css';}
+else { $stylefile = './css/sample.style.css';}
+?>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="<?php echo $stylefile; ?>">
 <link rel="stylesheet" href="css/ADSstyle.<?php echo $mobiledetect; ?>.css">
 
 <link href='https://fonts.googleapis.com/css?family=Calligraffitti:300,400,500,300italic' rel='stylesheet' type='text/css'>
@@ -446,16 +426,16 @@ echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['FollowHeading']."</p>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.FB']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorFollow&colorB=1877F2\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorFollow&colorB=1DA1F2\"></a>";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\">";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Insta']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorFollow&colorB=E4405F\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.YT']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followYT']."-YouTube-red?&style=plastic&logo=YouTube&logoColor=FF0000&colorA=$bgcolorFollow&colorB=FF0000\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Pin']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['followPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorFollow&colorB=BD081C\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\">";
-echo "<a href=\"https://github.com/pfeifferch/\"><img src=\"https://camo.githubusercontent.com/5b9892dbe9afbf5efe21afc4d3ea5d98ef3aaa5b8a4a51ba2e8457bdfcb4d2a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5265706f7369746f726965732d6f6e2532304769744875622d6c69676874677265793f7374796c653d736f6369616c266c6f676f3d476974487562\" alt=\"Repositories on GitHub\" data-canonical-src=\"https://img.shields.io/badge/Repositories-on%20GitHub-lightgrey?style=social&amp;logo=GitHub\" style=\"max-width:100%;\"></a>";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\">";
-echo "<a href=\"https://hub.docker.com/r/pfeifferch/\" rel=\"nofollow\"><img src=\"https://camo.githubusercontent.com/9a6932a8cde023a110510c0e9251a2132a5c389951593ea83435edee173677dd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5265706f7369746f726965732d6f6e253230446f636b65722d626c75653f7374796c653d736f6369616c266c6f676f3d446f636b6572\" alt=\"Repositories on Docker\" data-canonical-src=\"https://img.shields.io/badge/Repositories-on%20Docker-blue?style=social&amp;logo=Docker\" style=\"max-width:100%;\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://camo.githubusercontent.com/5b9892dbe9afbf5efe21afc4d3ea5d98ef3aaa5b8a4a51ba2e8457bdfcb4d2a2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5265706f7369746f726965732d6f6e2532304769744875622d6c69676874677265793f7374796c653d736f6369616c266c6f676f3d476974487562\" alt=\"Repositories on GitHub\" data-canonical-src=\"https://img.shields.io/badge/Repositories-on%20GitHub-lightgrey?style=social&amp;logo=GitHub\" style=\"max-width:100%;\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://camo.githubusercontent.com/9a6932a8cde023a110510c0e9251a2132a5c389951593ea83435edee173677dd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5265706f7369746f726965732d6f6e253230446f636b65722d626c75653f7374796c653d736f6369616c266c6f676f3d446f636b6572\" alt=\"Repositories on Docker\" data-canonical-src=\"https://img.shields.io/badge/Repositories-on%20Docker-blue?style=social&amp;logo=Docker\" style=\"max-width:100%;\"></a>";
 
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\">";
 echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\">";
