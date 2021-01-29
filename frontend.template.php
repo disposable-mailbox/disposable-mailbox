@@ -437,16 +437,16 @@ echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"ht
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://camo.githubusercontent.com/9a6932a8cde023a110510c0e9251a2132a5c389951593ea83435edee173677dd/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5265706f7369746f726965732d6f6e253230446f636b65722d626c75653f7374796c653d736f6369616c266c6f676f3d446f636b6572\" alt=\"Repositories on Docker\" data-canonical-src=\"https://img.shields.io/badge/Repositories-on%20Docker-blue?style=social&amp;logo=Docker\" style=\"max-width:100%;\"></a>";
 
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\">";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnWtsApp']."-WhatsApp-red?&style=plastic&logo=WhatsApp&logoColor=25D366&colorA=$bgcolorTalk&colorB=25D366\"></a>";
 echo "</blockquote>";
 echo "<blockquote>";
 echo "<p>".$localeSoMePhrases['ShareHeading']."</p>";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorSafeAndShare&colorB=1877F2\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\">";
-echo "<img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\">";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnFB']."-Facebook-red?&style=plastic&logo=Facebook&logoColor=1877F2&colorA=$bgcolorSafeAndShare&colorB=1877F2\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnTwttr']."-Twitter-red?&style=plastic&logo=Twitter&logoColor=1DA1F2&colorA=$bgcolorSafeAndShare&colorB=1DA1F2\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnInsta']."-Instagramm-red?&style=plastic&logo=Instagram&logoColor=E4405F&colorA=$bgcolorSafeAndShare&colorB=E4405F\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Twttr']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ShareOnWtsApp']."-WhatsApp-red?&style=plastic&logo=Whatsapp&logoColor=25D366&colorA=$bgcolorSafeAndShare&colorB=25D366\"></a>";
 echo "<a data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\" href=\"https://www.pinterest.com/pin/create/button/\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['PinOnPinterest']."-Pinterest-red?&style=plastic&logo=Pinterest&logoColor=BD081C&colorA=$bgcolorSafeAndShare&colorB=BD081C\">*</a>";
 echo "<h6 style=\"font-size:XX-SMALL;\">*: Advertising cookies required (Pinterest)</h6>";
 echo "</blockquote>";
