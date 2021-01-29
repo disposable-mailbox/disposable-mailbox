@@ -18,7 +18,8 @@ $SoMeSettings['RepoDocker'] = "disposable-mailbox";
 $SoMeSettings['UserGitter'] = "pfeifferch";
 $SoMeSettings['GitterRoom'] = "disposable-mailbox";
 $SoMeSettings['UserElement'] = "#ElementUsername";
-$SoMeSettings['ElementRoom'] = "#ElementRoome";
+$SoMeSettings['ElementRoom'] = "#ElementRoom";
+$SoMeSettings['StartWaChat'] = "#StartWAchat";
 
 
 $SoMeSettings['ShareFB'] = "#FBshareURL";
