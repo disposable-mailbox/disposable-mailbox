@@ -17,7 +17,8 @@ $localeSoMePhrases['devOnDocker'] = "Mitwirken auf ";
 $localeSoMePhrases['chatOnGitter'] = "Trete dem Chat bei auf ";
 $localeSoMePhrases['chatOnElement'] = "Trete dem Chat bei auf ";
 $localeSoMePhrases['chatOnWtsApp'] = "Chatte mit mir via ";
-
+$localeSoMePhrases['RoposOnGitHub'] = "Repositories auf ";
+$localeSoMePhrases['RoposOnDocker'] = "Repositories auf ";
 
 $localeSoMePhrases['ShareHeading'] = "Teile diesen Beitrag / diese Seite";
 
