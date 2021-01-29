@@ -19,13 +19,15 @@ $SoMeSettings['ElementRoom'] = "#ElementRoom";
 $SoMeSettings['StartWaChat'] = "https://wa.me/".$SoMeSettings['WtsAppID']."&text=Website ".$just_domain;
 
 
+$SoMeSettings['disclaimerShareButtons'] = "<br/><span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest - only available for the main domain disposable-mailbox.eu</span>";
+
+
 // Hier den Link für den Teilen-Button einfügen
 // Insert the link for the share button here
 $SoMeSettings['ShareFB'] = "#FBshareURL";
 $SoMeSettings['ShareTwttr'] = "#TWTTRshareURL";
 $SoMeSettings['ShareInsta'] = "#INSTAshareURL";
 $SoMeSettings['ShareWtsApp'] = "#WAshareURL";
-
 
 // Hier den JavaScript Code des Teilen-Button-Anbieters einfügen - oder je nach Gesetzgebung (zb. DSGVO in der EU) beim CookieConsent-Anbieter
 // Insert the Button- provider's JavaScript code here - or depending on the legislation (e.g. GDPR in the EU) from the CookieConsent provider
@@ -50,6 +52,6 @@ $SoMeSettings['URL.DockerProfile'] = "https://hub.docker.com/r/".$SoMeSettings['
 $SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['UserDocker']."/".$SoMeSettings['RepoDocker']."/";
 $SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
 $SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
+$SoMeSettings['SharePin'] = "https://www.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\";
 
-$SoMeSettings['disclaimerShareButtons'] = "<br/><span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest - only available for the main domain disposable-mailbox.eu</span>";
 ?>
