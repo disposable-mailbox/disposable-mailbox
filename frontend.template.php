@@ -385,7 +385,7 @@ echo "<p>".$localeSoMePhrases['CommunityHeading']."</p>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitHub']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnGitHub']."-GitHub-red?&style=plastic&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitHubRepo']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ReposOnGitHub']."-GitHub-red?&style=social&logo=GitHub&logoColor=181717&colorA=$bgcolorTalk&colorB=181717\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.Docker']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['devOnDocker']."-Docker-red?&style=plastic&logo=Docker&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
-echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.DockerRepo']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['RoposOnGitHub']."-Docker-red?&style=social&logo=GitHub&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
+echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.DockerRepo']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['ReposOnGitHub']."-Docker-red?&style=social&logo=GitHub&logoColor=2496ED&colorA=$bgcolorTalk&colorB=2496ED\"></a>";
 
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.GitterRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnGitter']."-Gitter-red?&style=plastic&logo=Gitter&logoColor=ED1965&colorA=$bgcolorTalk&colorB=ED1965\"></a>";
 echo "<a target=\"DpMbEx\" href=\"".$SoMeSettings['URL.ElementRoom']."\"><img src=\"https://shields.io/badge/".$localeSoMePhrases['chatOnElement']."-Element-red?&style=plastic&logo=Element&logoColor=0DBD8B&colorA=$bgcolorTalk&colorB=0DBD8B\"></a>";
