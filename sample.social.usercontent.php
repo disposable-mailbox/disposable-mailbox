@@ -8,9 +8,6 @@ $SoMeSettings['UserPinterest'] = "disposablemxbox";
 $SoMeSettings['WtsAppID'] = "#WAid";
 
 
-//$SoMeSettings['PinPinterest'] = "";
-
-
 $SoMeSettings['UserGitHub'] = "pfeifferch";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox-ML";
 $SoMeSettings['UserDocker'] = "pfeifferch";
@@ -21,6 +18,7 @@ $SoMeSettings['UserElement'] = "#ElementUsername";
 $SoMeSettings['ElementRoom'] = "#ElementRoom";
 $SoMeSettings['StartWaChat'] = "https://wa.me/".$SoMeSettings['WtsAppID']."&text=Website ".$just_domain;
 
+
 // Hier den Link für den Teilen-Button einfügen
 // Insert the link for the share button here
 $SoMeSettings['ShareFB'] = "#FBshareURL";
@@ -28,13 +26,14 @@ $SoMeSettings['ShareTwttr'] = "#TWTTRshareURL";
 $SoMeSettings['ShareInsta'] = "#INSTAshareURL";
 $SoMeSettings['ShareWtsApp'] = "#WAshareURL";
 
+
 // Hier den JavaScript Code des Teilen-Button-Anbieters einfügen - oder je nach Gesetzgebung (zb. DSGVO in der EU) beim CookieConsent-Anbieter
 // Insert the Button- provider's JavaScript code here - or depending on the legislation (e.g. GDPR in the EU) from the CookieConsent provider
 $SoMeSettings['CodeShareFB'] = "#FBshareCode";
 $SoMeSettings['CodeShareTwttr'] = "#TWTTRshareCode";
 $SoMeSettings['CodeShareInsta'] = "#INSTAshareCode";
 $SoMeSettings['CodeShareWtsApp'] = "#WAshareCode";
-
+$SoMeSettings['CodePinterest'] = "#PinCode";
 
 
 // ab hier nichts mehr ändern, ausser du weißt was du tust
@@ -52,5 +51,5 @@ $SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['User
 $SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
 $SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
 
-
+$SoMeSettings['disclaimerShareButtons'] = "";
 ?>
