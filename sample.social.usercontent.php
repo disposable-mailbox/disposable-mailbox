@@ -2,10 +2,14 @@
 
 $SoMeSettings['UserFB'] = "disposablemailbox";
 $SoMeSettings['UserTwttr'] = "disposablemxbox";
-$SoMeSettings['UserInsta'] = "";
-$SoMeSettings['UserYT'] = "";
+$SoMeSettings['UserInsta'] = "#InstaUsername";
+$SoMeSettings['UserYT'] = "#YTusername";
 $SoMeSettings['UserPinterest'] = "disposablemxbox";
+$SoMeSettings['WtsAppID'] = "#WAid";
+
+
 //$SoMeSettings['PinPinterest'] = "";
+
 
 $SoMeSettings['UserGitHub'] = "pfeifferch";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox-ML";
@@ -13,17 +17,14 @@ $SoMeSettings['UserDocker'] = "pfeifferch";
 $SoMeSettings['RepoDocker'] = "disposable-mailbox";
 $SoMeSettings['UserGitter'] = "pfeifferch";
 $SoMeSettings['GitterRoom'] = "disposable-mailbox";
-$SoMeSettings['UserElement'] = "";
-$SoMeSettings['ElementRoom'] = "";
-
-$SoMeSettings['WtsAppID'] = "";
-$SoMeSettings['ShareFB'] = "";
-$SoMeSettings['ShareTwttr'] = "";
-$SoMeSettings['ShareInsta'] = "";
-$SoMeSettings['ShareWtsApp'] = "";
+$SoMeSettings['UserElement'] = "#ElementUsername";
+$SoMeSettings['ElementRoom'] = "#ElementRoome";
 
 
-
+$SoMeSettings['ShareFB'] = "#FBshareURL";
+$SoMeSettings['ShareTwttr'] = "#TWTTRshareURL";
+$SoMeSettings['ShareInsta'] = "#INSTAshareURL";
+$SoMeSettings['ShareWtsApp'] = "#WAshareURL";
 
 
 $SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
@@ -37,5 +38,6 @@ $SoMeSettings['URL.DockerProfile'] = "https://hub.docker.com/r/".$SoMeSettings['
 $SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['UserDocker']."/".$SoMeSettings['RepoDocker']."/";
 $SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
 $SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
+
 
 ?>
