@@ -17,6 +17,8 @@ $localeSoMePhrases['devOnDocker'] = "Doprinosi ";
 $localeSoMePhrases['chatOnGitter'] = "Pridružite se chatu ";
 $localeSoMePhrases['chatOnElement'] = "Pridružite se chatu ";
 $localeSoMePhrases['chatOnWtsApp'] = "Razgovaraj sa mnom putem ";
+$localeSoMePhrases['ReposOnGitHub'] = "Spremišta na ";
+$localeSoMePhrases['ReposOnDocker'] = "Spremišta na ";
 
 
 $localeSoMePhrases['ShareHeading'] = "Podijelite ovaj post / stranicu";
