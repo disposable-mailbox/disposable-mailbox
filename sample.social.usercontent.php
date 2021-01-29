@@ -19,7 +19,7 @@ $SoMeSettings['UserGitter'] = "pfeifferch";
 $SoMeSettings['GitterRoom'] = "disposable-mailbox";
 $SoMeSettings['UserElement'] = "#ElementUsername";
 $SoMeSettings['ElementRoom'] = "#ElementRoom";
-$SoMeSettings['StartWaChat'] = "#StartWAchat";
+$SoMeSettings['StartWaChat'] = "https://wa.me/".$SoMeSettings['WtsAppID']."&text=Website ".$just_domain;
 
 
 $SoMeSettings['ShareFB'] = "#FBshareURL";
