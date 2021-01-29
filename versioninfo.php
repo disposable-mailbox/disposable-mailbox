@@ -1,5 +1,4 @@
 <?php
-$config['versionnumber'] = '2.5.02 BETA D';
-// Social Media Beta (disabled by default - a lot is still missing)
-// 
+$config['versionnumber'] = '2.5.11 BETA';
+// Social Media Beta (a lot is still missing) 
 ?>
