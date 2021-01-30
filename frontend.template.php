@@ -99,8 +99,8 @@ echo $user->address ?></title>
 	
 <link rel="stylesheet" href="assets/custom.css">
 <?php 
-if (!file_exists('./css/style.css')) { $stylefile = './css/style.css';}
-else { $stylefile = './css/sample.style.css';}
+if (!file_exists('./css/style.css')) { $stylefile = './css/sample.style.css';}
+else { $stylefile = './css/style.css';}
 ?>
 
 <link rel="stylesheet" href="<?php echo $stylefile; ?>">
