@@ -3,7 +3,15 @@ body {
 	color: black;
 	background-color: #CC2925;
 }
-
+a { 
+	color: #EE2D2E; 
+}
+a:visited { 
+	color: #EE2D2E; 
+}
+a:hover { 
+	color: #CC2925; 
+}
 h1 {
 	font-size: 14pt;
 }
