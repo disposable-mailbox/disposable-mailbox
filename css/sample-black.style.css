@@ -1,0 +1,54 @@
+/* style.css - optional black */
+body {
+	color: #363D41;
+	background-color: #000;
+}
+a { 
+	color: #363D41; 
+}
+a:visited { 
+	color: #363D41; 
+}
+a:hover { 
+	color: #7E868A; 
+}
+h1 {
+	font-size: 14pt;
+}
+	
+h2 a { 
+	color: #7E868A; 
+}
+h2 a:visited { 
+	color: #7E868A; 
+}
+h2 a:hover { 
+	color: #363D41; 
+}
+
+.container {
+		background-color: #FFF; 
+}
+
+#emailMessageBody {
+	background-color: #FFF;
+	padding-right:25px;
+	padding-left:25px;
+}
+
+hr{
+border: 0;
+height: 2px;
+background-image: linear-gradient(to right,
+rgba(54,61,65,0),
+rgba(0, 0, 0, 1),
+rgba(54,61,65,0));
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
