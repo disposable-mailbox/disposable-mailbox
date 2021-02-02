@@ -4,10 +4,10 @@ body {
 	background-color: #6FA4B8;
 }
 a { 
-	color: #CCE1EC; 
+	color: #4C8AB8; 
 }
 a:visited { 
-	color: #CCE1EC; 
+	color: #4C8AB8; 
 }
 a:hover { 
 	color: #6FA4B8; 
@@ -23,7 +23,7 @@ h2 a:visited {
 	color: #6FA4B8; 
 }
 h2 a:hover { 
-	color: #CCE1EC; 
+	color: #4C8AB8; 
 }
 
 .container {
