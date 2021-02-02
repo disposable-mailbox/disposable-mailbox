@@ -41,7 +41,7 @@ border: 0;
 height: 2px;
 background-image: linear-gradient(to right,
 rgba(0,0,0,0),
-rgba(0, 80, 82, 1),
+rgba(80, 82, 20, 1),
 rgba(0,0,0,0));
 }
 
