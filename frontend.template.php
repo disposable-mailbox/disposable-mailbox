@@ -18,7 +18,9 @@ if (!file_exists('./social.usercontent.php')) { @include './sample.social.userco
 
 $localeSoMePhrases['PinterestLng'] = $languagemainselection;
 
-
+$bgcolorFollow = "eee";
+$bgcolorTalk = "a3a9af";
+$bgcolorSafeAndShare = "51565c";
 
 /*
 input:
