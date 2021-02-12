@@ -2,6 +2,8 @@
 
 $setHTMLLanguageCode = "nl";
 
+$locale['title']  =  "Jouw e-mailadres: ";
+
 $locale['HowManyMailArrivedBevore']  = "er zijn "; //Counter
 $locale['MailHaveBeArrivedAfter']  = " nieuwe mails.";
 
