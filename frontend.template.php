@@ -94,7 +94,7 @@ crossorigin="anonymous">
 integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 crossorigin="anonymous">
 <title><?php
-echo $emails ? "(" . count($emails) . ") " : "";
+echo $locale['title'].$emails ? "(" . count($emails) . ") " : "";
 echo $user->address ?></title>
 <link rel="stylesheet" href="assets/spinner.css">
 <link rel="stylesheet" href="assets/custom.css">
