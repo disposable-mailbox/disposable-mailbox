@@ -2,6 +2,8 @@
 
 $setHTMLLanguageCode = "de";
 
+$locale['title']  =  "Deine Mailadresse: ";
+
 $locale['HowManyMailArrivedBevore']  = "es gibt "; //Counter
 $locale['MailHaveBeArrivedAfter']  = " neue Mails.";
 
@@ -9,7 +11,7 @@ $locale['MailArrived']  = "<strong>neue eMails</strong> sind eingetroffen.";
 
 $locale['TranslationForRefresh']  = "Aktualisieren!";
 
-$locale['MailboxReady']  =  "Deine Einweg-Mailadresse ist bereit.";
+$locale['MailboxReady']  =  "Deine Mailadresse ist bereit.";
 
 $locale['TranslationforCopy']  =  "Kopieren";
 
