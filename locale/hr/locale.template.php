@@ -2,6 +2,8 @@
 
 $setHTMLLanguageCode = "hr";
 
+$locale['title']  =  "Vaša email adresa: ";
+
 $locale['HowManyMailArrivedBevore']  = "postoje "; //Counter
 $locale['MailHaveBeArrivedAfter']  = " nove mailove.";
 
