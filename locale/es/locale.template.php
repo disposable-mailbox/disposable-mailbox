@@ -2,6 +2,8 @@
 
 $setHTMLLanguageCode = "es";
 
+$locale['title']  =  "Tu correo electrónico: ";
+
 $locale['HowManyMailArrivedBevore']  = "hay "; //Counter
 $locale['MailHaveBeArrivedAfter']  = " nuevos correos.";
 
