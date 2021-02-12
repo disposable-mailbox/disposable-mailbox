@@ -97,8 +97,6 @@ crossorigin="anonymous">
 echo $emails ? "(" . count($emails) . ") " : "";
 echo $user->address ?></title>
 <link rel="stylesheet" href="assets/spinner.css">
-	
-	
 <link rel="stylesheet" href="assets/custom.css">
 <?php 
 if (!file_exists('./css/style.css')) { $stylefile = './css/sample.style.css';}
@@ -149,7 +147,7 @@ r.send();
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
+<meta name="description" content="disposable-mailbox" />
 </head>
 <body>
 <?php echo $usercontent['CookieConsentManagementTool']; ?>
