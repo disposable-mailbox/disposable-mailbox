@@ -93,7 +93,7 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="assets/fontawesome/v5.0.13/all.css"
 integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 crossorigin="anonymous">
-<title>📧<?php
+<title><?php
 echo $emails ? "(" . count($emails) . ") " : "";
 echo $user->address ?></title>
 <link rel="stylesheet" href="assets/spinner.css">
