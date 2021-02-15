@@ -43,7 +43,7 @@ $SoMeSettings['CodePinterest'] = "#PinCode";
 // Don't change anything from here on, unless you know what you're doing
 
 $SoMeSettings['URL.FB'] = "https://fb.me/".$SoMeSettings['UserFB'];
-$SoMeSettings['URL.Twttr'] = "https://twitter.com/".$SoMeSettings['UserTwttr'];
+$SoMeSettings['URL.Twttr'] = "https://twitter.com/intent/follow?original_referer=&tw_p=followbutton&ref_src=&region=follow_link&screen_name=".$SoMeSettings['UserTwttr'];
 $SoMeSettings['URL.Insta'] = "https://www.instagram.com/".$SoMeSettings['UserInsta'];
 $SoMeSettings['URL.YT'] = "https://www.youtube.com/".$SoMeSettings['UserYT'];
 $SoMeSettings['URL.Pin'] = "https://www.pinterest.de/".$SoMeSettings['UserPinterest']."/pins/follow/";
