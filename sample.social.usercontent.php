@@ -19,7 +19,7 @@ $SoMeSettings['ElementRoom'] = "#ElementRoom";
 $SoMeSettings['StartWaChat'] = "https://wa.me/".$SoMeSettings['WtsAppID']."&text=Website ".$just_domain;
 
 
-$SoMeSettings['disclaimerShareButtons'] = "<br/><span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest - only available for the main domain disposable-mailbox.eu</span>";
+$SoMeSettings['disclaimerShareButtons'] = "<br/><span style=\"font-size:XX-SMALL;\">Advertising cookies required for share buttons and Pinterest <BR />- only available for the <a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">main domain disposable-mailbox.eu</a></i></h2></span>";
 
 
 // Hier den Link für den Teilen-Button einfügen
