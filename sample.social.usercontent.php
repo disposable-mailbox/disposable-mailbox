@@ -12,8 +12,9 @@ $SoMeSettings['UserGitHub'] = "disposable-mailbox";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox";
 $SoMeSettings['UserDocker'] = "pfeifferch";
 $SoMeSettings['RepoDocker'] = "disposable-mailbox";
-$SoMeSettings['UserGitter'] = "pfeifferch";
-$SoMeSettings['GitterRoom'] = "disposable-mailbox";
+$SoMeSettings['UserGitter'] = "disposable-mailbox";
+$SoMeSettings['CommunityGitter'] = "disposablemailbox";
+$SoMeSettings['GitterRoom'] = "disposable-mailbox.eu";
 $SoMeSettings['UserElement'] = "#ElementUsername";
 $SoMeSettings['ElementRoom'] = "#ElementRoom";
 $SoMeSettings['StartWaChat'] = "https://wa.me/".$SoMeSettings['WtsAppID']."&text=Website ".$just_domain;
@@ -51,7 +52,7 @@ $SoMeSettings['URL.GitHubProfile'] = "https://github.com/".$SoMeSettings['UserGi
 $SoMeSettings['URL.GitHubRepo'] ="https://github.com/".$SoMeSettings['UserGitHub']."/".$SoMeSettings['RepoGitHub']."/";
 $SoMeSettings['URL.DockerProfile'] = "https://hub.docker.com/r/".$SoMeSettings['UserDocker'];
 $SoMeSettings['URL.DockerRepo'] ="https://hub.docker.com/r/".$SoMeSettings['UserDocker']."/".$SoMeSettings['RepoDocker']."/";
-$SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['UserGitter']."/".$SoMeSettings['GitterRoom']; 
+$SoMeSettings['URL.GitterRoom'] = "https://gitter.im/".$SoMeSettings['CommunityGitter']."/".$SoMeSettings['GitterRoom']; 
 $SoMeSettings['URL.ElementRoom'] = "https://element.im/".$SoMeSettings['UserElement']."/".$SoMeSettings['ElementRoom'];
 $SoMeSettings['SharePin'] = "https://www.pinterest.com/pin/create/button/\" data-pin-do=\"buttonBookmark\" data-pin-lang=\"".$localeSoMePhrases['PinterestLng']."\" ";
 
