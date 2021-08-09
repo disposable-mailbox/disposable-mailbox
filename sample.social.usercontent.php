@@ -8,7 +8,7 @@ $SoMeSettings['UserPinterest'] = "disposablemxbox";
 $SoMeSettings['WtsAppID'] = "#WAid";
 
 
-$SoMeSettings['UserGitHub'] = "pfeifferch";
+$SoMeSettings['UserGitHub'] = "disposable-mailbox";
 $SoMeSettings['RepoGitHub'] = "disposable-mailbox";
 $SoMeSettings['UserDocker'] = "pfeifferch";
 $SoMeSettings['RepoDocker'] = "disposable-mailbox";
