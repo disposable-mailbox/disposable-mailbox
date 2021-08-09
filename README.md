@@ -1,4 +1,4 @@
-[![Join the chat at https://gitter.im/disposablemailbox/disposable-mailbox.eu](https://badges.gitter.im/pfeifferch/disposable-mailbox.svg)](https://gitter.im/disposablemailbox/disposable-mailbox.eu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+[![Join the chat at https://gitter.im/disposablemailbox/disposable-mailbox.eu](https://badges.gitter.im/disposable-mailbox/disposable-mailbox.svg)](https://gitter.im/disposablemailbox/disposable-mailbox.eu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 
 [![Repositories on Docker](https://img.shields.io/badge/Repositories-on%20Docker-blue?style=social&logo=Docker)](https://hub.docker.com/u/pfeifferch) 
 [![Repositories on GitHub](https://img.shields.io/badge/Repositories-on%20GitHub-lightgrey?style=social&logo=GitHub)](https://github.com/disposable-mailbox/)
@@ -32,10 +32,10 @@ A **self-hosted** disposable mailbox  service (aka trash mail)  :cloud: :envelop
 
 ### Before you start :heavy_exclamation_mark:
 
-<!-- * Subscribe to [![Join the chat at https://gitter.im/pfeifferch/disposable-mailbox](https://badges.gitter.im/pfeifferch/disposable-mailbox.svg)](https://gitter.im/pfeifferch/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes. --> 
-* This is **Beta** software, [there are still unsolved problems](https://github.com/pfeifferch/disposable-mailbox/issues). Contributions are welcome! :heart:
+<!-- * Subscribe to [![Join the chat at https://gitter.im/disposable-mailbox/disposable-mailbox](https://badges.gitter.im/disposable-mailbox/disposable-mailbox.svg)](https://gitter.im/disposable-mailbox/disposable-mailbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) to be notified about issues and bugfixes. --> 
+* This is **Beta** software, [there are still unsolved problems](https://github.com/disposable-mailbox/disposable-mailbox/issues). Contributions are welcome! :heart:
 * License: **GPL-3.0**. You can modify this application and run it anywhere, charge money and show advertisement. Any forks or repacked distribution must follow the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).  
-* A link to https://github.com/pfeifferch/disposable-mailbox in the footer is appreciated.  
+* A link to https://github.com/disposable-mailbox/disposable-mailbox in the footer is appreciated.  
 
 
 
@@ -47,7 +47,7 @@ Disposable-mailbox can be installed by copying the src directory to a webserver.
 
         <?php print imap_base64("SU1BUCBleHRlbnNpb24gc2VlbXMgdG8gYmUgaW5zdGFsbGVkLiA="); ?>
 
-2. download a [release](https://github.com/pfeifferch/disposable-mailbox/releases) or clone this repository
+2. download a [release](https://github.com/disposable-mailbox/disposable-mailbox/releases) or clone this repository
 3. copy the files in the `src` directory to your web server (not the whole repo!).
 4. rename `config.sample.php` to `config.php` and apply the imap settings. 
    Set CHMOD (Oktal) to 400
