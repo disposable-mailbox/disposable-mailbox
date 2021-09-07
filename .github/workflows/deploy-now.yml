@@ -1,0 +1,41 @@
+name: Deploy Now
+
+on: [push]
+
+jobs:
+  deploy-now:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch project data
+        uses: ionos-deploy-now/retrieve-project-info-action@v1
+        id: project
+        with:
+          project: 5d1d3164-4238-4b60-88f9-ac38d444d2e5
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
+      - name: checkout
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+      - name: Cache dependencies
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-gems-
+      - name: Build project
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: lemonarc/jekyll-action@1.0.0
+      - name: Deploy build
+        if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
+        uses: ionos-deploy-now/deploy-to-ionos-action@v1
+        with:
+          branch-id: ${{ steps.project.outputs.branch-id }}
+          storage-quota: ${{ steps.project.outputs.storage-quota }}
+          project: 5d1d3164-4238-4b60-88f9-ac38d444d2e5
+          dist-folder: _site
+          remote-host: ${{ steps.project.outputs.remote-host }}
+          api-key: ${{ secrets.IONOS_API_KEY }}
+          service-host: api-eu.ionos.space
