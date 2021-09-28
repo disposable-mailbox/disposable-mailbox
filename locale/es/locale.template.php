@@ -48,6 +48,6 @@ $locale['adsLocale'] = "Anuncio:";
 
 $locale['ourdomains'] = "Nuestros dominios";
 
-$locale['Copyright']  = "<small><a href=\"https://github.com/pfeifferch/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (ES)</small>";
+$locale['Copyright']  = "<small><a href=\"https://github.com/disposable-mailbox/disposable-mailbox\"><strong>disposable-mailbox</strong></a> ".$config['versionnumber']." (ES)</small>";
 
 ?>
