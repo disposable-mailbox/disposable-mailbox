@@ -55,7 +55,7 @@ class RedirectToRandomAddressController {
     }
 
     public static function invoke(ImapClient $imapClient, array $config) {
-        $address = User::get_random_address($config{'domains'});
+        $address = User::get_random_address($config['domains']);
         RedirectToAddressController::render($address);
     }
 }
