@@ -11,7 +11,7 @@ if(strpos($languagemainselection,"hr")!==false) {$awfn = $awfnHR;}
 if(strpos($languagemainselection,"nl")!==false) {$awfn = $awfnNL;}
 
 //edit disposable-mailbox.eu to your Main Domain ;)
-$usercontent['headline'] = "<h2 style=\"text-align:center;\">📧 <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable-mailbox&#8200;.eu</a></i></h2>$awfn<hr>"; 
+$usercontent['headline'] = "<h2 style=\"text-align:center;\"><i class="far fa-envelope"></i> <i style=\"font-family:'Calligraffitti',sans-serif;font-weight:300\"><a href=\"https://www.disposable-mailbox.eu/?$user->username@".$user->domain."\">disposable-mailbox&#8200;.eu</a></i></h2>$awfn<hr>"; 
 
 //// only one domain usage:
 //$usercontent['CookieConsentManagementTool'] = "<!-- Edit your CookieConsentManagementTool Settings in Usercontent please!!! -->";
