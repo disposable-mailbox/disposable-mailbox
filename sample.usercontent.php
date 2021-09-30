@@ -37,9 +37,9 @@ $usercontent['adsContent'] = "<img src=\"https://cdn.info.disposable-mailbox.eu/
 // Translation assistance is requested. Standard is:
 //$usercontent['footer'] = "";
 if ($localeselected == 'nl') {
-$usercontent['footer'] = "<hr><blockquote>Deze vertaling is gemaakt met behulp van programma's.  help alstublieft op <a href=\"https://github.com/pfeifferch/disposable-mailbox\">GitHub</a> om een ​​begrijpelijke vertaling voor te bereiden.</blockquote>"; 
+$usercontent['footer'] = "<hr><blockquote>Deze vertaling is gemaakt met behulp van programma's.  help alstublieft op <a href=\"https://github.com/disposable-mailbox/disposable-mailbox\">GitHub</a> om een ​​begrijpelijke vertaling voor te bereiden.</blockquote>"; 
 } elseif ($localeselected == 'es') {
-$usercontent['footer'] = "<hr><blockquote>Esta traducción se creó con la ayuda de programas.  ayuda en <a href=\"https://github.com/pfeifferch/disposable-mailbox\">GitHub</a> para preparar una traducción comprensible.</blockquote>"; 
+$usercontent['footer'] = "<hr><blockquote>Esta traducción se creó con la ayuda de programas.  ayuda en <a href=\"https://github.com/disposable-mailbox/disposable-mailbox\">GitHub</a> para preparar una traducción comprensible.</blockquote>"; 
 } else    { 
 $usercontent['footer'] = "<br>"; }
 
