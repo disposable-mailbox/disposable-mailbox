@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## [2.5.30] - 2021-09-30
+Bugfixes, fontawesome statt emoji, Anpassungen der Links für Info-Seiten, Links zu GitHub aktualisiert,
+Diverse andere kleine Aktualisierungen (2.3 bis 2.5)
+
 ## [2.3.3]-[2.2.3a] - 2020-12-xx -ML Branch
 Bugfixes 
 
