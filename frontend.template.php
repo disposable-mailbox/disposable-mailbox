@@ -169,7 +169,15 @@ echo $user->address ?></title>
 <link rel="stylesheet" href="assets/spinner.css">
 <link rel="stylesheet" href="assets/custom.css">
 <?php 
-if (!file_exists('./css/style.css')) { $stylefile = './css/sample.style.css';}
+$allestyledateien = scandir('css'); 
+$stylecolors = array($stylecolorsdatei);
+//Ordner "files" auslesen 
+foreach ($allestyledateien as $stylecolorsdatei) { 
+if ($stylecolorsdatei != "." && $stylecolorsdatei != ".." && $stylecolorsdatei != "ADSstyle.mobile.css" && $stylecolorsdatei != "ADSstyle.desktop.css" && $stylecolorsdatei != "style.css") { 
+array_push($stylecolors,$stylecolorsdatei);
+}
+};
+if (!file_exists('./css/style.css')) { $stylefile = './css/'.$stylecolors[rand(1,count($stylecolors))];}
 else { $stylefile = './css/style.css';}
 ?>
 
