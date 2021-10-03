@@ -18,6 +18,75 @@ if (!file_exists('./social.usercontent.php')) { @include './sample.social.userco
 
 $localeSoMePhrases['PinterestLng'] = $languagemainselection;
 
+
+$moment_supported_languages = array(
+"de"=>"de_DE",
+"de_DE"=>"de_DE",
+"de_AT"=>"de_DE",
+"de_CH"=>"de_DE",
+"de_LI"=>"de_DE",
+"de_LT"=>"de_DE",
+
+"en"=>"en_US",
+"en_US"=>"en_US",
+
+"en_GB"=>"en_GB",
+"en_GB"=>"en_GB",
+
+"es"=>"es_ES",
+"es_ES"=>"es_ES",
+
+
+"nl"=> "nl_NL",
+"nl_NL"=>"nl_NL",
+
+/*
+ar_TN Arabic (Tunisia)
+ca_ES Catalan
+zh_CN Chinese
+zh_TW Chinese (traditional)
+cs_CZ Czech
+da_DK Danish
+nl_NL Dutch
+en_CA English (Canada)
+en_GB English (British)
+en_US English (American)
+eo_EO Esperanto
+fa_IR Farsi
+fi_FI Finnish
+fr_FR French (Europe)
+fr_CA French (Canada)
+de_DE German (Germany)
+hu_HU Hungarian
+id_ID Indonesian
+it_IT Italian
+ja_JP Japanese
+kz_KZ Kazakh
+oc_LNC Lengadocian
+lv_LV Latvian (Latviešu)
+pl_PL Polish
+pt_BR Portuguese (Brazil)
+pt_PT Portuguese (Portugal)
+ru_RU Russian (Basic version)
+es_ES Spanish (Europe)
+sv_SE Swedish
+uk_UA Ukrainian
+th_TH Thai
+tr_TR Turkish
+vi_VN Vietnamese
+*/
+);
+
+// set locale (see supported locales: https://github.com/fightbulc/moment.php#switch-locale)
+if(array_key_exists($languagemainselection, $moment_supported_languages)) {
+  $config['localemoment'] = $moment_supported_languages[$languagemainselection];
+} else {
+  $config['localemoment'] = "en_US"; 
+}
+
+
+
+
 $bgcolorFollow = "eee";
 $bgcolorTalk = "a3a9af";
 $bgcolorSafeAndShare = "51565c";
@@ -37,7 +106,7 @@ $purifier_config->set('HTML.Nofollow', true);
 $purifier_config->set('HTML.ForbiddenElements', array("img"));
 $purifier = new HTMLPurifier($purifier_config);
 
-\Moment\Moment::setLocale($config['locale']);
+\Moment\Moment::setLocale($config['localemoment']);
 
 $mailIds = array_map(function ($mail) {
 return $mail->id;
