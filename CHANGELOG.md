@@ -7,6 +7,26 @@ All notable changes to this project will be documented in this file. The format 
  Diverse andere kleine Aktualisierungen
 2.5.30-33 
  Verbesserungen bei den Übersetzungen (bei Mails werden die Zeiten - soweit von "moment" supportet möglich - auch übersetzt)
+2.5.34
+ Wenn kein style.css vorhanden ist, wird eine zufällige CSS verwendet. 
+ Wenn du zufällige Farben nutzen möchtest, lasse einfach die style.css weg.
+
+ Wenn du nur weitere Farben anlegen möchtest, fertige die CSS entsprechend den Vorlagen. 
+ Sind jedoch andere (Benutzerdefinierte oder Fertige wie Fontawesome, ect.) .css Dateien mit in dem Ordner /css/ packe sie bitte in einen extra Ordner (jedoch keinen Unterordner)
+
+ Hast du dich für einen Style entschieden benenne ihn um in style.css, nun kannst du auch Custom-Styles in den Ordner packen. 
+
+
+ If there is no style.css, a random CSS is used.
+ If you want to use random colors, just leave out the style.css.
+
+ If you just want to add more colors, make the CSS according to the templates.
+ However, if there are other (user-defined or ready-made such as Fontawesome, etc.) .css files in the / css / folder, please pack them in a separate folder (but not a subfolder)
+
+ Once you have decided on a style rename it to style.css, now you can also put custom styles in the folder.
+
+
+
 
 ## [2.3.3]-[2.2.3a] - 2020-12-xx -ML Branch
 Bugfixes 
