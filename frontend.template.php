@@ -173,11 +173,11 @@ $allestyledateien = scandir('css');
 $stylecolors = array($stylecolorsdatei);
 //Ordner "files" auslesen 
 foreach ($allestyledateien as $stylecolorsdatei) { 
-if ($stylecolorsdatei != "." && $stylecolorsdatei != ".." && $stylecolorsdatei != "ADSstyle.mobile.css" && $stylecolorsdatei != "ADSstyle.desktop.css" && $stylecolorsdatei != "style.css") { 
-array_push($stylecolors,$stylecolorsdatei);
-}
+if ($stylecolorsdatei != "" && $stylecolorsdatei != "." && $stylecolorsdatei != ".." && $stylecolorsdatei != "ADSstyle.mobile.css" && $stylecolorsdatei != "ADSstyle.desktop.css" && $stylecolorsdatei != "style.css") { 
+array_push($stylecolors,$stylecolorsdatei);}
 };
-if (!file_exists('./css/style.css')) { $stylefile = './css/'.$stylecolors[rand(1,count($stylecolors))];}
+$styleszaehlen = count($stylecolors)-1;
+if (!file_exists('./css/style.css')) { $stylefile = './css/'.$stylecolors[rand(1,$styleszaehlen)];}
 else { $stylefile = './css/style.css';}
 ?>
 
