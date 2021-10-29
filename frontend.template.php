@@ -241,7 +241,7 @@ r.send();
 
 </div>
 <!-- move the rest of the page a bit down to show all content -->
-<div style="height: 3rem"> </div>
+<div style="height: 5rem"> </div>
 </div>
 
 <header>
@@ -333,7 +333,7 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 
 <?php 
 
-if ($config['adsActive'] == "1") {echo "<div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
+if ($config['adsActive'] == "1") {echo "<div style=\"height: 1rem\"> </div><div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
 }
 
 ?>
@@ -511,6 +511,7 @@ if (!$SoMeSettings['CodePinterest'] == "#PinCode")
 { echo $SoMeSettings['CodePinterest']; }
 } 
 ?>
+
 <hr>
 <a data-toggle="collapse" href="#imprintanddisclaimer"
 aria-expanded="false"
