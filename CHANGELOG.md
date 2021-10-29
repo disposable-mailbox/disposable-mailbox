@@ -25,7 +25,8 @@ All notable changes to this project will be documented in this file. The format 
 
  Once you have decided on a style rename it to style.css, now you can also put custom styles in the folder.
 
-
+2.5.34 + 35 
+Kleine Optimierungen am Design 
 
 
 ## [2.3.3]-[2.2.3a] - 2020-12-xx -ML Branch
