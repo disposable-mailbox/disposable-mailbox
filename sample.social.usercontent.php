@@ -9,7 +9,7 @@ $SoMeSettings['WtsAppID'] = "#WAid";
 
 
 $SoMeSettings['UserGitHub'] = "disposable-mailbox";
-$SoMeSettings['RepoGitHub'] = "disposable-mailbox";
+$SoMeSettings['RepoGitHub'] = "disposable-mailbox/disposable-mailbox";
 $SoMeSettings['UserDocker'] = "disposablemailbox";
 $SoMeSettings['RepoDocker'] = "disposable-mailbox";
 $SoMeSettings['UserGitter'] = "disposable-mailbox";
