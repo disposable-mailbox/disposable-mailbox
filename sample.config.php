@@ -48,6 +48,10 @@ error_reporting(0);
 $config['imap']['url'] = '{imap.example.com:993/imap/ssl}INBOX';
 $config['imap']['username'] = "myuser";
 $config['imap']['password'] = "mypassword";
+#####    Wichtig:        Important:    #####
+##### Konfigurationsdaten nicht auf GitHub speichern - oder Repository auf Privat stellen!
+##### Do not save configuration data on GitHub - or set repository to private!
+
 
 // For gmail you can use '{imap.gmail.com:993/imap/ssl}INBOX'
 // and follow the troubleshooting at:
