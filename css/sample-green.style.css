@@ -1,7 +1,11 @@
-/* style.css - default green */
+/* style.css - (default) green */
 body {
 	color: black;
 	background-color: #0C891F;
+}
+.transpabgcol {
+	background-color: #0C891F;
+	color: #0C891F;
 }
 a { 
 	color: #006B35; 
@@ -16,16 +20,24 @@ h1 {
 	font-size: 14pt;
 }
 	
-h2 a { 
+h3 a { 
 	color: #0C891F; 
 }
-h2 a:visited { 
+h3 a:visited { 
 	color: #0C891F; 
 }
-h2 a:hover { 
+h3 a:hover { 
 	color: #006B35; 
 }
-
+.transpabgcol a {
+	color: #0C891F;
+}
+.transpabgcol a:hover {
+	color: #0C891F;
+}
+.transpabgcol a:visited {
+	color: #0C891F;
+}
 .container {
 		background-color: #FFF; 
 }
