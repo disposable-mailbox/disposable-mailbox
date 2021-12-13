@@ -3,6 +3,10 @@ body {
 	color: black;
 	background-color: #028989;
 }
+.transpabgcol {
+	background-color: #028989;
+	color: #028989;
+}
 a { 
 	color: #005b62; 
 }
@@ -16,16 +20,24 @@ h1 {
 	font-size: 14pt;
 }
 	
-h2 a { 
+h3 a { 
 	color: #028989; 
 }
-h2 a:visited { 
+h3 a:visited { 
 	color: #028989; 
 }
-h2 a:hover { 
+h3 a:hover { 
 	color: #005b62; 
 }
-
+.transpabgcol a {
+	color: #028989;
+}
+.transpabgcol a:hover {
+	color: #028989;
+}
+.transpabgcol a:visited {
+	color: #028989;
+}
 .container {
 		background-color: #FFF; 
 }
