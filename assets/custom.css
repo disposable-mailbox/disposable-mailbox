@@ -112,3 +112,29 @@ footer {
 #address-box-edit {
     margin: 1rem;
 }
+
+// The CSS for the colored dot that represents your current status
+$red:#e74c3c;
+$orange:#e67e22;
+$yellow:#f1c40f;
+$green:#2ecc71;
+
+.color-dot {
+  @include border-radius(99px);
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin-right:5px;
+  &.critical {
+    background-color:$red;
+  }
+  &.major {
+    background-color:$orange;
+  }
+  &.minor {
+    background-color:$yellow;
+  }
+  &.none {
+    background-color:$green;
+  }
+
