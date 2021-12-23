@@ -9,8 +9,8 @@ if (!file_exists('./social.settings.php')) { @include './sample.social.settings.
 if (!file_exists('./social.usercontent.php')) { @include './sample.social.usercontent.php';}
 
 
-if (file_exists('./domaininfobanner.'.$languagemainselection.'.php')) {
-include './domaininfobanner.'.$languagemainselection.'.php';
+if (file_exists('.locale/dib/domaininfobanner.'.$languagemainselection.'.php')) {
+include './locale/dib/domaininfobanner.'.$languagemainselection.'.php';
 $domaininfos = "1";
 }
 
