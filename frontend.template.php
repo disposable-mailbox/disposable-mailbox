@@ -304,7 +304,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 placeholder="username"
 value="<?php echo $user->username ?>">
 <input name="localeselect" id="localeselect" type="hidden" class="form-control"
-value="<?php echo $localeselected; ?>">
+value="<?php echo $languagemainselection; ?>">
 </div>
 <div class="col-sm-auto my-1">
 <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $locale['TranslationForDomain']; ?></label>
@@ -334,7 +334,12 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </div>
 </div>
 </form>
+
+<div class="col my-address-block">
+<span id="my-domaininfo">
 <div class="domaininfo <?php echo $domaininfos." ".$domaininfolng; ?>">Active? <?php echo $domaininfos." lang?".$domaininfolng; ?></div>
+</span>
+</div>
 
 </div>
 </header>
