@@ -285,7 +285,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 </div>
 
 
-<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect&localeselect=<?php echo $localeselected; ?>" method="post">
+<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect&localeselect=<?php echo $languagemainselection; ?>" method="post">
 <div class="card">
 <div class="card-body">
 <p>
