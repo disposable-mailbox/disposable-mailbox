@@ -303,7 +303,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<input name="localeselect" id="localeselect" type="text" not="hidden" class="form-control"
+<input name="localeselect" id="language-selection" type="text" not="hidden" class="form-control"
 value="<?php echo $languagemainselection; ?>">
 </div>
 <div class="col-sm-auto my-1">
