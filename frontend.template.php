@@ -303,16 +303,6 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
-<?php
-	
-foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
-$lngselected = $aLanguages === $localeselected ? ' selected ' : '';
-print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</option>";
-}
-
-?>
-</select>
 </div>
 <div class="col-sm-auto my-1">
 <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $locale['TranslationForDomain']; ?></label>
@@ -330,6 +320,16 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 ?>
 </select>
 
+<select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
+<?php
+	
+foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
+$lngselected = $aLanguages === $localeselected ? ' selected ' : '';
+print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</option>";
+}
+
+?>
+</select>
 
 </div>
 </div>
