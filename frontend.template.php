@@ -320,6 +320,9 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 ?>
 </select>
 
+</div>
+</div>
+
 <select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
 <?php
 	
@@ -330,9 +333,6 @@ print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</
 
 ?>
 </select>
-
-</div>
-</div>
 
 <div class="col-auto my-1">
 <button type="submit" class="btn btn-primary"><?php echo $locale['OpenMailbox']; ?></button>
