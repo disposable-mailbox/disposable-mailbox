@@ -274,6 +274,12 @@ print "<p>$user->username @ <a href=\"https://$aDomain\?$user->username@$aDomain
 </div>
 
 
+<blockquote>
+Active? <?php echo $domaininfos; ?>  &nbsp; 
+Lang? <?php echo $domaininfolng; ?>
+</blockquote>
+
+
 <div class="col get-new-address-col">
 <button type="button" class="btn btn-outline-dark"
 data-toggle="collapse" title="choose your own address"
@@ -343,20 +349,11 @@ print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</
 </div>
 </form>
 </div>
-
-
-<blockquote>
-Active? <?php echo $domaininfos; ?>  &nbsp; 
-Lang? <?php echo $domaininfolng; ?>
-</blockquote>
-
-
-
 </header>
 
 <?php 
-
-if ($config['adsActive'] == "1") {echo "<div style=\"height: 1rem\"> </div><div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
+if ($config['adsActive'] == "1") {
+echo "<div style=\"height: 1rem\"> </div><div class=\"container\"><div class=\"hwadw\">".$locale['adsLocale']."</div> <div class=\"adw\">".$usercontent['adsContent']."</div></div>";	
 }
 
 ?>
