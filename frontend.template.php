@@ -343,12 +343,11 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </div>
 </form>
 
-<div class="col my-address-block">
 <blockquote>
 Active? <?php echo $domaininfos; ?>  &nbsp; 
 Lang? <?php echo $domaininfolng; ?>
 </blockquote>
-</div>
+
 
 </div>
 </header>
