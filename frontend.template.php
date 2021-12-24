@@ -273,9 +273,11 @@ print "<p>$user->username @ <a href=\"https://$aDomain\?$user->username@$aDomain
 <span id="my-address"><?php echo $user->address ?></span> <button class="copy-button" data-clipboard-target="#my-address"><?php echo $locale['TranslationforCopy']; ?></button>
 </div>
 
-<?php if ($domaininfos == "1") {
+<?php 
+if ($domaininfos == "1") {
 echo "<blockquote>".$domaininfo."</blockquote>";
 }
+?>
 
 
 <div class="col get-new-address-col">
