@@ -334,10 +334,9 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 </div>
 </div>
 </form>
-<div class="domaininfo"><?php echo $domaininfos.$domaininfolng; ?></div>
+<div class="domaininfo <?php echo $domaininfos." ".$domaininfolng; ?>">Active? <?php echo $domaininfos." lang?".$domaininfolng; ?></div>
 
 </div>
-2
 </header>
 
 <?php 
