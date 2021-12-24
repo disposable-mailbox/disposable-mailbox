@@ -12,7 +12,7 @@ if (!file_exists('./social.usercontent.php')) { @include './sample.social.userco
 if (file_exists('./locale/domaininfobanner.php')) {
 include './locale/domaininfobanner.php';
 $domaininfos = "1";
-$domaininfolng = languagemainselection;
+$domaininfolng = $languagemainselection;
 }
 
 //@include './social.template.php';
