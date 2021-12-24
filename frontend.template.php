@@ -308,7 +308,7 @@ value="<?php echo $user->username ?>">
 	
 foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
 $lngselected = $aLanguages === $localeselected ? ' selected ' : '';
-print "<option hidden value='$aLanguages' $lngselected>$aLanguagecd</option>";
+print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</option>";
 }
 
 ?>
