@@ -325,7 +325,7 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 
 </div>
 
-<?php echo $domaininfos.$domaininfolng; ?>
+<div class="domaininfo"><?php echo $domaininfos.$domaininfolng; ?></div>
 
 </div>
 <div class="col-auto my-1">
