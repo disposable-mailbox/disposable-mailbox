@@ -324,10 +324,11 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 
 
 </div>
+</div>
 
 <div class="domaininfo"><?php echo $domaininfos.$domaininfolng; ?></div>
 
-</div>
+
 <div class="col-auto my-1">
 <button type="submit" class="btn btn-primary"><?php echo $locale['OpenMailbox']; ?></button>
 </div>
