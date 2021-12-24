@@ -9,7 +9,7 @@ if (!file_exists('./social.settings.php')) { @include './sample.social.settings.
 if (!file_exists('./social.usercontent.php')) { @include './sample.social.usercontent.php';}
 
 
-if (file_exists('.locale/domaininfobanner.php')) {
+if (file_exists('./locale/domaininfobanner.php')) {
 include './locale/domaininfobanner.php';
 $domaininfos = "1";
 $domaininfolng = languagemainselection;
