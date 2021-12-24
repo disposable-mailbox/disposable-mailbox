@@ -285,7 +285,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 </div>
 
 
-<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect&localeselect=<?php echo $languagemainselection; ?>&localeselected=<?php echo $languagemainselection; ?>" method="post">
+<form class="collapse change-address-toggle" id="address-box-edit" action="?action=redirect" method="post">
 <div class="card">
 <div class="card-body">
 <p>
@@ -303,8 +303,16 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<input name="localeselect" id="language-selection" type="text" not="hidden" class="form-control"
-value="<?php echo $languagemainselection; ?>">
+<select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
+<?php
+	
+foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
+$lngselected = $aLanguages === $localeselected ? ' selected ' : '';
+print "<option value='$aLanguages' $lngselected>$aLanguagecd</option>";
+}
+
+?>
+</select>
 </div>
 <div class="col-sm-auto my-1">
 <label class="sr-only" for="inlineFormInputGroupUsername"><?php echo $locale['TranslationForDomain']; ?></label>
