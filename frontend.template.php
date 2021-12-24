@@ -274,10 +274,10 @@ print "<p>$user->username @ <a href=\"https://$aDomain\?$user->username@$aDomain
 </div>
 
 <?php 
-if ($domaininfos == "1" && !empty($domainfo)) {
+if ($domaininfos == "1" && !empty($domaininfo)) {
 echo "<blockquote>".$domaininfo."</blockquote>";
 } else {
-echo "<!-- HIER STEHTS DANN. ODER NICHT -->";
+echo "<!-- no info x6 -->";
 }
 ?>
 
