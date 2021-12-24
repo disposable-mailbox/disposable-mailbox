@@ -343,10 +343,7 @@ print "<option hidden=\"hidden\" value='$aLanguages' $lngselected>$aLanguagecd</
 </div>
 </form>
 
-<blockquote>
-Active? <?php echo $domaininfos; ?>  &nbsp; 
-Lang? <?php echo $domaininfolng; ?>
-</blockquote>
+
 
 
 </div>
