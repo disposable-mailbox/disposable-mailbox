@@ -303,7 +303,7 @@ aria-controls="address-box-normal address-box-edit" aria-expanded="false">
 <input name="username" type="text" class="form-control" id="inlineFormInputName"
 placeholder="username"
 value="<?php echo $user->username ?>">
-<select id="language-selection" name="localeselect"  class="custom-select" title="Language"> 
+<select id="language-selection" name="localeselect"  class="custom-select" title="Language" type="hidden"> 
 <?php
 	
 foreach ($config['availablelanguages'] as $aLanguagecd => $aLanguages) {
