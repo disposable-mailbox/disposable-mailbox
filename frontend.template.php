@@ -330,12 +330,14 @@ print "<option value='$aDomain' $selected>$aDomain</option>";
 <button type="submit" class="btn btn-primary"><?php echo $locale['OpenMailbox']; ?></button>
 </div>
 </div>
-<div class="domaininfo"><?php echo $domaininfos.$domaininfolng; ?></div>
 
 </div>
 </div>
 </form>
+<div class="domaininfo"><?php echo $domaininfos.$domaininfolng; ?></div>
+
 </div>
+2
 </header>
 
 <?php 
