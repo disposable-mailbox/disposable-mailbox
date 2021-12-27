@@ -3,4 +3,6 @@
   "description": "self-hosted disposable email service (php) using catch-all and imap",
   "repository": "https://github.com/disposable-mailbox/disposable-mailbox",
   "website": "https://www.disposable-mailbox.eu/",
+  "success_url": "/",
+  "logo": "https://disposabl.email/favicon/android-icon-192x192.png",
 }
