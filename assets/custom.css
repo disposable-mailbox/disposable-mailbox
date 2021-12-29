@@ -13,9 +13,9 @@ html > body {
 
 .my-address-block {
     background-color: #F8F9FA;
-    white-space: nowrap;
     text-align: center;
 /*
+    white-space: nowrap;
     padding: 0.5rem;
     padding-left: 0;
     margin-left: 1rem;
