@@ -293,7 +293,7 @@ echo "<hr><blockquote>".$domaininfo[$user->domain]."</blockquote>";
 
 echo $domaininfo[$user->domain];
 echo "<hr>"; 
-echo $domaininfo[$user->domain]
+echo $domaininfo[$user->domain];
 echo $domaininfo[$domaininfolng];
 echo "<hr>";
 echo $domaininfo[$domaininfolng];
