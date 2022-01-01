@@ -274,7 +274,7 @@ print "<p>$user->username @ <a href=\"https://$aDomain\?$user->username@$aDomain
 </div>
 
 <?php 
-if ($domaininfos == "1" && !empty($domaininfo[$user->domain[$domaininfolng]])) {
+if ($domaininfos == "1" && !empty($domaininfo[$user->domain])) {
 echo "<hr>
 <blockquote>".$domaininfo[$user->domain]."</blockquote>";
 } else {
