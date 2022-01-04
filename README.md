@@ -72,6 +72,30 @@ Install php dependecies:
 
     ini_set('display_errors', 1);    ini_set('display_startup_errors', 1);    error_reporting(E_ALL);
 
+#### Blank Site
+* Will give me an url like www.example.com/?user@mail.example.com
+* but the page itselfs is blank??!
+
+```
+$address = User::get_random_address($config{'domains'});
+```
+Please change line 58 in the controller.php, 
+as it is above / or try:
+```
+$address = User::get_random_address($config['domains']); 
+```
+
+
+#### the page stops when a mail arrives
+The entire page is displayed, from head to toe.
+But as soon as an incoming email is displayed, the footer is missing.
+```
+Unfortunately, this is an 
+UNSOLVED PROBLEM 
+that occurs with certain server configurations.
+```
+
+
 ## Testing on MacOs
  * brew install php
  * brew tap kabel/php-ext 
