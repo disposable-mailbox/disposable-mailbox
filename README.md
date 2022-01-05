@@ -49,10 +49,11 @@ Disposable-mailbox can be installed by copying the src directory to a webserver.
 
 2. download a [release](https://github.com/disposable-mailbox/disposable-mailbox/releases) or clone this repository
 3. copy the files in the `src` directory to your web server (not the whole repo! - only affects main branch (or Synox's original) ).
-4. rename `config.sample.php` to `config.php` and apply the imap settings. *
-   Set CHMOD (Oktal) to 400
-    #####    Wichtig:        Important:    #####
+4. rename `config.sample.php` to `config.php` and apply the imap settings. 
+  * Set CHMOD (Oktal) to 400
+    #####   Wichtig:       #####
     ##### * Konfigurationsdaten nicht auf GitHub speichern - oder Repository auf Privat stellen!
+    #####   Important:    #####
     ##### * Do not save configuration data on GitHub - or set repository to private!
 5. open it in your browser, check your php error log for messages. 
 
@@ -73,8 +74,8 @@ Install php dependecies:
     ini_set('display_errors', 1);    ini_set('display_startup_errors', 1);    error_reporting(E_ALL);
 
 #### Blank Site
- * Will give me an url like www.example.com/?user@mail.example.com
- * but the page itselfs is blank??!
+ * Browser will give me an url like www.example.com/?user@mail.example.com
+* but the page itselfs is blank
 
 
 ```
@@ -88,7 +89,7 @@ $address = User::get_random_address($config['domains']);
 
 
 #### the page stops when a mail arrives
- The entire page is displayed, from head to toe.
+ The entire page is displayed, from head to footer.
  But as soon as an incoming email is displayed, the footer is missing.
 ```
 Unfortunately, this is an 
