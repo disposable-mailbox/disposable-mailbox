@@ -292,7 +292,7 @@ echo "<hr><blockquote>";
 echo "<hr>1:"; 
 echo $aDomain;
 echo "<hr>2:"; 
-echo $domaininfo[$user->domain];
+echo $user->domain;
 echo "<hr>3/4:"; 
 echo $domaininfo[$user->domain];
 echo $domaininfo[$domaininfolng];
