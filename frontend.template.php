@@ -288,7 +288,7 @@ print "<p>$user->username @ <a href=\"https://$aDomain\?$user->username@$aDomain
 // if ($domaininfos == "1" && !empty($domaininfo[$user->domain])) {
 echo "<hr><blockquote>".$domaininfo[$user->domain]."</blockquote>";
 echo "<hr>"; 
-echo $[$user->domain];
+//echo $[$user->domain];
 echo "<hr>"; 
 echo $domaininfo[$user->domain];
 echo "<hr>"; 
