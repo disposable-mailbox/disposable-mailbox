@@ -1,3 +1,8 @@
+DISPOSABLE-MAILBOX.EU und DISPOSABL.EMAIL laufen zum 12.11.2022 aus und werden nicht verlängert.  
+Das GitHub Projekt wird zum 30.11.2022 archiviert, die Begleitseiten gelöscht!  
+Kontaktiere uns, wenn du weiter machen möchtest
+
+
 [![Join the chat at https://gitter.im/disposablemailbox/disposable-mailbox.eu](https://badges.gitter.im/disposable-mailbox/disposable-mailbox.svg)](https://gitter.im/disposablemailbox/disposable-mailbox.eu?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 
 [![Repositories on Docker](https://img.shields.io/badge/Repositories-on%20Docker-blue?style=social&logo=Docker)](https://hub.docker.com/u/disposablemailbox) 
