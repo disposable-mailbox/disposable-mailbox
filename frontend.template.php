@@ -184,7 +184,7 @@ else { $stylefile = './css/style.css';}
 <link rel="stylesheet" href="<?php echo $stylefile; ?>">
 <link rel="stylesheet" href="css/ADSstyle.<?php echo $mobiledetect; ?>.css">
 
-<link href='https://fonts.googleapis.com/css?family=Calligraffitti:300,400,500,300italic' rel='stylesheet' type='text/css'>
+<link href='https://css.fonts.disposable-mailbox.eu/css/?family=Calligraffitti:300,400,500,300italic' rel='stylesheet' type='text/css'>
 <script>
 var mailCount = <?php echo count($emails)?>;
 setInterval(function () {
